@@ -1,0 +1,226 @@
+body {
+  background: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ============== */
+/* HEADER SECTION */
+/* ============== */
+
+/* NAVBAR SECTION */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+div.logo_header {
+  color: #fff;
+  background: linear-gradient(to right bottom, #1900ff 0%, #000000 70%);
+  font-size: 2rem;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #006efd;
+  text-align: center;
+}
+
+div.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #9b9b9b;
+  transition: all 0.3s ease;
+}
+
+header a.home {
+}
+
+header a.about-me {
+}
+
+header a.skills {
+}
+
+header a.projects {
+}
+
+header a.contact {
+}
+
+header div.download {
+  padding: 1rem, 3rem;
+  color: #fff;
+  background: linear-gradient(to right, #051428 20%, #03234d 100%);
+  padding: 1rem 1rem;
+  border: 1px solid #006efd;
+  border-radius: 15px;
+}
+
+/* LEFT SECTION */
+
+header div.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
+header div.hello {
+  margin-bottom: 0.1rem;
+}
+
+header div.name {
+  display: flex;
+  gap: 5px;
+}
+
+header h1.name {
+  color: #fff;
+}
+
+header h1.lastname {
+  color: #49a7ff;
+}
+
+header div.name h1 {
+  margin: 0;
+}
+
+header div.left-section {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  direction: rtl;
+  flex: 1;
+}
+
+header h5.intro-english {
+}
+
+header p.intro-persian {
+}
+
+header p.i-like {
+}
+
+header div.buttons {
+  margin: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header a.contact-button {
+  border: 1px solid #006efd;
+}
+
+header a.contact-button,
+a.about-me-button {
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header a.about-me-button {
+  background: linear-gradient(to right, #3f4cff 15%, #112f81 90%);
+}
+
+/* RIGHT SECTION */
+
+header div.rihgt-section {
+  padding: 1rem;
+}
+
+header div.rihgt-section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header div.right-section img {
+  max-width: 600px;
+  display: block;
+  object-fit: cover;
+}
+
+div.social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* MAIN */
+
+main {
+  color: white;
+}
+
+/* ABOUT ME */
+
+div.container_main {
+  display: flex;
+  background: #222222;
+  border-top: 2px solid #5e5e5f;
+}
+
+div.left-section_main {
+    
+}
+
+div.about-me_main {
+}
+
+h3.about-me_main {
+}
+
+p.about-me_main {
+}
+
+div.container-about-me_main {
+}
+
+div.birth {
+}
+
+div.location {
+}
+
+div.studies {
+}
+
+div.favourite {
+}
+
+div.right-section_main {
+}
+
+div.skills {
+}
+
+h3.skills {
+}
+
+div.container-skills {
+}
+
+div.skills-img {
+}
+
+div.skills-img img {
+  width: 100px;
+}
