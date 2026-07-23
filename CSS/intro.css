@@ -12,7 +12,7 @@ body {
 
 header {
   background: #01041a;
-  padding: 1rem 0;
+  padding-bottom: 2rem;
 }
 
 /* NAVBAR SECTION */
@@ -20,7 +20,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  margin: 1rem;
+  margin: 2rem;
   gap: 3rem;
 }
 
@@ -187,6 +187,7 @@ div.container_main {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   background: #040627;
+  padding-bottom: 2rem;
 }
 
 /* ABOUT ME */
@@ -321,4 +322,104 @@ div.figma {
 }
 div.react {
   width: 0%;
+}
+
+/* MY LEARNING WAY */
+
+div.my-learning-way {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #010522;
+  padding-bottom: 2rem;
+}
+
+i.fa-route {
+  color: #8f18ff;
+}
+
+div.my-learning-way-time-line-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 1100px;
+}
+
+div.my-learning-way-time-line-container span {
+  color: #7700ff;
+}
+
+div.my-learning-way-time-line-container h5 {
+  margin: 0.2rem;
+}
+
+div.my-learning-way-time-line-container p {
+  color: #b3b3b3;
+  margin: 0.3rem;
+}
+
+div.vertical-line {
+  width: 3px;
+  height: 335px;
+  background: linear-gradient(to bottom, #00aeff, #006efd, #00aeff, #006efd, #00aeff, #006efd);
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.horizontal {
+  height: 3px;
+  width: 50%;
+  background: linear-gradient(to right, #006efd, #00aeff, #006efd);
+}
+
+div.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background:
+    linear-gradient(#0b1b30) padding-box,
+    linear-gradient(90deg, #1900ff, #13b3cf, #1900ff) border-box;
+  border: 5px solid transparent;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+div.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid #00aeff;
+  padding: 1rem;
+  width: 500px;
+  height: 100px;
+  background: #061a33;
+  border-radius: 10px;
+}
+
+div.card-1-container {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-start;
+}
+
+div.card-2-container {
+  direction: ltr;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  margin-left: auto;
+}
+
+div.card-3-container {
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-start;
 }
