@@ -22,13 +22,13 @@
       <!-- NAVBAR -->
 
       <nav>
-        <div class="logo_header">R</div>
+        <div class="logo_header"><span>R</span></div>
         <div class="navbar">
-          <a href="" class="contact">تماس</a>
-          <a href="" class="projects">پروژه ها</a>
-          <a href="" class="skills">مهارت ها</a>
-          <a href="" class="about-me">درباره من</a>
-          <a href="" class="home">خانه</a>
+          <a href="#contact" class="contact">تماس</a>
+          <a href="#projects" class="projects">پروژه ها</a>
+          <a href="#skills" class="skills">مهارت ها</a>
+          <a href="#about" class="about-me">درباره من</a>
+          <a href="#learningWay" class="learning-way">مسیر یادگیری</a>
         </div>
         <div class="download-button">
           دانلود رزومه <i class="fa-solid fa-download"></i>
@@ -63,14 +63,17 @@
             </a>
           </div>
           <div class="social_header">
-            <a href="https://github.com" target="_blank">
+            <a href="https://www.github.com/rezaWebDeveloper01" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://linkedin.com" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/reza-niazkar-front-end" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
             </a>
-            <a href="mailto:rezan4162@gmail.com">
+            <a href="mailto:rezan4162@gmail.com" target="_blank">
               <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://t.em/reza80-08" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
             </a>
           </div>
         </div>
@@ -80,18 +83,13 @@
         <div class="right-section_header">
           <div class="cover-position-of-cards">
               <div class="code_hero card_hero">&lt;/&gt;</div>
-          <div class="js_hero card_hero">JS</div>
-          <div class="css_hero card_hero">CSS</div>
-          <div class="html_hero card_hero">HTML</div>
-          <div class="big-circle">
-            <div class="smaller-circle">
-              <div class="back-light">
-                <img class="hero-img" src="" alt="/">
-              </div>
-            </div>
-          </div>
-          </div>
-          </div>
+              <div class="js_hero card_hero">JS</div>
+              <div class="css_hero card_hero">CSS</div>
+              <div class="html_hero card_hero">HTML</div>
+              <div class="big-circle"></div>
+              <div class="smaller-circle"></div>
+          <div class="back-light"></div>
+          <img class="hero-img" src="" alt="/">
         </div>
       </div>
     </header>
@@ -103,17 +101,23 @@
 
         <!-- ABOUT ME -->
 
-        <div class="left-section_main">
+        <div class="left-section_main" id="about">
           <div class="about-me-container_main">
             <h3 class="about-me-title_main">
               درباره من <i class="fa-regular fa-user"></i>
             </h3>
+
+            <!-- PARAGRAPH -->
+
             <p class="about-me-paragraph_main">
               من دانشجوی مهندسی کامپیوتر هستم و از سال ۱۴۰۳ برنامه نویسی رو شروع
               کردم. تمرکز من روی توسعه فراند اند هست و عاشق طراحی سایت های مدرن
               و واکنش گرا هستم. علاوه بر برنامه نویسی، طراحی و تمرینات ورزشی نیز
               علاقه دارم
             </p>
+
+            <!-- CARDS -->
+
             <div class="card-container-about-me_main">
               <div class="birth about-me_boxes">
                 <i class="fa-solid fa-calendar-days"></i>
@@ -141,7 +145,7 @@
 
         <!-- SKILLS -->
 
-        <div class="right-section_main">
+        <div class="right-section_main" id="skills">
           <div class="skills">
             <h3 class="skills_title">مهارت ها <i class="fa-solid fa-code"></i></h3>
             <div class="container-skills_card">
@@ -200,7 +204,7 @@
 
       <!-- MY LEARNING WAY -->
 
-      <div class="my-learning-way">
+      <div class="my-learning-way" id="learningWay">
         <h4>مسیر یادگیری من <i class="fa-solid fa-route"></i></h4>
         <div class="my-learning-way-time-line-container">
           <div class="vertical-line"></div>
@@ -257,7 +261,7 @@
 
       <!-- PROJECTS -->
 
-      <div class="projects_footer">
+      <div class="projects_footer" id="projects">
         <h3>پروژه ها <i class="fa-solid fa-briefcase"></i></h3>
         <div class="card-container-projects_footer">
           <div class="project-card_footer">بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد</div>
@@ -281,24 +285,29 @@
 
         <!-- CONTACT -->
 
-        <div class="contact_footer">
-          <h3>تماس با من <i class="fa-regular fa-paper-plane"></i><h3>
+        <div class="contact_footer" id="contact">
+          <h3>تماس با من <i class="fa-regular fa-paper-plane"></i></h3>
           <div class="contact-container">
-            <div class="gmail-footer">
+            <a class="gmail-footer" href="mailto:rezan4162@gmail.com" target="_blank">
               <i class="fa-solid fa-envelope"></i>
               <h4>Gmail</h4>
               <span>rezan4162@gmail.com</span>
-            </div>
-            <div class="github-footer">
+            </a>
+            <a class="github-footer" href="https://www.github.com/rezaWebDeveloper01" target="_blank">
               <i class="fa-brands fa-github"></i>
               <h4>GitHub</h4>
-              <span>rezan4162-rgb</span>
-            </div>
-            <div class="linkedin-footer">
+              <span>rezaWebDeveloper01</span>
+            </a>
+            <a class="telegram-footer" href="https://t.em/reza80-08" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
+              <h4>Telegram</h4>
+              <span>@reza80-08</span>
+            </a>
+            <a class="linkedin-footer" href="https://www.linkedin.com/in/reza-niazkar-front-end" target="_blank">
               <i class="fa-brands fa-linkedin"></i>
-              <h4>Linkedin</h4>
-              <span>_____</span>
-            </div>
+              <h4>Telegram</h4>
+              <span></span>
+            </a>
           </div>
         </div>
       </div>
