@@ -14,29 +14,45 @@
     <title>INTRO</title>
   </head>
   <body>
-
     <!-- ### HEADER ### -->
 
     <header>
-
       <!-- NAVBAR -->
 
       <nav>
-        <div class="logo_header"><span>R</span></div>
-        <div class="navbar">
-          <a href="#contact" class="contact">تماس</a>
-          <a href="#projects" class="projects">پروژه ها</a>
-          <a href="#skills" class="skills">مهارت ها</a>
-          <a href="#about" class="about-me">درباره من</a>
-          <a href="#learningWay" class="learning-way">مسیر یادگیری</a>
-        </div>
-        <div class="download-button">
-          دانلود رزومه <i class="fa-solid fa-download"></i>
+        <div class="navbar-container">
+          <div class="logo_header"><span>R</span></div>
+          <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar_toggle"></span>
+            <span class="bar_toggle"></span>
+            <span class="bar_toggle"></span>
+          </div>
+          <ul class="navbar-menu">
+            <li class="navbar-item">
+              <a href="#contact" class="contact">تماس</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#projects" class="projects">پروژه ها</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#skills" class="skills">مهارت ها</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#about" class="about-me">درباره من</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#learningWay" class="learning-way">مسیر یادگیری</a>
+            </li>
+            <li class="navbar-item">
+              <div class="download-button">
+                دانلود رزومه <i class="fa-solid fa-download"></i>
+              </div>
+            </li>
+          </ul>
         </div>
       </nav>
 
       <div class="container_header">
-
         <!-- LEFT SECTION -->
 
         <div class="left-section_header">
@@ -46,9 +62,9 @@
               <h1 class="name_h1">رضا</h1>
               <h1 class="lastname_h1">نیازکار</h1>
             </div>
-            <h5 class="intro-english">
+            <p class="intro-english">
               Front-End Developer & Computer Engineering Student
-            </h5>
+            </p>
             <p class="intro-persian">
               علاقه مند به طراحی رابط کاربری و تجربه کاربری جذاب.
             </p>
@@ -57,16 +73,21 @@
             </p>
           </div>
           <div class="buttons_header">
-            <a class="contact-button_header"><i class="fa-solid fa-envelope"></i> تماس با من
+            <a class="contact-button_header"
+              ><i class="fa-solid fa-envelope"></i> تماس با من
             </a>
-            <a class="about-me-button_header">درباره من <i class="fa-solid fa-arrow-down-long"></i>
+            <a class="about-me-button_header"
+              >درباره من <i class="fa-solid fa-arrow-down-long"></i>
             </a>
           </div>
           <div class="social_header">
             <a href="https://www.github.com/rezaWebDeveloper01" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/reza-niazkar-front-end" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/reza-niazkar-front-end"
+              target="_blank"
+            >
               <i class="fa-brands fa-telegram"></i>
             </a>
             <a href="mailto:rezan4162@gmail.com" target="_blank">
@@ -82,14 +103,15 @@
 
         <div class="right-section_header">
           <div class="cover-position-of-cards">
-              <div class="code_hero card_hero">&lt;/&gt;</div>
-              <div class="js_hero card_hero">JS</div>
-              <div class="css_hero card_hero">CSS</div>
-              <div class="html_hero card_hero">HTML</div>
-              <div class="big-circle"></div>
-              <div class="smaller-circle"></div>
-          <div class="back-light"></div>
-          <img class="hero-img" src="" alt="/">
+            <div class="code_hero card_hero">&lt;/&gt;</div>
+            <div class="js_hero card_hero">JS</div>
+            <div class="css_hero card_hero">CSS</div>
+            <div class="html_hero card_hero">HTML</div>
+            <div class="big-circle"></div>
+            <div class="smaller-circle"></div>
+            <div class="back-light"></div>
+            <img class="hero-img" src="" alt="/" />
+          </div>
         </div>
       </div>
     </header>
@@ -98,7 +120,6 @@
 
     <main>
       <div class="container_main">
-
         <!-- ABOUT ME -->
 
         <div class="left-section_main" id="about">
@@ -147,12 +168,14 @@
 
         <div class="right-section_main" id="skills">
           <div class="skills">
-            <h3 class="skills_title">مهارت ها <i class="fa-solid fa-code"></i></h3>
+            <h3 class="skills_title">
+              مهارت ها <i class="fa-solid fa-code"></i>
+            </h3>
             <div class="container-skills_card">
               <div class="skill-card">
-                <img src="./PIC/HTML5_Badge.webp" alt="" />
+                <img src="./PIC/Html.webp" alt="" />
                 <h4>HTML</h4>
-                <span>85%</span>
+                <span class="counter" data-target="90"></span><span>%</span>
                 <div class="bar-skill_card">
                   <div class="fill-skill_card html-skill"></div>
                 </div>
@@ -160,7 +183,7 @@
               <div class="skill-card">
                 <img src="./PIC/CSS.webp" alt="" />
                 <h4>CSS</h4>
-                <span>80%</span>
+                <span class="counter" data-target="80"></span><span>%</span>
                 <div class="bar-skill_card">
                   <div class="fill-skill_card css-skill"></div>
                 </div>
@@ -168,7 +191,7 @@
               <div class="skill-card">
                 <img src="./PIC/JS.webp" alt="" />
                 <h4>JavaScript</h4>
-                <span>70%</span>
+                <span class="counter" data-target="60"></span><span>%</span>
                 <div class="bar-skill_card">
                   <div class="fill-skill_card js-skill"></div>
                 </div>
@@ -176,23 +199,23 @@
               <div class="skill-card">
                 <img src="./PIC/Git.webp" alt="" />
                 <h4>Git</h4>
-                <span>85%</span>
+                <span class="counter" data-target="80"></span><span>%</span>
                 <div class="bar-skill_card">
                   <div class="fill-skill_card git-skill"></div>
                 </div>
               </div>
               <div class="skill-card">
-                <img src="./PIC/Figma.webp" alt="" />
-                <h4>Figma</h4>
-                <span>0%</span>
+                <img src="./PIC/Responsive.png" alt="" />
+                <h4>Responsive design</h4>
+                <span class="counter" data-target="75"></span><span>%</span>
                 <div class="bar-skill_card">
-                  <div class="fill-skill_card figma-skill"></div>
+                  <div class="fill-skill_card responsive-skill"></div>
                 </div>
               </div>
               <div class="skill-card">
                 <img src="./PIC/React.png" alt="" />
                 <h4>React</h4>
-                <span>0%</span>
+                <span class="counter" data-target="5"></span><span>%</span>
                 <div class="bar-skill_card">
                   <div class="fill-skill_card react-skill"></div>
                 </div>
@@ -208,7 +231,9 @@
         <h4>مسیر یادگیری من <i class="fa-solid fa-route"></i></h4>
         <div class="my-learning-way-time-line-container">
           <div class="vertical-line"></div>
-          <div class="card-1-container_learning_way card-container_learning_way">
+          <div
+            class="card-1-container_learning_way card-container_learning_way"
+          >
             <div class="circle_main"></div>
             <div class="horizontal-line"></div>
             <div class="card_learning_way">
@@ -223,7 +248,9 @@
               </div>
             </div>
           </div>
-          <div class="card-2-container_learning_way card-container_learning_way">
+          <div
+            class="card-2-container_learning_way card-container_learning_way"
+          >
             <div class="circle_main"></div>
             <div class="horizontal-line"></div>
             <div class="card_learning_way">
@@ -237,7 +264,9 @@
               </div>
             </div>
           </div>
-          <div class="card-3-container_learning_way card-container_learning_way">
+          <div
+            class="card-3-container_learning_way card-container_learning_way"
+          >
             <div class="circle_main"></div>
             <div class="horizontal-line"></div>
             <div class="card_learning_way">
@@ -258,15 +287,20 @@
     <!-- ### FOOTER ### -->
 
     <footer>
-
       <!-- PROJECTS -->
 
       <div class="projects_footer" id="projects">
         <h3>پروژه ها <i class="fa-solid fa-briefcase"></i></h3>
         <div class="card-container-projects_footer">
-          <div class="project-card_footer">بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد</div>
-          <div class="project-card_footer">بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد</div>
-          <div class="project-card_footer">بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد</div>
+          <div class="project-card_footer">
+            بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
+          </div>
+          <div class="project-card_footer">
+            بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
+          </div>
+          <div class="project-card_footer">
+            بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
+          </div>
         </div>
       </div>
 
@@ -274,13 +308,25 @@
 
       <div class="goals-container">
         <div class="goals">
-          <h3 class="goals_title"> اهداف من <i class="fa-solid fa-bullseye"></i></h3>
-          <p class="goals_paragraph"> <i class="fa-regular fa-circle-check"></i> یادگیری ری اکت و ساخت پروژه های پیچیده تر</p>
-          <p class="goals_paragraph"><i class="fa-regular fa-circle-check"></i> تسلط کامل بر مفاهیم پیشرفته و جاوااسکریپت</p>
+          <h3 class="goals_title">
+            اهداف من <i class="fa-solid fa-bullseye"></i>
+          </h3>
           <p class="goals_paragraph">
-           <i class="fa-regular fa-circle-check"></i>  کار به عنوان توسعه دهنده فرانت اند در یک تیم حرفه ای
+            <i class="fa-regular fa-circle-check"></i> یادگیری ری اکت و ساخت
+            پروژه های پیچیده تر
           </p>
-          <p class="goals_paragraph"> <i class="fa-regular fa-circle-check"></i> درآمد دلاری از طریق فریلنسری</p>
+          <p class="goals_paragraph">
+            <i class="fa-regular fa-circle-check"></i> تسلط کامل بر مفاهیم
+            پیشرفته و جاوااسکریپت
+          </p>
+          <p class="goals_paragraph">
+            <i class="fa-regular fa-circle-check"></i> کار به عنوان توسعه دهنده
+            فرانت اند در یک تیم حرفه ای
+          </p>
+          <p class="goals_paragraph">
+            <i class="fa-regular fa-circle-check"></i> درآمد دلاری از طریق
+            فریلنسری
+          </p>
         </div>
 
         <!-- CONTACT -->
@@ -288,25 +334,41 @@
         <div class="contact_footer" id="contact">
           <h3>تماس با من <i class="fa-regular fa-paper-plane"></i></h3>
           <div class="contact-container">
-            <a class="gmail-footer" href="mailto:rezan4162@gmail.com" target="_blank">
+            <a
+              class="gmail-footer"
+              href="mailto:rezan4162@gmail.com"
+              target="_blank"
+            >
               <i class="fa-solid fa-envelope"></i>
               <h4>Gmail</h4>
               <span>rezan4162@gmail.com</span>
             </a>
-            <a class="github-footer" href="https://www.github.com/rezaWebDeveloper01" target="_blank">
+            <a
+              class="github-footer"
+              href="https://www.github.com/rezaWebDeveloper01"
+              target="_blank"
+            >
               <i class="fa-brands fa-github"></i>
               <h4>GitHub</h4>
               <span>rezaWebDeveloper01</span>
             </a>
-            <a class="telegram-footer" href="https://t.em/reza80-08" target="_blank">
+            <a
+              class="telegram-footer"
+              href="https://t.em/reza80-08"
+              target="_blank"
+            >
               <i class="fa-brands fa-telegram"></i>
               <h4>Telegram</h4>
               <span>@reza80-08</span>
             </a>
-            <a class="linkedin-footer" href="https://www.linkedin.com/in/reza-niazkar-front-end" target="_blank">
+            <a
+              class="linkedin-footer"
+              href="https://www.linkedin.com/in/reza-niazkar-front-end"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin"></i>
-              <h4>Telegram</h4>
-              <span></span>
+              <h4>Linkedin</h4>
+              <span>reza-niazkar-front-end</span>
             </a>
           </div>
         </div>
@@ -314,7 +376,10 @@
 
       <!-- COPYRIGHT -->
 
-      <h5 align = center class="copyright">&copy 2026 Reza. All rights reserved.</h5>
+      <h5 align="center" class="copyright">
+        &copy 2026 Reza. All rights reserved.
+      </h5>
     </footer>
+    <script src="JS/app.js"></script>
   </body>
 </html>
