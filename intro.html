@@ -17,10 +17,10 @@
   <body>
     <!-- ### HEADER ### -->
 
-    <header>
+    <header class="hidden">
       <!-- NAVBAR -->
 
-      <nav>
+      <nav class="hidden">
         <div class="navbar-container">
           <div class="logo_header"><span>R</span></div>
           <div class="navbar-toggle" id="mobile-menu">
@@ -44,20 +44,14 @@
             <li class="navbar-item">
               <a href="#learningWay" class="learning-way">مسیر یادگیری</a>
             </li>
-            <li class="navbar-item">
-              <div class="download-button">
-                دانلود رزومه <i class="fa-solid fa-download"></i>
-              </div>
-            </li>
           </ul>
         </div>
       </nav>
 
       <div class="container_header">
-        
         <!-- LEFT SECTION -->
 
-        <div class="left-section_header">
+        <section class="left-section_header hidden">
           <div class="intro">
             <div class="hello">درود! من</div>
             <div class="name">
@@ -75,12 +69,78 @@
             </p>
           </div>
           <div class="buttons_header">
-            <a class="contact-button_header"
-              ><i class="fa-solid fa-envelope"></i> تماس با من
-            </a>
-            <a class="about-me-button_header"
-              >درباره من <i class="fa-solid fa-arrow-down-long"></i>
-            </a>
+            <!-- BUTTONS -->
+            <!-- CONTACT -->
+
+            <button class="contact-button_header" id="contact-btn">
+              <i class="fa-solid fa-envelope"></i> تماس با من
+            </button>
+
+            <div class="modal-overlay" id="modal">
+              <div class="modal-box">
+                <button class="close-btn" id="close-btn">✕</button>
+
+                <h2>Contact Me</h2>
+
+                <div class="contact-item">
+                  <span><i class="fa-solid fa-envelope"></i> Email</span>
+
+                  <div class="buttons">
+                    <button class="copy-btn" data-copy="rezan4162@gmail.com">
+                      Copy
+                    </button>
+                    <a href="mailto:rezan4162@gmail.com">Open</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <span><i class="fa-brands fa-github"></i> GitHub</span>
+
+                  <div class="buttons">
+                    <button class="copy-btn" data-copy="rezaWebDeveloper01">
+                      Copy
+                    </button>
+                    <a
+                      href="https://github.com/rezaWebDeveloper01"
+                      target="_blank"
+                    >
+                      Open
+                    </a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <span><i class="fa-brands fa-telegram"></i> Telegram</span>
+
+                  <div class="buttons">
+                    <button class="copy-btn" data-copy="reza80-08">Copy</button>
+                    <a href="https://t.me/reza80-08" target="_blank"> Open </a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <span><i class="fa-brands fa-linkedin"></i> Linkedin</span>
+
+                  <div class="buttons">
+                    <button class="copy-btn" data-copy="reza-niazkar-front-end">
+                      Copy
+                    </button>
+                    <a
+                      href="https://www.linkedin.com/in/reza-niazkar-front-end"
+                      target="_blank"
+                    >
+                      Open
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CONTACT -->
+
+            <button class="about-me-button_header">
+              درباره من <i class="fa-solid fa-arrow-down-long"></i>
+            </button>
           </div>
           <div class="social_header">
             <a href="https://www.github.com/rezaWebDeveloper01" target="_blank">
@@ -90,7 +150,7 @@
               href="https://www.linkedin.com/in/reza-niazkar-front-end"
               target="_blank"
             >
-              <i class="fa-brands fa-telegram"></i>
+              <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="mailto:rezan4162@gmail.com" target="_blank">
               <i class="fa-solid fa-envelope"></i>
@@ -99,11 +159,11 @@
               <i class="fa-brands fa-telegram"></i>
             </a>
           </div>
-        </div>
+        </section>
 
         <!-- RIGHT SECTION -->
 
-        <div class="right-section_header">
+        <section class="right-section_header hidden">
           <div class="cover-position-of-cards">
             <div class="code_hero card_hero">&lt;/&gt;</div>
             <div class="js_hero card_hero">JS</div>
@@ -114,17 +174,17 @@
             <div class="back-light"></div>
             <img class="hero-img" src="" alt="/" />
           </div>
-        </div>
+        </section>
       </div>
     </header>
 
     <!-- ### MAIN ### -->
 
-    <main>
+    <main class="hidden">
       <div class="container_main">
         <!-- ABOUT ME -->
 
-        <div class="left-section_main" id="about">
+        <section class="left-section_main hidden" id="about">
           <div class="about-me-container_main">
             <h3 class="about-me-title_main">
               درباره من <i class="fa-regular fa-user"></i>
@@ -164,11 +224,11 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <!-- SKILLS -->
 
-        <div class="right-section_main" id="skills">
+        <section class="right-section_main hidden" id="skills">
           <div class="skills">
             <h3 class="skills_title">
               مهارت ها <i class="fa-solid fa-code"></i>
@@ -224,120 +284,116 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
 
       <!-- MY LEARNING WAY -->
 
-      <div class="my-learning-way" id="learningWay">
-        <h4>مسیر یادگیری من <i class="fa-solid fa-route"></i></h4>
-        <div class="my-learning-way-time-line-container">
-          <div class="vertical-line"></div>
-          <div
-            class="card-1-container_learning_way card-container_learning_way"
-          >
-            <div class="circle_main"></div>
-            <div class="horizontal-line"></div>
+      <section class="timeline-container hidden" id="learningWay">
+        <h4 class="title_learning_way hidden">مسیر یادگیری من <i class="fa-solid fa-route"></i></h4>
+        <div class="timeline hidden">
+          <div class="timeline-item left hidden">
             <div class="card_learning_way">
-              <div class="card-1">
-                <span>1403</span>
-                <h5>شروع برنامه نویسی</h5>
-                <p>
-                  با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوضه طراحی
-                  سایت رو انتخاب کردم و شروع به دیدن آموزش کد نویسی سایت های
-                  ساده کردم
-                </p>
-              </div>
+              <span>1403</span>
+              <h5>شروع برنامه نویسی</h5>
+              <p>
+                با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوضه طراحی
+                سایت رو انتخاب کردم و شروع به دیدن آموزش کد نویسی سایت های ساده
+                کردم
+              </p>
+            </div>
+            <div class="middle">
+              <span class="circle_learning_way"></span>
+            </div>
+            <div></div>
+          </div>
+          <div class="timeline-item right hidden">
+            <div></div>
+            <div class="middle">
+              <span class="circle_learning_way"></span>
+            </div>
+            <div class="card_learning_way">
+              <span>1404</span>
+              <h5>ورود به دنیای جاوااسکریپت</h5>
+              <p>
+                جاوااسکریپت رو در حد مبتدی یاد گرفتم و پروژه های تمرینی تعاملی
+                ساختم
+              </p>
             </div>
           </div>
-          <div
-            class="card-2-container_learning_way card-container_learning_way"
-          >
-            <div class="circle_main"></div>
-            <div class="horizontal-line"></div>
+          <div class="timeline-item left hidden">
+
             <div class="card_learning_way">
-              <div class="card-2">
-                <span>1404</span>
-                <h5>ورود به دنیای جاوااسکریپت</h5>
-                <p>
-                  جاوااسکریپت رو در حد مبتدی یاد گرفتم و پروژه های تمرینی تعاملی
-                  ساختم
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="card-3-container_learning_way card-container_learning_way"
-          >
-            <div class="circle_main"></div>
-            <div class="horizontal-line"></div>
-            <div class="card_learning_way">
-              <div class="card-3">
                 <span>1405</span>
                 <h5>تمرکز روی توسعه مهارت های فرانت اند</h5>
                 <p>
                   ابزار ها و فریم ورک های مدرن رو یاد گرفتم و پروژه های تمرینی
                   پیشرفته تر درست کردم
                 </p>
-              </div>
             </div>
+            <div class="middle">
+              <span class="circle_learning_way"></span>
+            </div>
+            <div></div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <!-- ### FOOTER ### -->
 
-    <footer>
+    <footer class="hidden">
       <!-- PROJECTS -->
 
-      <div class="projects_footer" id="projects">
+      <section class="projects_footer hidden" id="projects">
         <h3>پروژه ها <i class="fa-solid fa-briefcase"></i></h3>
         <div class="card-container-projects_footer">
-          <div class="project-card_footer">
+          <div class="project-card_footer hidden">
             بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
           </div>
-          <div class="project-card_footer">
+          <div class="project-card_footer hidden">
             بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
           </div>
-          <div class="project-card_footer">
+          <div class="project-card_footer hidden">
             بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- GOALS -->
 
       <div class="goals-container">
-        <div class="goals">
-          <h3 class="goals_title">
+        <section class="goals">
+          <h3 class="goals_title hidden">
             اهداف من <i class="fa-solid fa-bullseye"></i>
           </h3>
-          <p class="goals_paragraph">
+          <p class="goals_paragraph hidden">
             <i class="fa-regular fa-circle-check"></i> یادگیری ری اکت و ساخت
-            پروژه های پیچیده تر
+            پروژه های پیچیده
           </p>
-          <p class="goals_paragraph">
+          <p class="goals_paragraph hidden">
             <i class="fa-regular fa-circle-check"></i> تسلط کامل بر مفاهیم
-            پیشرفته و جاوااسکریپت
+            پیشرفته
           </p>
-          <p class="goals_paragraph">
-            <i class="fa-regular fa-circle-check"></i> کار به عنوان توسعه دهنده
-            فرانت اند در یک تیم حرفه ای
+          <p class="goals_paragraph hidden">
+            <i class="fa-regular fa-circle-check"></i> کار در یک تیم حرفه ای
           </p>
-          <p class="goals_paragraph">
+          <p class="goals_paragraph hidden">
+            <i class="fa-regular fa-circle-check"></i> تسلط کامل بر زبان انگلیسی
+          </p>
+          <p class="goals_paragraph hidden">
             <i class="fa-regular fa-circle-check"></i> درآمد دلاری از طریق
             فریلنسری
           </p>
-        </div>
+        </section>
 
         <!-- CONTACT -->
 
         <div class="contact_footer" id="contact">
-          <h3>تماس با من <i class="fa-regular fa-paper-plane"></i></h3>
+          <h3 class="hidden">تماس با من <i class="fa-regular fa-paper-plane"></i></h3>
           <div class="contact-container">
             <a
-              class="gmail-footer"
+              class="gmail-footer hidden"
               href="mailto:rezan4162@gmail.com"
               target="_blank"
             >
@@ -346,7 +402,7 @@
               <span>rezan4162@gmail.com</span>
             </a>
             <a
-              class="github-footer"
+              class="github-footer hidden"
               href="https://www.github.com/rezaWebDeveloper01"
               target="_blank"
             >
@@ -355,7 +411,7 @@
               <span>rezaWebDeveloper01</span>
             </a>
             <a
-              class="telegram-footer"
+              class="telegram-footer hidden"
               href="https://t.em/reza80-08"
               target="_blank"
             >
@@ -364,7 +420,7 @@
               <span>@reza80-08</span>
             </a>
             <a
-              class="linkedin-footer"
+              class="linkedin-footer hidden"
               href="https://www.linkedin.com/in/reza-niazkar-front-end"
               target="_blank"
             >
@@ -378,7 +434,7 @@
 
       <!-- COPYRIGHT -->
 
-      <h5 align="center" class="copyright">
+      <h5 align="center" class="copyright hidden">
         &copy 2026 Reza. All rights reserved.
       </h5>
     </footer>

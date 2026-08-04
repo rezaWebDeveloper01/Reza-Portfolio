@@ -23,14 +23,34 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
 * {
   user-select: none;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  overflow-x: hidden;
+  background: var(--color-black);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(60px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ============== */
@@ -39,7 +59,7 @@ body {
 
 header {
   background: var(--color-dark-background);
-  padding-bottom: 2rem;
+  padding: 2rem 1rem;
 }
 
 /* NAVBAR SECTION */
@@ -48,9 +68,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
   width: 100%;
-  padding: 1rem;
 }
 
 .logo_header {
@@ -62,6 +80,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 1rem;
 }
 
 .logo_header span {
@@ -84,16 +103,6 @@ header {
   justify-content: center;
   text-decoration: none;
   padding: 0 1rem;
-}
-
-.download-button {
-  color: var(--color-white);
-  background: linear-gradient(to left, #1900ff 20%, #000000 100%);
-  padding: 1rem 1rem;
-  border: 2px solid #5e89ff;
-  border-radius: 15px;
-  cursor: pointer;
-  max-width: 7rem;
 }
 
 .container_header {
@@ -483,16 +492,95 @@ nav a:hover {
   gap: 2rem;
 }
 
-.contact-button_header {
-  border: 1px solid #006efd;
-}
-
 .contact-button_header,
 .about-me-button_header {
+  all: unset;
+  cursor: pointer;
   padding: 1rem;
   border-radius: 10px;
   cursor: pointer;
 }
+
+/* CONTACT BUTTON */
+
+.contact-button_header {
+  border: 1px solid #006efd;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00000099;
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-overlay a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.modal-overlay a:hover {
+  transform: scale(1.1);
+}
+
+.modal-box {
+  width: 400px;
+  padding: 30px;
+  background: #ffffff14;
+  border: 1px solid #ffffff33;
+  border-radius: 20px;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+.modal-overlay.active .modal-box {
+  transform: scale(1);
+}
+
+.close-btn {
+  all: unset;
+  float: right;
+  cursor: pointer;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.copy-btn,
+.buttons a {
+  all: unset;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.copy-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ABOUT ME BUTTON */
 
 .about-me-button_header {
   background: linear-gradient(to right, #344fe7 25%, #3000b6 95%);
@@ -874,44 +962,40 @@ main {
 /* ### MY LEARNING WAY ### */
 /* ####################### */
 
-.my-learning-way {
+.timeline-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
   background: var(--color-dark-background);
-  padding-bottom: 2rem;
+}
+
+.title_learning_way {
+  margin: 0;
 }
 
 .fa-route {
   color: #8f18ff;
 }
 
-.my-learning-way-time-line-container {
-  display: flex;
-  flex-direction: column;
+.timeline {
+  width: min(1100px, 95%);
+  margin-inline: auto;
   position: relative;
-  width: 100%;
-  max-width: 1100px;
 }
 
-.my-learning-way-time-line-container span {
-  color: #7700ff;
-}
-
-.my-learning-way-time-line-container h5 {
-  margin: 0.2rem;
-}
-
-.my-learning-way-time-line-container p {
-  color: var(--color-text);
-  margin: 0.3rem;
-}
-
-.vertical-line {
-  width: 3px;
-  height: 335px;
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 4px;
   background: linear-gradient(
-    to bottom,
+    #006efd,
     #00aeff,
     #006efd,
     #00aeff,
@@ -919,61 +1003,84 @@ main {
     #00aeff,
     #006efd
   );
-  position: absolute;
   z-index: 0;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
-.horizontal-line {
-  height: 3px;
-  width: 50%;
-  background: var(--color-horizontal-line);
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  align-items: center;
+  margin: 60px 0;
 }
 
-.circle_main {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: var(--color-circle);
-  border: 8px solid transparent;
+.middle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle::before {
+  content: "";
   position: absolute;
-  transform: translateX(-50%);
+  top: 50%;
+  height: 3px;
+  background: var(--color-horizontal-line);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.left .middle::before {
+  right: 50%;
+  width: 100%;
+}
+
+.right .middle::before {
   left: 50%;
+
+  width: 100%;
+}
+
+.circle_learning_way {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  background:
+    linear-gradient(#ffffff) padding-box,
+    linear-gradient(90deg, #0004f9, #4e5977) border-box;
+  position: relative;
+  z-index: 2;
 }
 
 .card_learning_way {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border: var(--color-border-box);
+  width: min(420px, 100%);
   padding: 1rem;
-  width: 500px;
-  height: 100px;
+  border-radius: 12px;
   background: var(--color-background-in-dark);
-  border-radius: 10px;
+  border: var(--color-border-box);
+  z-index: 3;
 }
 
-.card-container_learning_way {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.card-1-container_learning_way {
+.left .card_learning_way {
+  justify-self: start;
   direction: rtl;
-  align-self: flex-start;
 }
 
-.card-2-container_learning_way {
-  direction: ltr;
-  align-self: center;
-  margin-left: auto;
+.right .card_learning_way {
+  justify-self: end;
 }
 
-.card-3-container_learning_way {
-  direction: rtl;
-  align-self: flex-start;
+/* =============== */
+/* MY LEARNING WAY */
+/* =============== */
+
+.card_learning_way {
+  transition: transform 0.3s ease;
+}
+
+.card_learning_way:hover {
+  transform: translateY(-8px);
 }
 
 /* ###############*/
