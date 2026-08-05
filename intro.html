@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/intro.css" />
-    <link rel="stylesheet" href="CSS/help.css" />
+    <!-- <link rel="stylesheet" href="CSS/help.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,32 +15,47 @@
     <title>INTRO</title>
   </head>
   <body>
+    <!-- ############## -->
     <!-- ### HEADER ### -->
+    <!-- ############## -->
 
-    <header class="hidden">
-      <!-- NAVBAR -->
-
-      <nav class="hidden">
+    <header>
+      <!-- NAVBAR SECTION -->
+      <nav>
         <div class="navbar-container">
+          <!-- Logo -->
           <div class="logo_header"><span>R</span></div>
+
+          <!-- Toggle -->
           <div class="navbar-toggle" id="mobile-menu">
             <span class="bar_toggle"></span>
             <span class="bar_toggle"></span>
             <span class="bar_toggle"></span>
           </div>
+
+          <!-- Nav Items -->
           <ul class="navbar-menu">
+            <!-- Item - 1 -->
             <li class="navbar-item">
               <a href="#contact" class="contact">تماس</a>
             </li>
+
+            <!-- Item - 2 -->
             <li class="navbar-item">
               <a href="#projects" class="projects">پروژه ها</a>
             </li>
+
+            <!-- Item - 3 -->
             <li class="navbar-item">
               <a href="#skills" class="skills">مهارت ها</a>
             </li>
+
+            <!-- Item - 4 -->
             <li class="navbar-item">
               <a href="#about" class="about-me">درباره من</a>
             </li>
+
+            <!-- Item - 5 -->
             <li class="navbar-item">
               <a href="#learningWay" class="learning-way">مسیر یادگیری</a>
             </li>
@@ -48,9 +63,8 @@
         </div>
       </nav>
 
-      <div class="container_header">
+      <div class="header-container">
         <!-- LEFT SECTION -->
-
         <section class="left-section_header hidden">
           <div class="intro">
             <div class="hello">درود! من</div>
@@ -58,20 +72,24 @@
               <h1 class="name_h1">رضا</h1>
               <h1 class="lastname_h1">نیازکار</h1>
             </div>
-            <p class="intro-english">
+
+            <!-- Paragraph - 1 -->
+            <p class="intro_header english">
               Front-End Developer & Computer Engineering Student
             </p>
-            <p class="intro-persian">
-              علاقه مند به طراحی رابط کاربری و تجربه کاربری جذاب.
+
+            <!-- Paragraph - 2 -->
+            <p class="intro_header persian">
+              علاقه‌مند به طراحی رابط کاربری و تجربه کاربری جذاب
             </p>
-            <p class="i-like">
-              من عاشق کد نویسی، یاد گیری و ساختن وبسایت های خلاقانه هستم.
+
+            <!-- Paragraph - 3 -->
+            <p class="intro_header persian">
+             و عاشق کد نویسی، یاد گیری و ساختن وبسایت های خلاقانه
             </p>
           </div>
           <div class="buttons_header">
-            <!-- BUTTONS -->
-            <!-- CONTACT -->
-
+            <!-- Contact Button -->
             <button class="contact-button_header" id="contact-btn">
               <i class="fa-solid fa-envelope"></i> تماس با من
             </button>
@@ -81,10 +99,9 @@
                 <button class="close-btn" id="close-btn">✕</button>
 
                 <h2>Contact Me</h2>
-
+                <!-- Email -->
                 <div class="contact-item">
                   <span><i class="fa-solid fa-envelope"></i> Email</span>
-
                   <div class="buttons">
                     <button class="copy-btn" data-copy="rezan4162@gmail.com">
                       Copy
@@ -93,9 +110,9 @@
                   </div>
                 </div>
 
+                <!-- Github -->
                 <div class="contact-item">
-                  <span><i class="fa-brands fa-github"></i> GitHub</span>
-
+                  <span><i class="fa-brands fa-github"></i> Github</span>
                   <div class="buttons">
                     <button class="copy-btn" data-copy="rezaWebDeveloper01">
                       Copy
@@ -109,18 +126,18 @@
                   </div>
                 </div>
 
+                <!-- Telegram -->
                 <div class="contact-item">
                   <span><i class="fa-brands fa-telegram"></i> Telegram</span>
-
                   <div class="buttons">
                     <button class="copy-btn" data-copy="reza80-08">Copy</button>
                     <a href="https://t.me/reza80-08" target="_blank"> Open </a>
                   </div>
                 </div>
 
+                <!-- Linkedin -->
                 <div class="contact-item">
                   <span><i class="fa-brands fa-linkedin"></i> Linkedin</span>
-
                   <div class="buttons">
                     <button class="copy-btn" data-copy="reza-niazkar-front-end">
                       Copy
@@ -136,12 +153,13 @@
               </div>
             </div>
 
-            <!-- CONTACT -->
-
+            <!-- About Me Button -->
             <button class="about-me-button_header">
               درباره من <i class="fa-solid fa-arrow-down-long"></i>
             </button>
           </div>
+
+          <!-- Social -->
           <div class="social_header">
             <a href="https://www.github.com/rezaWebDeveloper01" target="_blank">
               <i class="fa-brands fa-github"></i>
@@ -162,15 +180,17 @@
         </section>
 
         <!-- RIGHT SECTION -->
-
         <section class="right-section_header hidden">
           <div class="cover-position-of-cards">
+            <!-- Boxes -->
             <div class="code_hero card_hero">&lt;/&gt;</div>
             <div class="js_hero card_hero">JS</div>
             <div class="css_hero card_hero">CSS</div>
             <div class="html_hero card_hero">HTML</div>
+            <!-- Circles -->
             <div class="big-circle"></div>
             <div class="smaller-circle"></div>
+            <!-- Image -->
             <div class="back-light"></div>
             <img class="hero-img" src="" alt="/" />
           </div>
@@ -178,21 +198,21 @@
       </div>
     </header>
 
+    <!-- ############ -->
     <!-- ### MAIN ### -->
+    <!-- ############ -->
 
-    <main class="hidden">
-      <div class="container_main">
-        <!-- ABOUT ME -->
-
+    <main>
+      <div class="main-container">
+        <!-- ABOUT ME SECTION -->
         <section class="left-section_main hidden" id="about">
           <div class="about-me-container_main">
-            <h3 class="about-me-title_main">
+            <h3 class="about-me-title_main hidden">
               درباره من <i class="fa-regular fa-user"></i>
             </h3>
 
-            <!-- PARAGRAPH -->
-
-            <p class="about-me-paragraph_main">
+            <!-- Paragraph -->
+            <p class="about-me_main hidden">
               من دانشجوی مهندسی کامپیوتر هستم و از سال ۱۴۰۳ برنامه نویسی رو شروع
               کردم. تمرکز من روی توسعه فراند اند هست و عاشق طراحی سایت های مدرن
               و واکنش گرا هستم. علاوه بر برنامه نویسی، طراحی و تمرینات ورزشی نیز
@@ -200,24 +220,30 @@
             </p>
 
             <!-- CARDS -->
-
             <div class="card-container-about-me_main">
-              <div class="birth about-me_boxes">
+              <!-- Box - Birth -->
+              <div class="birth about-me_boxes hidden">
                 <i class="fa-solid fa-calendar-days"></i>
                 <p class="birth">تولد</p>
                 <p class="birth">1386 / 11 / 7</p>
               </div>
-              <div class="location about-me_boxes">
+
+              <!-- Box - Location -->
+              <div class="location about-me_boxes hidden">
                 <i class="fa-solid fa-location-dot"></i>
                 <p class="location">موقعیت</p>
                 <p class="location">ایران - شیراز</p>
               </div>
-              <div class="studies about-me_boxes">
+
+              <!-- Box - Studies -->
+              <div class="studies about-me_boxes hidden">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <p class="studies">تحصیلات</p>
                 <p class="studies">درحال تحصیل در مهندسی کامپیوتر</p>
               </div>
-              <div class="favourite about-me_boxes">
+
+              <!-- Box - Favourite -->
+              <div class="favourite about-me_boxes hidden">
                 <i class="fa-regular fa-heart"></i>
                 <p class="favourite">علاقه مندی ها</p>
                 <p class="favourite">برنامه نویسی، طراحی، ورزش</p>
@@ -226,60 +252,70 @@
           </div>
         </section>
 
-        <!-- SKILLS -->
-
-        <section class="right-section_main hidden" id="skills">
-          <div class="skills">
-            <h3 class="skills_title">
+        <!-- SKILLS SECTION -->
+        <section class="right-section_main" id="skills">
+          <div class="skills-container">
+            <h3 class="skills_title hidden">
               مهارت ها <i class="fa-solid fa-code"></i>
             </h3>
-            <div class="container-skills_card">
-              <div class="skill-card">
-                <img src="./PIC/Html.webp" alt="" />
+            <div class="skills-card-container">
+              <!-- Card - HTML -->
+              <div class="skill-card hidden">
+                <img src="./PIC/Html.webp" alt="HTML Logo" />
                 <h4>HTML</h4>
-                <span class="counter" data-target="90"></span><span>%</span>
-                <div class="bar-skill_card">
-                  <div class="fill-skill_card html-skill"></div>
+                <span class="counter" data-target="90">0%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="90"></div>
                 </div>
               </div>
-              <div class="skill-card">
-                <img src="./PIC/CSS.webp" alt="" />
+
+              <!-- Card - CSS -->
+              <div class="skill-card hidden">
+                <img src="./PIC/CSS.webp" alt="CSS Logo" />
                 <h4>CSS</h4>
-                <span class="counter" data-target="80"></span><span>%</span>
-                <div class="bar-skill_card">
-                  <div class="fill-skill_card css-skill"></div>
+                <span class="counter" data-target="80">0%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
                 </div>
               </div>
-              <div class="skill-card">
-                <img src="./PIC/JS.webp" alt="" />
+
+              <!-- Card - JS -->
+              <div class="skill-card hidden">
+                <img src="./PIC/JS.webp" alt="JS Logo" />
                 <h4>JavaScript</h4>
-                <span class="counter" data-target="60"></span><span>%</span>
-                <div class="bar-skill_card">
-                  <div class="fill-skill_card js-skill"></div>
+                <span class="counter" data-target="60">0%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="60"></div>
                 </div>
               </div>
-              <div class="skill-card">
-                <img src="./PIC/Git.webp" alt="" />
+
+              <!-- Card - GIT -->
+              <div class="skill-card hidden">
+                <img src="./PIC/Git.webp" alt="Git Logo" />
                 <h4>Git</h4>
-                <span class="counter" data-target="80"></span><span>%</span>
-                <div class="bar-skill_card">
-                  <div class="fill-skill_card git-skill"></div>
+                <span class="counter" data-target="80">0%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="80"></div>
                 </div>
               </div>
-              <div class="skill-card">
-                <img src="./PIC/Responsive.png" alt="" />
+
+              <!-- Card - RESPONSIVE DESIGN -->
+              <div class="skill-card hidden">
+                <img src="./PIC/Responsive.png" alt="Responsive Logo" />
                 <h4>Responsive design</h4>
-                <span class="counter" data-target="75"></span><span>%</span>
-                <div class="bar-skill_card">
-                  <div class="fill-skill_card responsive-skill"></div>
+                <span class="counter" data-target="75">0%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="75"></div>
                 </div>
               </div>
-              <div class="skill-card">
-                <img src="./PIC/React.png" alt="" />
+
+              <!-- Card - REACT -->
+              <div class="skill-card hidden">
+                <img src="./PIC/React.png" alt="React Logo" />
                 <h4>React</h4>
-                <span class="counter" data-target="5"></span><span>%</span>
-                <div class="bar-skill_card">
-                  <div class="fill-skill_card react-skill"></div>
+                <span class="counter" data-target="5">0%</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-width="5"></div>
                 </div>
               </div>
             </div>
@@ -287,11 +323,13 @@
         </section>
       </div>
 
-      <!-- MY LEARNING WAY -->
-
+      <!-- MY LEARNING WAY SECTION -->
       <section class="timeline-container hidden" id="learningWay">
-        <h4 class="title_learning_way hidden">مسیر یادگیری من <i class="fa-solid fa-route"></i></h4>
+        <h4 class="title_learning_way hidden">
+          مسیر یادگیری من <i class="fa-solid fa-route"></i>
+        </h4>
         <div class="timeline hidden">
+          <!-- Item - 1 -->
           <div class="timeline-item left hidden">
             <div class="card_learning_way">
               <span>1403</span>
@@ -307,6 +345,8 @@
             </div>
             <div></div>
           </div>
+
+          <!-- Item - 2 -->
           <div class="timeline-item right hidden">
             <div></div>
             <div class="middle">
@@ -321,15 +361,16 @@
               </p>
             </div>
           </div>
-          <div class="timeline-item left hidden">
 
+          <!-- Item - 3 -->
+          <div class="timeline-item left hidden">
             <div class="card_learning_way">
-                <span>1405</span>
-                <h5>تمرکز روی توسعه مهارت های فرانت اند</h5>
-                <p>
-                  ابزار ها و فریم ورک های مدرن رو یاد گرفتم و پروژه های تمرینی
-                  پیشرفته تر درست کردم
-                </p>
+              <span>1405</span>
+              <h5>تمرکز روی توسعه مهارت های فرانت اند</h5>
+              <p>
+                ابزار ها و فریم ورک های مدرن رو یاد گرفتم و پروژه های تمرینی
+                پیشرفته تر درست کردم
+              </p>
             </div>
             <div class="middle">
               <span class="circle_learning_way"></span>
@@ -340,30 +381,35 @@
       </section>
     </main>
 
+    <!-- ############## -->
     <!-- ### FOOTER ### -->
+    <!-- ############## -->
 
-    <footer class="hidden">
-      <!-- PROJECTS -->
-
-      <section class="projects_footer hidden" id="projects">
-        <h3>پروژه ها <i class="fa-solid fa-briefcase"></i></h3>
+    <footer>
+      <!-- PROJECTS SECTION -->
+      <section class="projects_footer" id="projects">
+        <h3 class="hidden">پروژه ها <i class="fa-solid fa-briefcase"></i></h3>
         <div class="card-container-projects_footer">
+          <!-- Project - 1 -->
           <div class="project-card_footer hidden">
             بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
           </div>
+
+          <!-- Project - 2 -->
           <div class="project-card_footer hidden">
             بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
           </div>
+
+          <!-- Project - 3 -->
           <div class="project-card_footer hidden">
             بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
           </div>
         </div>
       </section>
 
-      <!-- GOALS -->
-
-      <div class="goals-container">
-        <section class="goals">
+      <div class="footer-container">
+        <!-- GOALS SECTION -->
+        <section class="goals_section">
           <h3 class="goals_title hidden">
             اهداف من <i class="fa-solid fa-bullseye"></i>
           </h3>
@@ -387,11 +433,13 @@
           </p>
         </section>
 
-        <!-- CONTACT -->
-
-        <div class="contact_footer" id="contact">
-          <h3 class="hidden">تماس با من <i class="fa-regular fa-paper-plane"></i></h3>
+        <!-- CONTACT SECTION -->
+        <section class="contact_section" id="contact">
+          <h3 class="hidden">
+            تماس با من <i class="fa-regular fa-paper-plane"></i>
+          </h3>
           <div class="contact-container">
+            <!-- Gmail -->
             <a
               class="gmail-footer hidden"
               href="mailto:rezan4162@gmail.com"
@@ -401,6 +449,8 @@
               <h4>Gmail</h4>
               <span>rezan4162@gmail.com</span>
             </a>
+
+            <!-- Github -->
             <a
               class="github-footer hidden"
               href="https://www.github.com/rezaWebDeveloper01"
@@ -410,6 +460,8 @@
               <h4>GitHub</h4>
               <span>rezaWebDeveloper01</span>
             </a>
+
+            <!-- Telegram -->
             <a
               class="telegram-footer hidden"
               href="https://t.em/reza80-08"
@@ -419,6 +471,8 @@
               <h4>Telegram</h4>
               <span>@reza80-08</span>
             </a>
+
+            <!-- Linkedin -->
             <a
               class="linkedin-footer hidden"
               href="https://www.linkedin.com/in/reza-niazkar-front-end"
@@ -429,15 +483,14 @@
               <span>reza-niazkar-front-end</span>
             </a>
           </div>
-        </div>
+        </section>
       </div>
 
-      <!-- COPYRIGHT -->
-
+      <!-- COPYRIGHT SECTION -->
       <h5 align="center" class="copyright hidden">
         &copy 2026 Reza. All rights reserved.
       </h5>
+      <script src="JS/app.js"></script>
     </footer>
-    <script src="JS/app.js"></script>
   </body>
 </html>

@@ -1,53 +1,85 @@
-// SHOW ANIMAET
+// ===============================
+// === SHOW + SKILLS ANIMATION ===
+// ===============================
 
 const hiddenElements = document.querySelectorAll(".hidden");
 
-const observer = new IntersectionObserver((entries) => {
+function animateSkillCard(card) {
+  const counter = card.querySelector(".counter");
+  const progress = card.querySelector(".skill-progress");
 
-    entries.forEach(entry => {
+  if (!counter || !progress) return;
 
-        if(entry.isIntersecting){
+  const target = Number(counter.dataset.target);
 
-            entry.target.classList.add("show");
+  let current = 0;
 
-        }
+  const duration = 1500;
+  const fps = 60;
+  const totalFrames = duration / (1000 / fps);
+  const increment = target / totalFrames;
 
+  function update() {
+    current += increment;
+
+    if (current >= target) {
+      current = target;
+    }
+
+    const value = Math.floor(current);
+
+    counter.textContent = `${value}%`;
+    progress.style.width = `${value}%`;
+
+    if (current < target) {
+      requestAnimationFrame(update);
+    }
+  }
+
+  update();
+}
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+
+      entry.target.classList.add("show");
+
+      // اگر این المنت یک کارت مهارت بود
+      if (entry.target.classList.contains("skill-card")) {
+        setTimeout(() => {
+          animateSkillCard(entry.target);
+        }, 600);
+      }
+
+      observer.unobserve(entry.target);
     });
+  },
+  {
+    threshold: 0.2,
+  },
+);
 
-},{
-    threshold:0.2
+hiddenElements.forEach((element) => {
+  observer.observe(element);
 });
 
-hiddenElements.forEach(element=>{
-    observer.observe(element);
-});
-
-// TOGGLE
+// ==============
+// === TOGGLE ===
+// ==============
 
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar-menu");
 
-menu.addEventListener("click", function () {
+menu.addEventListener("click", () => {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
 });
 
-// COUNTER SECTION
-
-const counters = document.querySelectorAll(".counter");
-counters.forEach((counter) => {
-  const target = Number(counter.dataset.target);
-  let count = 0;
-  const interval = setInterval(() => {
-    count++;
-    counter.textContent = count;
-    if (count >= target) {
-      clearInterval(interval);
-    }
-  }, 20);
-});
-
-// CONTACT BUTTON
+// ======================
+// === CONTACT BUTTON ===
+// ======================
 
 const contactBtn = document.getElementById("contact-btn");
 const modal = document.getElementById("modal");
@@ -67,7 +99,9 @@ modal.addEventListener("click", (event) => {
   }
 });
 
-// COPY BTN
+// ===================
+// === COPY BUTTON ===
+// ===================
 
 const copyButtons = document.querySelectorAll(".copy-btn");
 
