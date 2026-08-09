@@ -1,3 +1,20 @@
+const text = "Front-End Developer & Computer Engineering Student";
+const typingText = document.getElementById("typing-text");
+
+let index = 0;
+
+function typeText() {
+  if (index < text.length) {
+    typingText.textContent += text[index];
+    index++;
+
+    setTimeout(typeText, 50);
+  }
+}
+
+typeText();
+
+
 // ===============================
 // === SHOW + SKILLS ANIMATION ===
 // ===============================
@@ -77,27 +94,51 @@ menu.addEventListener("click", () => {
   menuLinks.classList.toggle("active");
 });
 
-// ======================
-// === CONTACT BUTTON ===
-// ======================
+// ==========================
+// === MODAL FUNCTIONALITY ===
+// ==========================
 
-const contactBtn = document.getElementById("contact-btn");
-const modal = document.getElementById("modal");
-const closeBtn = document.getElementById("close-btn");
+function setupModal(openBtnId, modalId, closeBtnId) {
+  const openBtn = document.getElementById(openBtnId);
+  const modal = document.getElementById(modalId);
+  const closeBtn = document.getElementById(closeBtnId);
 
-contactBtn.addEventListener("click", () => {
-  modal.classList.add("active");
-});
+  openBtn.addEventListener("click", () => {
+    modal.classList.add("active");
+  });
 
-closeBtn.addEventListener("click", () => {
-  modal.classList.remove("active");
-});
-
-modal.addEventListener("click", (event) => {
-  if (event.target === modal) {
+  closeBtn.addEventListener("click", () => {
     modal.classList.remove("active");
-  }
-});
+  });
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
+}
+
+
+// ==================
+// === CONTACT MODAL
+// ==================
+
+setupModal(
+  "contact-btn",
+  "modal-contact",
+  "close-contact-btn"
+);
+
+
+// ==================
+// === ABOUT MODAL
+// ==================
+
+setupModal(
+  "about-btn",
+  "modal-about",
+  "close-about-btn"
+);
 
 // ===================
 // === COPY BUTTON ===

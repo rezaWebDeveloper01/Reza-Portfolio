@@ -39,21 +39,25 @@
             <li class="navbar-item">
               <a href="#contact" class="contact">تماس</a>
             </li>
+            <hr>
 
             <!-- Item - 2 -->
             <li class="navbar-item">
               <a href="#projects" class="projects">پروژه ها</a>
             </li>
+            <hr>
 
             <!-- Item - 3 -->
             <li class="navbar-item">
               <a href="#skills" class="skills">مهارت ها</a>
             </li>
+            <hr>
 
             <!-- Item - 4 -->
             <li class="navbar-item">
               <a href="#about" class="about-me">درباره من</a>
             </li>
+            <hr>
 
             <!-- Item - 5 -->
             <li class="navbar-item">
@@ -65,7 +69,7 @@
 
       <div class="header-container">
         <!-- LEFT SECTION -->
-        <section class="left-section_header hidden">
+        <section class="left-section_header">
           <div class="intro">
             <div class="hello">درود! من</div>
             <div class="name">
@@ -74,8 +78,8 @@
             </div>
 
             <!-- Paragraph - 1 -->
-            <p class="intro_header english">
-              Front-End Developer & Computer Engineering Student
+            <p class="intro_header english" id="typing-text">
+              <!-- Front-End Developer & Computer Engineering Student -->
             </p>
 
             <!-- Paragraph - 2 -->
@@ -85,18 +89,19 @@
 
             <!-- Paragraph - 3 -->
             <p class="intro_header persian">
-             و عاشق کد نویسی، یاد گیری و ساختن وبسایت های خلاقانه
+              و عاشق کد نویسی، یاد گیری و ساختن وبسایت های خلاقانه
             </p>
           </div>
           <div class="buttons_header">
             <!-- Contact Button -->
-            <button class="contact-button_header" id="contact-btn">
-              <i class="fa-solid fa-envelope"></i> تماس با من
+            <button class="contact-btn_header" id="contact-btn">
+              <i class="fa-solid fa-paper-plane"></i> تماس با من
             </button>
 
-            <div class="modal-overlay" id="modal">
+            <!-- Modal Contact -->
+            <div class="modal-overlay" id="modal-contact">
               <div class="modal-box">
-                <button class="close-btn" id="close-btn">✕</button>
+                <button class="close-btn" id="close-contact-btn">✕</button>
 
                 <h2>Contact Me</h2>
                 <!-- Email -->
@@ -154,25 +159,46 @@
             </div>
 
             <!-- About Me Button -->
-            <button class="about-me-button_header">
-              درباره من <i class="fa-solid fa-arrow-down-long"></i>
+            <button class="about-me-btn_header" id="about-btn">
+              درباره من <i class="fa-solid fa-info"></i>
             </button>
+
+            <!-- Modal About Me -->
+            <div class="modal-overlay" id="modal-about">
+              <div class="modal-box">
+                <button class="close-btn" id="close-about-btn">✕</button>
+                <h2>About Me</h2>
+                <p class="modal-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                  commodi ea iusto non nobis ratione doloremque consequatur
+                  praesentium, laborum repellendus ab id atque fugit assumenda
+                  harum at? Nemo dicta dolore quasi unde eius accusamus deserunt
+                  amet praesentium repudiandae quas. Voluptates, quidem.
+                  Repellat amet incidunt corrupti corporis illum, nisi fugit
+                  obcaecati.
+                </p>
+              </div>
+            </div>
           </div>
 
           <!-- Social -->
           <div class="social_header">
+            <!-- Git -->
             <a href="https://www.github.com/rezaWebDeveloper01" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
+            <!-- Linkedin -->
             <a
               href="https://www.linkedin.com/in/reza-niazkar-front-end"
               target="_blank"
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
+            <!-- Email -->
             <a href="mailto:rezan4162@gmail.com" target="_blank">
               <i class="fa-solid fa-envelope"></i>
             </a>
+            <!-- Telegram -->
             <a href="https://t.em/reza80-08" target="_blank">
               <i class="fa-brands fa-telegram"></i>
             </a>
@@ -180,7 +206,7 @@
         </section>
 
         <!-- RIGHT SECTION -->
-        <section class="right-section_header hidden">
+        <section class="right-section_header">
           <div class="cover-position-of-cards">
             <!-- Boxes -->
             <div class="code_hero card_hero">&lt;/&gt;</div>
