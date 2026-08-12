@@ -1,4 +1,8 @@
-const text = "Front-End Developer & Computer Engineering Student";
+// ========================
+// === TYPING ANIMATION ===
+// ========================
+
+const text = "Front-End Developer & Computer Student";
 const typingText = document.getElementById("typing-text");
 
 let index = 0;
@@ -13,7 +17,6 @@ function typeText() {
 }
 
 typeText();
-
 
 // ===============================
 // === SHOW + SKILLS ANIMATION ===
@@ -147,9 +150,17 @@ setupModal(
 const copyButtons = document.querySelectorAll(".copy-btn");
 
 copyButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    navigator.clipboard.writeText(button.dataset.copy);
+    button.addEventListener("click", async () => {
+        await navigator.clipboard.writeText(button.dataset.copy);
 
-    alert("Copied!");
-  });
+        button.innerHTML = `
+            <i class="fa-solid fa-check"></i>
+        `;
+
+        setTimeout(() => {
+            button.innerHTML = `
+                <i class="fa-regular fa-copy"></i>
+            `;
+        }, 2500);
+    });
 });

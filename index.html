@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/intro.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <!-- <link rel="stylesheet" href="CSS/help.css" /> -->
     <link
       rel="stylesheet"
@@ -20,8 +20,9 @@
     <!-- ############## -->
 
     <header>
-      <!-- NAVBAR SECTION -->
+      <!-- === NAVBAR SECTION === -->
       <nav>
+        <!-- NAVBAR CONTAINER -->
         <div class="navbar-container">
           <!-- Logo -->
           <div class="logo_header"><span>R</span></div>
@@ -33,31 +34,31 @@
             <span class="bar_toggle"></span>
           </div>
 
-          <!-- Nav Items -->
+          <!-- NAV ITEMS -->
           <ul class="navbar-menu">
             <!-- Item - 1 -->
             <li class="navbar-item">
               <a href="#contact" class="contact">تماس</a>
             </li>
-            <hr>
+            <hr />
 
             <!-- Item - 2 -->
             <li class="navbar-item">
               <a href="#projects" class="projects">پروژه ها</a>
             </li>
-            <hr>
+            <hr />
 
             <!-- Item - 3 -->
             <li class="navbar-item">
               <a href="#skills" class="skills">مهارت ها</a>
             </li>
-            <hr>
+            <hr />
 
             <!-- Item - 4 -->
             <li class="navbar-item">
               <a href="#about" class="about-me">درباره من</a>
             </li>
-            <hr>
+            <hr />
 
             <!-- Item - 5 -->
             <li class="navbar-item">
@@ -68,7 +69,7 @@
       </nav>
 
       <div class="header-container">
-        <!-- LEFT SECTION -->
+        <!-- === LEFT SECTION === -->
         <section class="left-section_header">
           <div class="intro">
             <div class="hello">درود! من</div>
@@ -83,16 +84,16 @@
             </p>
 
             <!-- Paragraph - 2 -->
-            <p class="intro_header persian">
-              علاقه‌مند به طراحی رابط کاربری و تجربه کاربری جذاب
+            <p class="intro_header persian" dir="rtl">
+              علاقه‌مند به توسعه Front-End
             </p>
 
             <!-- Paragraph - 3 -->
             <p class="intro_header persian">
-              و عاشق کد نویسی، یاد گیری و ساختن وبسایت های خلاقانه
+              و ساختن وب‌سایت های مدرن و تعاملی هستم
             </p>
           </div>
-          <div class="buttons_header">
+          <div class="buttons-container_header">
             <!-- Contact Button -->
             <button class="contact-btn_header" id="contact-btn">
               <i class="fa-solid fa-paper-plane"></i> تماس با من
@@ -100,32 +101,44 @@
 
             <!-- Modal Contact -->
             <div class="modal-overlay" id="modal-contact">
+              <!-- Box -->
               <div class="modal-box">
+                <!-- Close btn -->
                 <button class="close-btn" id="close-contact-btn">✕</button>
 
-                <h2>Contact Me</h2>
+                <!-- Title -->
+                <h2 class="modal-box-title">Contact Me</h2>
+
                 <!-- Email -->
                 <div class="contact-item">
-                  <span><i class="fa-solid fa-envelope"></i> Email</span>
-                  <div class="buttons">
+                  <span class="modal-item-name"
+                    ><i class="fa-solid fa-envelope"></i> Email</span
+                  >
+                  <div class="buttons-container">
                     <button class="copy-btn" data-copy="rezan4162@gmail.com">
-                      Copy
+                      <i class="fa-regular fa-copy"></i>
                     </button>
-                    <a href="mailto:rezan4162@gmail.com">Open</a>
+                    <a href="mailto:rezan4162@gmail.com">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      Open</a
+                    >
                   </div>
                 </div>
 
                 <!-- Github -->
                 <div class="contact-item">
-                  <span><i class="fa-brands fa-github"></i> Github</span>
-                  <div class="buttons">
+                  <span class="modal-item-name"
+                    ><i class="fa-brands fa-github"></i> Github</span
+                  >
+                  <div class="buttons-container">
                     <button class="copy-btn" data-copy="rezaWebDeveloper01">
-                      Copy
+                      <i class="fa-regular fa-copy"></i>
                     </button>
                     <a
                       href="https://github.com/rezaWebDeveloper01"
                       target="_blank"
                     >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       Open
                     </a>
                   </div>
@@ -133,24 +146,34 @@
 
                 <!-- Telegram -->
                 <div class="contact-item">
-                  <span><i class="fa-brands fa-telegram"></i> Telegram</span>
-                  <div class="buttons">
-                    <button class="copy-btn" data-copy="reza80-08">Copy</button>
-                    <a href="https://t.me/reza80-08" target="_blank"> Open </a>
+                  <span class="modal-item-name"
+                    ><i class="fa-brands fa-telegram"></i> Telegram</span
+                  >
+                  <div class="buttons-container">
+                    <button class="copy-btn" data-copy="reza80_08">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                    <a href="https://t.me/reza80-08" target="_blank">
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                      Open
+                    </a>
                   </div>
                 </div>
 
                 <!-- Linkedin -->
                 <div class="contact-item">
-                  <span><i class="fa-brands fa-linkedin"></i> Linkedin</span>
-                  <div class="buttons">
+                  <span class="modal-item-name"
+                    ><i class="fa-brands fa-linkedin"></i> Linkedin</span
+                  >
+                  <div class="buttons-container">
                     <button class="copy-btn" data-copy="reza-niazkar-front-end">
-                      Copy
+                      <i class="fa-regular fa-copy"></i>
                     </button>
                     <a
                       href="https://www.linkedin.com/in/reza-niazkar-front-end"
                       target="_blank"
                     >
+                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
                       Open
                     </a>
                   </div>
@@ -167,15 +190,14 @@
             <div class="modal-overlay" id="modal-about">
               <div class="modal-box">
                 <button class="close-btn" id="close-about-btn">✕</button>
-                <h2>About Me</h2>
-                <p class="modal-paragraph">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-                  commodi ea iusto non nobis ratione doloremque consequatur
-                  praesentium, laborum repellendus ab id atque fugit assumenda
-                  harum at? Nemo dicta dolore quasi unde eius accusamus deserunt
-                  amet praesentium repudiandae quas. Voluptates, quidem.
-                  Repellat amet incidunt corrupti corporis illum, nisi fugit
-                  obcaecati.
+                <h2 class="modal-box-title">About Me</h2>
+                <p class="modal-paragraph" dir="rtl">
+                  من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو
+                  شروع کردم. بعد از یاد گیری زبان های Html و CSS به طراحی سایت
+                  علاقه‌مند شدم و پروژه های ساده و پیش پا افتاده درست میکردم.
+                  بعد از تمرین های متعدد و مسلط شدن بر Html و CSS تصمیم به یاد
+                  گیری JavaScript کردم و اکنون درحال یادگیری استفاده از آن در
+                  ساخت وب‌سایت هستم.
                 </p>
               </div>
             </div>
@@ -187,6 +209,7 @@
             <a href="https://www.github.com/rezaWebDeveloper01" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
+
             <!-- Linkedin -->
             <a
               href="https://www.linkedin.com/in/reza-niazkar-front-end"
@@ -194,18 +217,20 @@
             >
               <i class="fa-brands fa-linkedin"></i>
             </a>
+
             <!-- Email -->
             <a href="mailto:rezan4162@gmail.com" target="_blank">
               <i class="fa-solid fa-envelope"></i>
             </a>
+
             <!-- Telegram -->
-            <a href="https://t.em/reza80-08" target="_blank">
+            <a href="https://t.em/reza80_08" target="_blank">
               <i class="fa-brands fa-telegram"></i>
             </a>
           </div>
         </section>
 
-        <!-- RIGHT SECTION -->
+        <!-- === RIGHT SECTION === -->
         <section class="right-section_header">
           <div class="cover-position-of-cards">
             <!-- Boxes -->
@@ -213,12 +238,13 @@
             <div class="js_hero card_hero">JS</div>
             <div class="css_hero card_hero">CSS</div>
             <div class="html_hero card_hero">HTML</div>
+
             <!-- Circles -->
             <div class="big-circle"></div>
             <div class="smaller-circle"></div>
+
             <!-- Image -->
-            <div class="back-light"></div>
-            <img class="hero-img" src="" alt="/" />
+            <img class="hero-img" src="./PIC/Profile.webp" alt="/" />
           </div>
         </section>
       </div>
@@ -230,27 +256,30 @@
 
     <main>
       <div class="main-container">
-        <!-- ABOUT ME SECTION -->
+        <!-- === ABOUT ME SECTION === -->
         <section class="left-section_main hidden" id="about">
+          <!-- LEFT SECTION CONTAINER -->
           <div class="about-me-container_main">
+            <!-- Title -->
             <h3 class="about-me-title_main hidden">
               درباره من <i class="fa-regular fa-user"></i>
             </h3>
 
             <!-- Paragraph -->
-            <p class="about-me_main hidden">
-              من دانشجوی مهندسی کامپیوتر هستم و از سال ۱۴۰۳ برنامه نویسی رو شروع
-              کردم. تمرکز من روی توسعه فراند اند هست و عاشق طراحی سایت های مدرن
-              و واکنش گرا هستم. علاوه بر برنامه نویسی، طراحی و تمرینات ورزشی نیز
-              علاقه دارم
+            <p class="about-me_main hidden" dir="rtl">
+              من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو شروع
+              کردم. بعد از یاد گیری زبان های Html و CSS به طراحی سایت علاقه‌مند
+              شدم و پروژه های ساده و پیش پا افتاده درست میکردم. بعد از تمرین های
+              متعدد و مسلط شدن بر Html و CSS تصمیم به یاد گیری JavaScript کردم و
+              اکنون درحال یادگیری استفاده از آن در ساخت وب‌سایت هستم.
             </p>
 
-            <!-- CARDS -->
+            <!-- BOXES -->
             <div class="card-container-about-me_main">
               <!-- Box - Birth -->
               <div class="birth about-me_boxes hidden">
                 <i class="fa-solid fa-calendar-days"></i>
-                <p class="birth">تولد</p>
+                <p class="birth">تاریخ تولد</p>
                 <p class="birth">1386 / 11 / 7</p>
               </div>
 
@@ -265,7 +294,7 @@
               <div class="studies about-me_boxes hidden">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <p class="studies">تحصیلات</p>
-                <p class="studies">درحال تحصیل در مهندسی کامپیوتر</p>
+                <p class="studies" dir="rtl">درحال تحصیل...</p>
               </div>
 
               <!-- Box - Favourite -->
@@ -278,12 +307,15 @@
           </div>
         </section>
 
-        <!-- SKILLS SECTION -->
+        <!-- === SKILLS SECTION === -->
         <section class="right-section_main" id="skills">
           <div class="skills-container">
+            <!-- Title -->
             <h3 class="skills_title hidden">
               مهارت ها <i class="fa-solid fa-code"></i>
             </h3>
+
+            <!-- CARDS -->
             <div class="skills-card-container">
               <!-- Card - HTML -->
               <div class="skill-card hidden">
@@ -327,7 +359,7 @@
 
               <!-- Card - RESPONSIVE DESIGN -->
               <div class="skill-card hidden">
-                <img src="./PIC/Responsive.png" alt="Responsive Logo" />
+                <img src="./PIC/Responsive.webp" alt="Responsive Logo" />
                 <h4>Responsive design</h4>
                 <span class="counter" data-target="75">0%</span>
                 <div class="skill-bar">
@@ -337,7 +369,7 @@
 
               <!-- Card - REACT -->
               <div class="skill-card hidden">
-                <img src="./PIC/React.png" alt="React Logo" />
+                <img src="./PIC/React.webp" alt="React Logo" />
                 <h4>React</h4>
                 <span class="counter" data-target="5">0%</span>
                 <div class="skill-bar">
@@ -349,8 +381,9 @@
         </section>
       </div>
 
-      <!-- MY LEARNING WAY SECTION -->
+      <!-- === MY LEARNING WAY SECTION === -->
       <section class="timeline-container hidden" id="learningWay">
+        <!-- Title -->
         <h4 class="title_learning_way hidden">
           مسیر یادگیری من <i class="fa-solid fa-route"></i>
         </h4>
@@ -359,7 +392,7 @@
           <div class="timeline-item left hidden">
             <div class="card_learning_way">
               <span>1403</span>
-              <h5>شروع برنامه نویسی</h5>
+              <h4>شروع برنامه نویسی</h4>
               <p>
                 با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوضه طراحی
                 سایت رو انتخاب کردم و شروع به دیدن آموزش کد نویسی سایت های ساده
@@ -369,7 +402,6 @@
             <div class="middle">
               <span class="circle_learning_way"></span>
             </div>
-            <div></div>
           </div>
 
           <!-- Item - 2 -->
@@ -380,10 +412,10 @@
             </div>
             <div class="card_learning_way">
               <span>1404</span>
-              <h5>ورود به دنیای جاوااسکریپت</h5>
+              <h4>ورود به دنیای جاوااسکریپت</h4>
               <p>
-                جاوااسکریپت رو در حد مبتدی یاد گرفتم و پروژه های تمرینی تعاملی
-                ساختم
+                جاوااسکریپت رو یاد گرفتم و همچنین کارم رو توی توسعه سایت ها
+                ارتقا دادم - سطح زبانم رو هم ارتقا دادم
               </p>
             </div>
           </div>
@@ -392,16 +424,16 @@
           <div class="timeline-item left hidden">
             <div class="card_learning_way">
               <span>1405</span>
-              <h5>تمرکز روی توسعه مهارت های فرانت اند</h5>
+              <h4>تمرکز روی توسعه مهارت های فرانت اند</h4>
               <p>
-                ابزار ها و فریم ورک های مدرن رو یاد گرفتم و پروژه های تمرینی
-                پیشرفته تر درست کردم
+                درحال یادگیری استفاده از جاوااسکریپت در توسعه وب هستم و همچنین
+                سعی در آموختن ترفند های جدید، حرفه‌ای و مدرن در توسعه وبسایت
+                هستم
               </p>
             </div>
             <div class="middle">
               <span class="circle_learning_way"></span>
             </div>
-            <div></div>
           </div>
         </div>
       </section>
@@ -412,9 +444,12 @@
     <!-- ############## -->
 
     <footer>
-      <!-- PROJECTS SECTION -->
+      <!-- === PROJECTS SECTION === -->
       <section class="projects_footer" id="projects">
+        <!-- Title -->
         <h3 class="hidden">پروژه ها <i class="fa-solid fa-briefcase"></i></h3>
+
+        <!-- PROJECTS CONTAINER -->
         <div class="card-container-projects_footer">
           <!-- Project - 1 -->
           <div class="project-card_footer hidden">
@@ -434,36 +469,56 @@
       </section>
 
       <div class="footer-container">
-        <!-- GOALS SECTION -->
+        <!-- === GOALS SECTION === -->
         <section class="goals_section">
+          <!-- Title -->
           <h3 class="goals_title hidden">
             اهداف من <i class="fa-solid fa-bullseye"></i>
           </h3>
+
+          <!-- Goal - 1 -->
           <p class="goals_paragraph hidden">
-            <i class="fa-regular fa-circle-check"></i> یادگیری ری اکت و ساخت
+            <i class="fa-regular fa-circle-check"></i> یادگیری کامل استفاده از
+            جاوااسکریپت در وبسایت
+          </p>
+
+          <!-- Goal - 2 -->
+          <p class="goals_paragraph hidden">
+            <i class="fa-regular fa-circle-check"></i> یادگیری React و ساخت
             پروژه های پیچیده
           </p>
+
+          <!-- Goal - 3 -->
           <p class="goals_paragraph hidden">
             <i class="fa-regular fa-circle-check"></i> تسلط کامل بر مفاهیم
             پیشرفته
           </p>
-          <p class="goals_paragraph hidden">
-            <i class="fa-regular fa-circle-check"></i> کار در یک تیم حرفه ای
-          </p>
+
+          <!-- Goal - 4 -->
           <p class="goals_paragraph hidden">
             <i class="fa-regular fa-circle-check"></i> تسلط کامل بر زبان انگلیسی
           </p>
+
+          <!-- Goal - 5 -->
+          <p class="goals_paragraph hidden">
+            <i class="fa-regular fa-circle-check"></i> کار در یک تیم حرفه ای
+          </p>
+
+          <!-- Goal - 6 -->
           <p class="goals_paragraph hidden">
             <i class="fa-regular fa-circle-check"></i> درآمد دلاری از طریق
             فریلنسری
           </p>
         </section>
 
-        <!-- CONTACT SECTION -->
+        <!-- === CONTACT SECTION === -->
         <section class="contact_section" id="contact">
+          <!-- Title -->
           <h3 class="hidden">
             تماس با من <i class="fa-regular fa-paper-plane"></i>
           </h3>
+
+          <!-- CONTACT CONTAINER -->
           <div class="contact-container">
             <!-- Gmail -->
             <a
@@ -490,7 +545,7 @@
             <!-- Telegram -->
             <a
               class="telegram-footer hidden"
-              href="https://t.em/reza80-08"
+              href="https://t.em/reza80_08"
               target="_blank"
             >
               <i class="fa-brands fa-telegram"></i>
@@ -512,7 +567,7 @@
         </section>
       </div>
 
-      <!-- COPYRIGHT SECTION -->
+      <!-- === COPYRIGHT SECTION === -->
       <h5 align="center" class="copyright hidden">
         &copy 2026 Reza. All rights reserved.
       </h5>
