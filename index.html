@@ -1,577 +1,691 @@
 <!doctype html>
 <html lang="fa">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <!-- <link rel="stylesheet" href="CSS/help.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>INTRO</title>
-  </head>
-  <body>
-    <!-- ############## -->
-    <!-- ### HEADER ### -->
-    <!-- ############## -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <!-- <link rel="stylesheet" href="CSS/help.css" /> -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <title>INTRO</title>
+    </head>
+    <body>
+        <!-- ############## -->
+        <!-- ### HEADER ### -->
+        <!-- ############## -->
 
-    <header>
-      <!-- === NAVBAR SECTION === -->
-      <nav>
-        <!-- NAVBAR CONTAINER -->
-        <div class="navbar-container">
-          <!-- Logo -->
-          <div class="logo_header"><span>R</span></div>
+        <header>
+            <!-- === NAVBAR SECTION === -->
+            <nav>
+                <!-- NAVBAR CONTAINER -->
+                <div class="navbar-container">
+                    <!-- Logo -->
+                    <div class="logo_header"><span>R</span></div>
 
-          <!-- Toggle -->
-          <div class="navbar-toggle" id="mobile-menu">
-            <span class="bar_toggle"></span>
-            <span class="bar_toggle"></span>
-            <span class="bar_toggle"></span>
-          </div>
+                    <!-- Toggle -->
+                    <div class="navbar-toggle" id="mobile-menu">
+                        <span class="bar_toggle"></span>
+                        <span class="bar_toggle"></span>
+                        <span class="bar_toggle"></span>
+                    </div>
 
-          <!-- NAV ITEMS -->
-          <ul class="navbar-menu">
-            <!-- Item - 1 -->
-            <li class="navbar-item">
-              <a href="#contact" class="contact">تماس</a>
-            </li>
-            <hr />
+                    <!-- NAV ITEMS -->
+                    <ul class="navbar-menu">
+                        <!-- Item - 1 -->
+                        <li class="navbar-item">
+                            <a href="#contact" class="contact">تماس</a>
+                        </li>
+                        <hr />
 
-            <!-- Item - 2 -->
-            <li class="navbar-item">
-              <a href="#projects" class="projects">پروژه ها</a>
-            </li>
-            <hr />
+                        <!-- Item - 2 -->
+                        <li class="navbar-item">
+                            <a href="#projects" class="projects">پروژه ها</a>
+                        </li>
+                        <hr />
 
-            <!-- Item - 3 -->
-            <li class="navbar-item">
-              <a href="#skills" class="skills">مهارت ها</a>
-            </li>
-            <hr />
+                        <!-- Item - 3 -->
+                        <li class="navbar-item">
+                            <a href="#skills" class="skills">مهارت ها</a>
+                        </li>
+                        <hr />
 
-            <!-- Item - 4 -->
-            <li class="navbar-item">
-              <a href="#about" class="about-me">درباره من</a>
-            </li>
-            <hr />
+                        <!-- Item - 4 -->
+                        <li class="navbar-item">
+                            <a href="#about" class="about-me">درباره من</a>
+                        </li>
+                        <hr />
 
-            <!-- Item - 5 -->
-            <li class="navbar-item">
-              <a href="#learningWay" class="learning-way">مسیر یادگیری</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+                        <!-- Item - 5 -->
+                        <li class="navbar-item">
+                            <a href="#learningWay" class="learning-way"
+                                >مسیر یادگیری</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-      <div class="header-container">
-        <!-- === LEFT SECTION === -->
-        <section class="left-section_header">
-          <div class="intro">
-            <div class="hello">درود! من</div>
-            <div class="name">
-              <h1 class="name_h1">رضا</h1>
-              <h1 class="lastname_h1">نیازکار</h1>
+            <div class="header-container">
+                <!-- === LEFT SECTION === -->
+                <section class="left-section_header">
+                    <div class="intro">
+                        <div class="hello">درود! من</div>
+                        <h1 class="name_h1">
+                            رضا <span class="lastname_h1">نیازکار</span>
+                        </h1>
+
+                        <!-- Paragraph - 1 -->
+                        <p class="intro_header english" id="typing-text">
+                            <!-- Front-End Developer & Computer Engineering Student -->
+                        </p>
+
+                        <!-- Paragraph - 2 -->
+                        <p class="intro_header persian" dir="rtl">
+                            علاقه‌مند به توسعه Front-End
+                        </p>
+
+                        <!-- Paragraph - 3 -->
+                        <p class="intro_header persian">
+                            و ساختن وب‌سایت های مدرن و تعاملی هستم
+                        </p>
+                    </div>
+                    <div class="buttons-container_header">
+                        <!-- Contact Button -->
+                        <button class="contact-btn_header" id="contact-btn">
+                            <i class="fa-solid fa-paper-plane"></i> تماس با من
+                        </button>
+
+                        <!-- Modal Contact -->
+                        <div class="modal-overlay" id="modal-contact">
+                            <!-- Box -->
+                            <div class="modal-box">
+                                <!-- Close btn -->
+                                <button
+                                    class="close-btn"
+                                    id="close-contact-btn"
+                                >
+                                    ✕
+                                </button>
+
+                                <!-- Title -->
+                                <h2 class="modal-box-title">Contact Me</h2>
+
+                                <!-- Email -->
+                                <div class="contact-item">
+                                    <span class="modal-item-name"
+                                        ><i class="fa-solid fa-envelope"></i>
+                                        Email</span
+                                    >
+                                    <div class="buttons-container">
+                                        <button
+                                            class="copy-btn"
+                                            data-copy="rezan4162@gmail.com"
+                                        >
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a href="mailto:rezan4162@gmail.com">
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i>
+                                            Open</a
+                                        >
+                                    </div>
+                                </div>
+
+                                <!-- Github -->
+                                <div class="contact-item">
+                                    <span class="modal-item-name"
+                                        ><i class="fa-brands fa-github"></i>
+                                        Github</span
+                                    >
+                                    <div class="buttons-container">
+                                        <button
+                                            class="copy-btn"
+                                            data-copy="rezaWebDeveloper01"
+                                        >
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a
+                                            href="https://github.com/rezaWebDeveloper01"
+                                            target="_blank"
+                                        >
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i>
+                                            Open
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Telegram -->
+                                <div class="contact-item">
+                                    <span class="modal-item-name"
+                                        ><i class="fa-brands fa-telegram"></i>
+                                        Telegram</span
+                                    >
+                                    <div class="buttons-container">
+                                        <button
+                                            class="copy-btn"
+                                            data-copy="reza80_08"
+                                        >
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a
+                                            href="https://t.me/reza80-08"
+                                            target="_blank"
+                                        >
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i>
+                                            Open
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Linkedin -->
+                                <div class="contact-item">
+                                    <span class="modal-item-name"
+                                        ><i class="fa-brands fa-linkedin"></i>
+                                        Linkedin</span
+                                    >
+                                    <div class="buttons-container">
+                                        <button
+                                            class="copy-btn"
+                                            data-copy="reza-niazkar-front-end"
+                                        >
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a
+                                            href="https://www.linkedin.com/in/reza-niazkar-front-end"
+                                            target="_blank"
+                                        >
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i>
+                                            Open
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About Me Button -->
+                        <button class="about-me-btn_header" id="about-btn">
+                            درباره من <i class="fa-solid fa-info"></i>
+                        </button>
+
+                        <!-- Modal About Me -->
+                        <div class="modal-overlay" id="modal-about">
+                            <div class="modal-box">
+                                <button class="close-btn" id="close-about-btn">
+                                    ✕
+                                </button>
+                                <h2 class="modal-box-title">About Me</h2>
+                                <p class="modal-paragraph" dir="rtl">
+                                    من دانشجوی مهندسی کامپیوتر هستم و از سال
+                                    1403 برنامه نویسی رو شروع کردم. بعد از یاد
+                                    گیری زبان های Html و CSS به طراحی سایت
+                                    علاقه‌مند شدم و پروژه های ساده و پیش پا
+                                    افتاده درست میکردم. بعد از تمرین های متعدد و
+                                    مسلط شدن بر Html و CSS تصمیم به یاد گیری
+                                    JavaScript کردم و اکنون درحال یادگیری
+                                    استفاده از آن در ساخت وب‌سایت هستم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="social_header">
+                        <!-- Git -->
+                        <a
+                            href="https://www.github.com/rezaWebDeveloper01"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <!-- Linkedin -->
+                        <a
+                            href="https://www.linkedin.com/in/reza-niazkar-front-end"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:rezan4162@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="https://t.em/reza80_08" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- === RIGHT SECTION === -->
+                <section class="right-section_header">
+                    <div class="cover-position-of-cards">
+                        <!-- Boxes -->
+                        <div class="code_hero card_hero">&lt;/&gt;</div>
+                        <div class="js_hero card_hero">JS</div>
+                        <div class="css_hero card_hero">CSS</div>
+                        <div class="html_hero card_hero">HTML</div>
+
+                        <!-- Circles -->
+                        <div class="big-circle"></div>
+                        <div class="smaller-circle"></div>
+
+                        <!-- Image -->
+                        <img
+                            class="hero-img"
+                            src="./images/Profile.webp"
+                            alt="Profile"
+                        />
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        <!-- ############ -->
+        <!-- ### MAIN ### -->
+        <!-- ############ -->
+
+        <main>
+            <div class="main-container">
+                <!-- === ABOUT ME SECTION === -->
+                <section class="left-section_main hidden" id="about">
+                    <!-- LEFT SECTION CONTAINER -->
+                    <div class="about-me-container_main">
+                        <!-- Title -->
+                        <h3 class="about-me-title_main hidden">
+                            درباره من <i class="fa-regular fa-user"></i>
+                        </h3>
+
+                        <!-- Paragraph -->
+                        <p class="about-me_main hidden" dir="rtl">
+                            من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه
+                            نویسی رو شروع کردم. بعد از یاد گیری زبان های Html و
+                            CSS به طراحی سایت علاقه‌مند شدم و پروژه های ساده و
+                            پیش پا افتاده درست میکردم. بعد از تمرین های متعدد و
+                            مسلط شدن بر Html و CSS تصمیم به یاد گیری JavaScript
+                            کردم و اکنون درحال یادگیری استفاده از آن در ساخت
+                            وب‌سایت هستم.
+                        </p>
+
+                        <!-- BOXES -->
+                        <div class="card-container-about-me_main">
+                            <!-- Box - Birth -->
+                            <div class="birth about-me_boxes hidden">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <p class="birth">تاریخ تولد</p>
+                                <p class="birth">1386 / 11 / 7</p>
+                            </div>
+
+                            <!-- Box - Location -->
+                            <div class="location about-me_boxes hidden">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p class="location">موقعیت</p>
+                                <p class="location">ایران - شیراز</p>
+                            </div>
+
+                            <!-- Box - Studies -->
+                            <div class="studies about-me_boxes hidden">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <p class="studies">تحصیلات</p>
+                                <p class="studies" dir="rtl">درحال تحصیل...</p>
+                            </div>
+
+                            <!-- Box - Favourite -->
+                            <div class="favourite about-me_boxes hidden">
+                                <i class="fa-regular fa-heart"></i>
+                                <p class="favourite">علاقه مندی ها</p>
+                                <p class="favourite">
+                                    برنامه نویسی، طراحی، ورزش
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === SKILLS SECTION === -->
+                <section class="right-section_main" id="skills">
+                    <div class="skills-container">
+                        <!-- Title -->
+                        <h3 class="skills_title hidden">
+                            مهارت ها <i class="fa-solid fa-code"></i>
+                        </h3>
+
+                        <!-- CARDS -->
+                        <div class="skills-card-container">
+                            <!-- Card - HTML -->
+                            <div class="skill-card hidden">
+                                <img src="./images/Html.webp" alt="HTML Logo" />
+                                <h4>HTML</h4>
+                                <span class="counter" data-target="90">0%</span>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-progress"
+                                        data-width="90"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <!-- Card - CSS -->
+                            <div class="skill-card hidden">
+                                <img src="./images/CSS.webp" alt="CSS Logo" />
+                                <h4>CSS</h4>
+                                <span class="counter" data-target="80">0%</span>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-progress"
+                                        data-width="80"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <!-- Card - JS -->
+                            <div class="skill-card hidden">
+                                <img src="./images/JS.webp" alt="JS Logo" />
+                                <h4>JavaScript</h4>
+                                <span class="counter" data-target="60">0%</span>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-progress"
+                                        data-width="60"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <!-- Card - GIT -->
+                            <div class="skill-card hidden">
+                                <img src="./images/Git.webp" alt="Git Logo" />
+                                <h4>Git</h4>
+                                <span class="counter" data-target="80">0%</span>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-progress"
+                                        data-width="80"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <!-- Card - RESPONSIVE DESIGN -->
+                            <div class="skill-card hidden">
+                                <img
+                                    src="./images/Responsive.webp"
+                                    alt="Responsive Logo"
+                                />
+                                <h4>Responsive design</h4>
+                                <span class="counter" data-target="75">0%</span>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-progress"
+                                        data-width="75"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <!-- Card - REACT -->
+                            <div class="skill-card hidden">
+                                <img
+                                    src="./images/React.webp"
+                                    alt="React Logo"
+                                />
+                                <h4>React</h4>
+                                <span class="counter" data-target="5">0%</span>
+                                <div class="skill-bar">
+                                    <div
+                                        class="skill-progress"
+                                        data-width="5"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
 
-            <!-- Paragraph - 1 -->
-            <p class="intro_header english" id="typing-text">
-              <!-- Front-End Developer & Computer Engineering Student -->
-            </p>
-
-            <!-- Paragraph - 2 -->
-            <p class="intro_header persian" dir="rtl">
-              علاقه‌مند به توسعه Front-End
-            </p>
-
-            <!-- Paragraph - 3 -->
-            <p class="intro_header persian">
-              و ساختن وب‌سایت های مدرن و تعاملی هستم
-            </p>
-          </div>
-          <div class="buttons-container_header">
-            <!-- Contact Button -->
-            <button class="contact-btn_header" id="contact-btn">
-              <i class="fa-solid fa-paper-plane"></i> تماس با من
-            </button>
-
-            <!-- Modal Contact -->
-            <div class="modal-overlay" id="modal-contact">
-              <!-- Box -->
-              <div class="modal-box">
-                <!-- Close btn -->
-                <button class="close-btn" id="close-contact-btn">✕</button>
-
+            <!-- === MY LEARNING WAY SECTION === -->
+            <section class="timeline-container hidden" id="learningWay">
                 <!-- Title -->
-                <h2 class="modal-box-title">Contact Me</h2>
+                <h4 class="title_learning_way hidden">
+                    مسیر یادگیری من <i class="fa-solid fa-route"></i>
+                </h4>
+                <div class="timeline hidden">
+                    <!-- Item - 1 -->
+                    <div class="timeline-item left hidden">
+                        <div class="card_learning_way">
+                            <span>1403</span>
+                            <h4>شروع برنامه نویسی</h4>
+                            <p>
+                                با یادگیری پایتون به برنامه نویسی علاقه مند شدم
+                                و حوضه طراحی سایت رو انتخاب کردم و شروع به دیدن
+                                آموزش کد نویسی سایت های ساده کردم
+                            </p>
+                        </div>
+                        <div class="middle">
+                            <span class="circle_learning_way"></span>
+                        </div>
+                    </div>
 
-                <!-- Email -->
-                <div class="contact-item">
-                  <span class="modal-item-name"
-                    ><i class="fa-solid fa-envelope"></i> Email</span
-                  >
-                  <div class="buttons-container">
-                    <button class="copy-btn" data-copy="rezan4162@gmail.com">
-                      <i class="fa-regular fa-copy"></i>
-                    </button>
-                    <a href="mailto:rezan4162@gmail.com">
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                      Open</a
-                    >
-                  </div>
-                </div>
+                    <!-- Item - 2 -->
+                    <div class="timeline-item right hidden">
+                        <div></div>
+                        <div class="middle">
+                            <span class="circle_learning_way"></span>
+                        </div>
+                        <div class="card_learning_way">
+                            <span>1404</span>
+                            <h4>ورود به دنیای جاوااسکریپت</h4>
+                            <p>
+                                جاوااسکریپت رو یاد گرفتم و همچنین کارم رو توی
+                                توسعه سایت ها ارتقا دادم - سطح زبانم رو هم ارتقا
+                                دادم
+                            </p>
+                        </div>
+                    </div>
 
-                <!-- Github -->
-                <div class="contact-item">
-                  <span class="modal-item-name"
-                    ><i class="fa-brands fa-github"></i> Github</span
-                  >
-                  <div class="buttons-container">
-                    <button class="copy-btn" data-copy="rezaWebDeveloper01">
-                      <i class="fa-regular fa-copy"></i>
-                    </button>
-                    <a
-                      href="https://github.com/rezaWebDeveloper01"
-                      target="_blank"
-                    >
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                      Open
-                    </a>
-                  </div>
+                    <!-- Item - 3 -->
+                    <div class="timeline-item left hidden">
+                        <div class="card_learning_way">
+                            <span>1405</span>
+                            <h4>تمرکز روی توسعه مهارت های فرانت اند</h4>
+                            <p>
+                                درحال یادگیری استفاده از جاوااسکریپت در توسعه وب
+                                هستم و همچنین سعی در آموختن ترفند های جدید،
+                                حرفه‌ای و مدرن در توسعه وبسایت هستم
+                            </p>
+                        </div>
+                        <div class="middle">
+                            <span class="circle_learning_way"></span>
+                        </div>
+                    </div>
                 </div>
+            </section>
+        </main>
 
-                <!-- Telegram -->
-                <div class="contact-item">
-                  <span class="modal-item-name"
-                    ><i class="fa-brands fa-telegram"></i> Telegram</span
-                  >
-                  <div class="buttons-container">
-                    <button class="copy-btn" data-copy="reza80_08">
-                      <i class="fa-regular fa-copy"></i>
-                    </button>
-                    <a href="https://t.me/reza80-08" target="_blank">
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                      Open
-                    </a>
-                  </div>
-                </div>
+        <!-- ############## -->
+        <!-- ### FOOTER ### -->
+        <!-- ############## -->
 
-                <!-- Linkedin -->
-                <div class="contact-item">
-                  <span class="modal-item-name"
-                    ><i class="fa-brands fa-linkedin"></i> Linkedin</span
-                  >
-                  <div class="buttons-container">
-                    <button class="copy-btn" data-copy="reza-niazkar-front-end">
-                      <i class="fa-regular fa-copy"></i>
-                    </button>
-                    <a
-                      href="https://www.linkedin.com/in/reza-niazkar-front-end"
-                      target="_blank"
-                    >
-                      <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                      Open
-                    </a>
-                  </div>
+        <footer>
+            <!-- === PROJECTS SECTION === -->
+            <section class="projects_footer" id="projects">
+                <!-- Title -->
+                <h3 class="hidden">
+                    پروژه ها <i class="fa-solid fa-briefcase"></i>
+                </h3>
+
+                <!-- PROJECTS CONTAINER -->
+                <div class="card-container-projects">
+                    <!-- Project - 1 -->
+                    <div class="project-card-container">
+                        <button
+                            class="project-card_footer hidden"
+                            id="project-one-btn"
+                        >
+                            <img
+                                src="./images/ProjectOne.webp"
+                                alt="First Project"
+                            />
+                        </button>
+                        <div class="modal-overlay" id="modal-project-one">
+                            <div class="modal-box">
+                                <button
+                                    class="close-btn"
+                                    id="close-project-one-btn"
+                                >
+                                    ✕
+                                </button>
+                                <h2 class="modal-box-title">
+                                    رابط کاربری احراز هویت متحرک
+                                </h2>
+                                <p class="modal-paragraph" dir="rtl">
+                                    یک رابط کاربری تایید هویت دو زبانه و
+                                    واکنش‌گرا با انتقالات ورود/ثبت‌نام،
+                                    اعتبارسنجی فرم، رابط کاربری CAPTCHA، قابلیت
+                                    نمایش رمز عبور، پشتیبانی از
+                                    راست‌به‌چپ/چپ‌به‌راست و طراحی واکنش‌گرای
+                                    موبایل.
+                                </p>
+                                <a
+                                    href="../Projects/Login-Signup/index.html"
+                                    target="_blank"
+                                    class="project-link"
+                                    >OPEN</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project - 2 -->
+                    <button
+                        class="project-card_footer hidden"
+                        id="project-btn"
+                    ></button>
+
+                    <!-- Project - 3 -->
+                    <button
+                        class="project-card_footer hidden"
+                        id="project-btn"
+                    ></button>
                 </div>
-              </div>
+            </section>
+
+            <div class="footer-container">
+                <!-- === GOALS SECTION === -->
+                <section class="goals_section">
+                    <!-- Title -->
+                    <h3 class="goals_title hidden">
+                        اهداف من <i class="fa-solid fa-bullseye"></i>
+                    </h3>
+
+                    <!-- Goal - 1 -->
+                    <p class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i> یادگیری کامل
+                        استفاده از جاوااسکریپت در وبسایت
+                    </p>
+
+                    <!-- Goal - 2 -->
+                    <p class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i> یادگیری React
+                        و ساخت پروژه های پیچیده
+                    </p>
+
+                    <!-- Goal - 3 -->
+                    <p class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i> تسلط کامل بر
+                        مفاهیم پیشرفته
+                    </p>
+
+                    <!-- Goal - 4 -->
+                    <p class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i> تسلط کامل بر
+                        زبان انگلیسی
+                    </p>
+
+                    <!-- Goal - 5 -->
+                    <p class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i> کار در یک تیم
+                        حرفه ای
+                    </p>
+
+                    <!-- Goal - 6 -->
+                    <p class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i> درآمد دلاری
+                        از طریق فریلنسری
+                    </p>
+                </section>
+
+                <!-- === CONTACT SECTION === -->
+                <section class="contact_section" id="contact">
+                    <!-- Title -->
+                    <h3 class="hidden">
+                        تماس با من <i class="fa-regular fa-paper-plane"></i>
+                    </h3>
+
+                    <!-- CONTACT CONTAINER -->
+                    <div class="contact-container">
+                        <!-- Gmail -->
+                        <a
+                            class="gmail-footer hidden"
+                            href="mailto:rezan4162@gmail.com"
+                            target="_blank"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                            <h4>Gmail</h4>
+                            <span>rezan4162@gmail.com</span>
+                        </a>
+
+                        <!-- Github -->
+                        <a
+                            class="github-footer hidden"
+                            href="https://www.github.com/rezaWebDeveloper01"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            <h4>GitHub</h4>
+                            <span>rezaWebDeveloper01</span>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a
+                            class="telegram-footer hidden"
+                            href="https://t.em/reza80_08"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-telegram"></i>
+                            <h4>Telegram</h4>
+                            <span>@reza80-08</span>
+                        </a>
+
+                        <!-- Linkedin -->
+                        <a
+                            class="linkedin-footer hidden"
+                            href="https://www.linkedin.com/in/reza-niazkar-front-end"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                            <h4>Linkedin</h4>
+                            <span>reza-niazkar-front-end</span>
+                        </a>
+                    </div>
+                </section>
             </div>
 
-            <!-- About Me Button -->
-            <button class="about-me-btn_header" id="about-btn">
-              درباره من <i class="fa-solid fa-info"></i>
-            </button>
-
-            <!-- Modal About Me -->
-            <div class="modal-overlay" id="modal-about">
-              <div class="modal-box">
-                <button class="close-btn" id="close-about-btn">✕</button>
-                <h2 class="modal-box-title">About Me</h2>
-                <p class="modal-paragraph" dir="rtl">
-                  من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو
-                  شروع کردم. بعد از یاد گیری زبان های Html و CSS به طراحی سایت
-                  علاقه‌مند شدم و پروژه های ساده و پیش پا افتاده درست میکردم.
-                  بعد از تمرین های متعدد و مسلط شدن بر Html و CSS تصمیم به یاد
-                  گیری JavaScript کردم و اکنون درحال یادگیری استفاده از آن در
-                  ساخت وب‌سایت هستم.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Social -->
-          <div class="social_header">
-            <!-- Git -->
-            <a href="https://www.github.com/rezaWebDeveloper01" target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-            <!-- Linkedin -->
-            <a
-              href="https://www.linkedin.com/in/reza-niazkar-front-end"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <!-- Email -->
-            <a href="mailto:rezan4162@gmail.com" target="_blank">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-
-            <!-- Telegram -->
-            <a href="https://t.em/reza80_08" target="_blank">
-              <i class="fa-brands fa-telegram"></i>
-            </a>
-          </div>
-        </section>
-
-        <!-- === RIGHT SECTION === -->
-        <section class="right-section_header">
-          <div class="cover-position-of-cards">
-            <!-- Boxes -->
-            <div class="code_hero card_hero">&lt;/&gt;</div>
-            <div class="js_hero card_hero">JS</div>
-            <div class="css_hero card_hero">CSS</div>
-            <div class="html_hero card_hero">HTML</div>
-
-            <!-- Circles -->
-            <div class="big-circle"></div>
-            <div class="smaller-circle"></div>
-
-            <!-- Image -->
-            <img class="hero-img" src="./PIC/Profile.webp" alt="/" />
-          </div>
-        </section>
-      </div>
-    </header>
-
-    <!-- ############ -->
-    <!-- ### MAIN ### -->
-    <!-- ############ -->
-
-    <main>
-      <div class="main-container">
-        <!-- === ABOUT ME SECTION === -->
-        <section class="left-section_main hidden" id="about">
-          <!-- LEFT SECTION CONTAINER -->
-          <div class="about-me-container_main">
-            <!-- Title -->
-            <h3 class="about-me-title_main hidden">
-              درباره من <i class="fa-regular fa-user"></i>
-            </h3>
-
-            <!-- Paragraph -->
-            <p class="about-me_main hidden" dir="rtl">
-              من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو شروع
-              کردم. بعد از یاد گیری زبان های Html و CSS به طراحی سایت علاقه‌مند
-              شدم و پروژه های ساده و پیش پا افتاده درست میکردم. بعد از تمرین های
-              متعدد و مسلط شدن بر Html و CSS تصمیم به یاد گیری JavaScript کردم و
-              اکنون درحال یادگیری استفاده از آن در ساخت وب‌سایت هستم.
-            </p>
-
-            <!-- BOXES -->
-            <div class="card-container-about-me_main">
-              <!-- Box - Birth -->
-              <div class="birth about-me_boxes hidden">
-                <i class="fa-solid fa-calendar-days"></i>
-                <p class="birth">تاریخ تولد</p>
-                <p class="birth">1386 / 11 / 7</p>
-              </div>
-
-              <!-- Box - Location -->
-              <div class="location about-me_boxes hidden">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="location">موقعیت</p>
-                <p class="location">ایران - شیراز</p>
-              </div>
-
-              <!-- Box - Studies -->
-              <div class="studies about-me_boxes hidden">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <p class="studies">تحصیلات</p>
-                <p class="studies" dir="rtl">درحال تحصیل...</p>
-              </div>
-
-              <!-- Box - Favourite -->
-              <div class="favourite about-me_boxes hidden">
-                <i class="fa-regular fa-heart"></i>
-                <p class="favourite">علاقه مندی ها</p>
-                <p class="favourite">برنامه نویسی، طراحی، ورزش</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- === SKILLS SECTION === -->
-        <section class="right-section_main" id="skills">
-          <div class="skills-container">
-            <!-- Title -->
-            <h3 class="skills_title hidden">
-              مهارت ها <i class="fa-solid fa-code"></i>
-            </h3>
-
-            <!-- CARDS -->
-            <div class="skills-card-container">
-              <!-- Card - HTML -->
-              <div class="skill-card hidden">
-                <img src="./PIC/Html.webp" alt="HTML Logo" />
-                <h4>HTML</h4>
-                <span class="counter" data-target="90">0%</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="90"></div>
-                </div>
-              </div>
-
-              <!-- Card - CSS -->
-              <div class="skill-card hidden">
-                <img src="./PIC/CSS.webp" alt="CSS Logo" />
-                <h4>CSS</h4>
-                <span class="counter" data-target="80">0%</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="80"></div>
-                </div>
-              </div>
-
-              <!-- Card - JS -->
-              <div class="skill-card hidden">
-                <img src="./PIC/JS.webp" alt="JS Logo" />
-                <h4>JavaScript</h4>
-                <span class="counter" data-target="60">0%</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="60"></div>
-                </div>
-              </div>
-
-              <!-- Card - GIT -->
-              <div class="skill-card hidden">
-                <img src="./PIC/Git.webp" alt="Git Logo" />
-                <h4>Git</h4>
-                <span class="counter" data-target="80">0%</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="80"></div>
-                </div>
-              </div>
-
-              <!-- Card - RESPONSIVE DESIGN -->
-              <div class="skill-card hidden">
-                <img src="./PIC/Responsive.webp" alt="Responsive Logo" />
-                <h4>Responsive design</h4>
-                <span class="counter" data-target="75">0%</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="75"></div>
-                </div>
-              </div>
-
-              <!-- Card - REACT -->
-              <div class="skill-card hidden">
-                <img src="./PIC/React.webp" alt="React Logo" />
-                <h4>React</h4>
-                <span class="counter" data-target="5">0%</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-width="5"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-      <!-- === MY LEARNING WAY SECTION === -->
-      <section class="timeline-container hidden" id="learningWay">
-        <!-- Title -->
-        <h4 class="title_learning_way hidden">
-          مسیر یادگیری من <i class="fa-solid fa-route"></i>
-        </h4>
-        <div class="timeline hidden">
-          <!-- Item - 1 -->
-          <div class="timeline-item left hidden">
-            <div class="card_learning_way">
-              <span>1403</span>
-              <h4>شروع برنامه نویسی</h4>
-              <p>
-                با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوضه طراحی
-                سایت رو انتخاب کردم و شروع به دیدن آموزش کد نویسی سایت های ساده
-                کردم
-              </p>
-            </div>
-            <div class="middle">
-              <span class="circle_learning_way"></span>
-            </div>
-          </div>
-
-          <!-- Item - 2 -->
-          <div class="timeline-item right hidden">
-            <div></div>
-            <div class="middle">
-              <span class="circle_learning_way"></span>
-            </div>
-            <div class="card_learning_way">
-              <span>1404</span>
-              <h4>ورود به دنیای جاوااسکریپت</h4>
-              <p>
-                جاوااسکریپت رو یاد گرفتم و همچنین کارم رو توی توسعه سایت ها
-                ارتقا دادم - سطح زبانم رو هم ارتقا دادم
-              </p>
-            </div>
-          </div>
-
-          <!-- Item - 3 -->
-          <div class="timeline-item left hidden">
-            <div class="card_learning_way">
-              <span>1405</span>
-              <h4>تمرکز روی توسعه مهارت های فرانت اند</h4>
-              <p>
-                درحال یادگیری استفاده از جاوااسکریپت در توسعه وب هستم و همچنین
-                سعی در آموختن ترفند های جدید، حرفه‌ای و مدرن در توسعه وبسایت
-                هستم
-              </p>
-            </div>
-            <div class="middle">
-              <span class="circle_learning_way"></span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ############## -->
-    <!-- ### FOOTER ### -->
-    <!-- ############## -->
-
-    <footer>
-      <!-- === PROJECTS SECTION === -->
-      <section class="projects_footer" id="projects">
-        <!-- Title -->
-        <h3 class="hidden">پروژه ها <i class="fa-solid fa-briefcase"></i></h3>
-
-        <!-- PROJECTS CONTAINER -->
-        <div class="card-container-projects_footer">
-          <!-- Project - 1 -->
-          <div class="project-card_footer hidden">
-            بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
-          </div>
-
-          <!-- Project - 2 -->
-          <div class="project-card_footer hidden">
-            بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
-          </div>
-
-          <!-- Project - 3 -->
-          <div class="project-card_footer hidden">
-            بعد از ایجاد پروژه های جدید این بخش برورسانی خواهد شد
-          </div>
-        </div>
-      </section>
-
-      <div class="footer-container">
-        <!-- === GOALS SECTION === -->
-        <section class="goals_section">
-          <!-- Title -->
-          <h3 class="goals_title hidden">
-            اهداف من <i class="fa-solid fa-bullseye"></i>
-          </h3>
-
-          <!-- Goal - 1 -->
-          <p class="goals_paragraph hidden">
-            <i class="fa-regular fa-circle-check"></i> یادگیری کامل استفاده از
-            جاوااسکریپت در وبسایت
-          </p>
-
-          <!-- Goal - 2 -->
-          <p class="goals_paragraph hidden">
-            <i class="fa-regular fa-circle-check"></i> یادگیری React و ساخت
-            پروژه های پیچیده
-          </p>
-
-          <!-- Goal - 3 -->
-          <p class="goals_paragraph hidden">
-            <i class="fa-regular fa-circle-check"></i> تسلط کامل بر مفاهیم
-            پیشرفته
-          </p>
-
-          <!-- Goal - 4 -->
-          <p class="goals_paragraph hidden">
-            <i class="fa-regular fa-circle-check"></i> تسلط کامل بر زبان انگلیسی
-          </p>
-
-          <!-- Goal - 5 -->
-          <p class="goals_paragraph hidden">
-            <i class="fa-regular fa-circle-check"></i> کار در یک تیم حرفه ای
-          </p>
-
-          <!-- Goal - 6 -->
-          <p class="goals_paragraph hidden">
-            <i class="fa-regular fa-circle-check"></i> درآمد دلاری از طریق
-            فریلنسری
-          </p>
-        </section>
-
-        <!-- === CONTACT SECTION === -->
-        <section class="contact_section" id="contact">
-          <!-- Title -->
-          <h3 class="hidden">
-            تماس با من <i class="fa-regular fa-paper-plane"></i>
-          </h3>
-
-          <!-- CONTACT CONTAINER -->
-          <div class="contact-container">
-            <!-- Gmail -->
-            <a
-              class="gmail-footer hidden"
-              href="mailto:rezan4162@gmail.com"
-              target="_blank"
-            >
-              <i class="fa-solid fa-envelope"></i>
-              <h4>Gmail</h4>
-              <span>rezan4162@gmail.com</span>
-            </a>
-
-            <!-- Github -->
-            <a
-              class="github-footer hidden"
-              href="https://www.github.com/rezaWebDeveloper01"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"></i>
-              <h4>GitHub</h4>
-              <span>rezaWebDeveloper01</span>
-            </a>
-
-            <!-- Telegram -->
-            <a
-              class="telegram-footer hidden"
-              href="https://t.em/reza80_08"
-              target="_blank"
-            >
-              <i class="fa-brands fa-telegram"></i>
-              <h4>Telegram</h4>
-              <span>@reza80-08</span>
-            </a>
-
-            <!-- Linkedin -->
-            <a
-              class="linkedin-footer hidden"
-              href="https://www.linkedin.com/in/reza-niazkar-front-end"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-              <h4>Linkedin</h4>
-              <span>reza-niazkar-front-end</span>
-            </a>
-          </div>
-        </section>
-      </div>
-
-      <!-- === COPYRIGHT SECTION === -->
-      <h5 align="center" class="copyright hidden">
-        &copy 2026 Reza. All rights reserved.
-      </h5>
-      <script src="JS/app.js"></script>
-    </footer>
-  </body>
+            <!-- === COPYRIGHT SECTION === -->
+            <h5 align="center" class="copyright hidden">
+                &copy 2026 Reza. All rights reserved.
+            </h5>
+            <script src="script.js"></script>
+        </footer>
+    </body>
 </html>
