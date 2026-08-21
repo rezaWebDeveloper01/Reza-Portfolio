@@ -15,6 +15,8 @@
         <title>INTRO</title>
     </head>
     <body>
+        <span class="language-btn-ripple"></span>
+        <button class="hidden" id="language-btn" type="button"></button>
         <!-- ############## -->
         <!-- ### HEADER ### -->
         <!-- ############## -->
@@ -38,31 +40,54 @@
                     <ul class="navbar-menu">
                         <!-- Item - 1 -->
                         <li class="navbar-item">
-                            <a href="#contact" class="contact">تماس</a>
+                            <a
+                                href="#contact"
+                                class="contact"
+                                data-i18n="contactLink"
+                                >تماس</a
+                            >
                         </li>
                         <hr />
 
                         <!-- Item - 2 -->
                         <li class="navbar-item">
-                            <a href="#projects" class="projects">پروژه ها</a>
+                            <a
+                                href="#projects"
+                                class="projects"
+                                data-i18n="projectsLink"
+                                >|پروژه ها</a
+                            >
                         </li>
                         <hr />
 
                         <!-- Item - 3 -->
                         <li class="navbar-item">
-                            <a href="#skills" class="skills">مهارت ها</a>
+                            <a
+                                href="#skills"
+                                class="skills"
+                                data-i18n="skillsLink"
+                                >مهارت ها</a
+                            >
                         </li>
                         <hr />
 
                         <!-- Item - 4 -->
                         <li class="navbar-item">
-                            <a href="#about" class="about-me">درباره من</a>
+                            <a
+                                href="#about"
+                                class="about-me"
+                                data-i18n="aboutMe"
+                                >درباره من</a
+                            >
                         </li>
                         <hr />
 
                         <!-- Item - 5 -->
                         <li class="navbar-item">
-                            <a href="#learningWay" class="learning-way"
+                            <a
+                                href="#learningWay"
+                                class="learning-way"
+                                data-i18n="learningWayLink"
                                 >مسیر یادگیری</a
                             >
                         </li>
@@ -74,9 +99,12 @@
                 <!-- === LEFT SECTION === -->
                 <section class="left-section_header">
                     <div class="intro">
-                        <div class="hello">درود! من</div>
-                        <h1 class="name_h1">
-                            رضا <span class="lastname_h1">نیازکار</span>
+                        <div class="hello" data-i18n="hello">درود! من</div>
+                        <h1 class="name-container">
+                            <span class="name_h1" data-i18n="nameH1">رضا</span>
+                            <span class="lastname_h1" data-i18n="lastNameH1">
+                                نیازکار
+                            </span>
                         </h1>
 
                         <!-- Paragraph - 1 -->
@@ -85,19 +113,27 @@
                         </p>
 
                         <!-- Paragraph - 2 -->
-                        <p class="intro_header persian" dir="rtl">
+                        <p
+                            class="intro_header persian"
+                            dir="rtl"
+                            data-i18n="headerItemTwo"
+                        >
                             علاقه‌مند به توسعه Front-End
                         </p>
 
                         <!-- Paragraph - 3 -->
-                        <p class="intro_header persian">
+                        <p
+                            class="intro_header persian"
+                            data-i18n="headerItemThree"
+                        >
                             و ساختن وب‌سایت های مدرن و تعاملی هستم
                         </p>
                     </div>
                     <div class="buttons-container_header">
                         <!-- Contact Button -->
                         <button class="contact-btn_header" id="contact-btn">
-                            <i class="fa-solid fa-paper-plane"></i> تماس با من
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-i18n="contactMe">تماس با من</span>
                         </button>
 
                         <!-- Modal Contact -->
@@ -113,7 +149,12 @@
                                 </button>
 
                                 <!-- Title -->
-                                <h2 class="modal-box-title">Contact Me</h2>
+                                <h2
+                                    class="modal-box-title"
+                                    data-i18n="contactMe"
+                                >
+                                    Contact Me
+                                </h2>
 
                                 <!-- Email -->
                                 <div class="contact-item">
@@ -216,7 +257,8 @@
 
                         <!-- About Me Button -->
                         <button class="about-me-btn_header" id="about-btn">
-                            درباره من <i class="fa-solid fa-info"></i>
+                            <span data-i18n="aboutMe"> درباره من </span
+                            ><i class="fa-solid fa-info"></i>
                         </button>
 
                         <!-- Modal About Me -->
@@ -225,8 +267,14 @@
                                 <button class="close-btn" id="close-about-btn">
                                     ✕
                                 </button>
-                                <h2 class="modal-box-title">About Me</h2>
-                                <p class="modal-paragraph" dir="rtl">
+                                <h2 class="modal-box-title" data-i18n="aboutMe">
+                                    About Me
+                                </h2>
+                                <p
+                                    class="modal-paragraph"
+                                    dir="rtl"
+                                    data-i18n="aboutMeParagraph"
+                                >
                                     من دانشجوی مهندسی کامپیوتر هستم و از سال
                                     1403 برنامه نویسی رو شروع کردم. بعد از یاد
                                     گیری زبان های Html و CSS به طراحی سایت
@@ -306,11 +354,16 @@
                     <div class="about-me-container_main">
                         <!-- Title -->
                         <h3 class="about-me-title_main hidden">
-                            درباره من <i class="fa-regular fa-user"></i>
+                            <span data-i18n="aboutMe">درباره من</span
+                            ><i class="fa-regular fa-user"></i>
                         </h3>
 
                         <!-- Paragraph -->
-                        <p class="about-me_main hidden" dir="rtl">
+                        <p
+                            class="about-me_main hidden"
+                            dir="rtl"
+                            data-i18n="aboutMeParagraph"
+                        >
                             من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه
                             نویسی رو شروع کردم. بعد از یاد گیری زبان های Html و
                             CSS به طراحی سایت علاقه‌مند شدم و پروژه های ساده و
@@ -325,29 +378,47 @@
                             <!-- Box - Birth -->
                             <div class="birth about-me_boxes hidden">
                                 <i class="fa-solid fa-calendar-days"></i>
-                                <p class="birth">تاریخ تولد</p>
-                                <p class="birth">1386 / 11 / 7</p>
+                                <p class="birth" data-i18n="birthDate">
+                                    تاریخ تولد
+                                </p>
+                                <p class="birth" data-i18n="birthDay">
+                                    1386 / 11 / 7
+                                </p>
                             </div>
 
                             <!-- Box - Location -->
                             <div class="location about-me_boxes hidden">
                                 <i class="fa-solid fa-location-dot"></i>
-                                <p class="location">موقعیت</p>
-                                <p class="location">ایران - شیراز</p>
+                                <p class="location" data-i18n="location">
+                                    موقعیت
+                                </p>
+                                <p class="location" data-i18n="located">
+                                    ایران - شیراز
+                                </p>
                             </div>
 
                             <!-- Box - Studies -->
                             <div class="studies about-me_boxes hidden">
                                 <i class="fa-solid fa-graduation-cap"></i>
-                                <p class="studies">تحصیلات</p>
-                                <p class="studies" dir="rtl">درحال تحصیل...</p>
+                                <p class="studies" data-i18n="studies">
+                                    تحصیلات
+                                </p>
+                                <p
+                                    class="studies"
+                                    dir="rtl"
+                                    data-i18n="studying"
+                                >
+                                    درحال تحصیل...
+                                </p>
                             </div>
 
                             <!-- Box - Favourite -->
                             <div class="favourite about-me_boxes hidden">
                                 <i class="fa-regular fa-heart"></i>
-                                <p class="favourite">علاقه مندی ها</p>
-                                <p class="favourite">
+                                <p class="favourite" data-i18n="favoritesTitle">
+                                    علاقه مندی ها
+                                </p>
+                                <p class="favourite" data-i18n="favoritesItems">
                                     برنامه نویسی، طراحی، ورزش
                                 </p>
                             </div>
@@ -360,7 +431,8 @@
                     <div class="skills-container">
                         <!-- Title -->
                         <h3 class="skills_title hidden">
-                            مهارت ها <i class="fa-solid fa-code"></i>
+                            <span data-i18n="skills">مهارت ها</span
+                            ><i class="fa-solid fa-code"></i>
                         </h3>
 
                         <!-- CARDS -->
@@ -457,15 +529,16 @@
             <section class="timeline-container hidden" id="learningWay">
                 <!-- Title -->
                 <h4 class="title_learning_way hidden">
-                    مسیر یادگیری من <i class="fa-solid fa-route"></i>
+                    <span data-i18n="myLearningWay">مسیر یادگیری من</span
+                    ><i class="fa-solid fa-route"></i>
                 </h4>
                 <div class="timeline hidden">
                     <!-- Item - 1 -->
                     <div class="timeline-item left hidden">
                         <div class="card_learning_way">
-                            <span>1403</span>
-                            <h4>شروع برنامه نویسی</h4>
-                            <p>
+                            <span data-i18n="dateItemOne">1403</span>
+                            <h4 data-i18n="titleItemOne">شروع برنامه نویسی</h4>
+                            <p data-i18n="paragraphItemOne">
                                 با یادگیری پایتون به برنامه نویسی علاقه مند شدم
                                 و حوضه طراحی سایت رو انتخاب کردم و شروع به دیدن
                                 آموزش کد نویسی سایت های ساده کردم
@@ -483,9 +556,11 @@
                             <span class="circle_learning_way"></span>
                         </div>
                         <div class="card_learning_way">
-                            <span>1404</span>
-                            <h4>ورود به دنیای جاوااسکریپت</h4>
-                            <p>
+                            <span data-i18n="dateItemTwo">1404</span>
+                            <h4 data-i18n="titleItemTwo">
+                                ورود به دنیای جاوااسکریپت
+                            </h4>
+                            <p data-i18n="paragraphItemTwo">
                                 جاوااسکریپت رو یاد گرفتم و همچنین کارم رو توی
                                 توسعه سایت ها ارتقا دادم - سطح زبانم رو هم ارتقا
                                 دادم
@@ -496,9 +571,11 @@
                     <!-- Item - 3 -->
                     <div class="timeline-item left hidden">
                         <div class="card_learning_way">
-                            <span>1405</span>
-                            <h4>تمرکز روی توسعه مهارت های فرانت اند</h4>
-                            <p>
+                            <span data-i18n="dateItemThree">1405</span>
+                            <h4 data-i18n="titleItemThree">
+                                تمرکز روی توسعه مهارت های فرانت اند
+                            </h4>
+                            <p data-i18n="paragraphItemThree">
                                 درحال یادگیری استفاده از جاوااسکریپت در توسعه وب
                                 هستم و همچنین سعی در آموختن ترفند های جدید،
                                 حرفه‌ای و مدرن در توسعه وبسایت هستم
@@ -521,7 +598,8 @@
             <section class="projects_footer" id="projects">
                 <!-- Title -->
                 <h3 class="hidden">
-                    پروژه ها <i class="fa-solid fa-briefcase"></i>
+                    <span data-i18n="projectsLink">پروژه ها</span
+                    ><i class="fa-solid fa-briefcase"></i>
                 </h3>
 
                 <!-- PROJECTS CONTAINER -->
@@ -545,10 +623,17 @@
                                 >
                                     ✕
                                 </button>
-                                <h2 class="modal-box-title">
+                                <h2
+                                    class="modal-box-title"
+                                    data-i18n="projectOneTitle"
+                                >
                                     رابط کاربری احراز هویت متحرک
                                 </h2>
-                                <p class="modal-paragraph" dir="rtl">
+                                <p
+                                    class="modal-paragraph"
+                                    dir="rtl"
+                                    data-i18n="projectOneParagraph"
+                                >
                                     یک رابط کاربری تایید هویت دو زبانه و
                                     واکنش‌گرا با انتقالات ورود/ثبت‌نام،
                                     اعتبارسنجی فرم، رابط کاربری CAPTCHA، قابلیت
@@ -585,43 +670,44 @@
                 <section class="goals_section">
                     <!-- Title -->
                     <h3 class="goals_title hidden">
-                        اهداف من <i class="fa-solid fa-bullseye"></i>
+                        <span data-i18n="goals">اهداف من</span
+                        ><i class="fa-solid fa-bullseye"></i>
                     </h3>
 
                     <!-- Goal - 1 -->
                     <p class="goals_paragraph hidden">
-                        <i class="fa-regular fa-circle-check"></i> یادگیری کامل
-                        استفاده از جاوااسکریپت در وبسایت
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalOne"></span>
                     </p>
 
                     <!-- Goal - 2 -->
                     <p class="goals_paragraph hidden">
-                        <i class="fa-regular fa-circle-check"></i> یادگیری React
-                        و ساخت پروژه های پیچیده
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalTwo"></span>
                     </p>
 
                     <!-- Goal - 3 -->
                     <p class="goals_paragraph hidden">
-                        <i class="fa-regular fa-circle-check"></i> تسلط کامل بر
-                        مفاهیم پیشرفته
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalThree"></span>
                     </p>
 
                     <!-- Goal - 4 -->
                     <p class="goals_paragraph hidden">
-                        <i class="fa-regular fa-circle-check"></i> تسلط کامل بر
-                        زبان انگلیسی
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalFour"></span>
                     </p>
 
                     <!-- Goal - 5 -->
                     <p class="goals_paragraph hidden">
-                        <i class="fa-regular fa-circle-check"></i> کار در یک تیم
-                        حرفه ای
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalFive"></span>
                     </p>
 
                     <!-- Goal - 6 -->
                     <p class="goals_paragraph hidden">
-                        <i class="fa-regular fa-circle-check"></i> درآمد دلاری
-                        از طریق فریلنسری
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalSix"></span>
                     </p>
                 </section>
 
@@ -629,7 +715,8 @@
                 <section class="contact_section" id="contact">
                     <!-- Title -->
                     <h3 class="hidden">
-                        تماس با من <i class="fa-regular fa-paper-plane"></i>
+                        <span data-i18n="contactMe">تماس با من</span
+                        ><i class="fa-regular fa-paper-plane"></i>
                     </h3>
 
                     <!-- CONTACT CONTAINER -->

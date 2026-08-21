@@ -107,6 +107,45 @@ body {
     background: var(--color-black);
 }
 
+#language-btn {
+    all: unset;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: clamp(40px, 6vw, 60px);
+    height: clamp(40px, 6vw, 60px);
+    background: url(./images/Languagee.webp);
+    background-size: cover;
+    z-index: 100;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.language-btn-ripple {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: clamp(40px, 6vw, 60px);
+    height: clamp(40px, 6vw, 60px);
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    transform: scale(0);
+    pointer-events: none;
+    z-index: 99;
+    animation: ripple 3000ms ease-out 5;
+}
+
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
 /* START ANIMATION */
 /* --------------- */
 .hidden {
@@ -200,11 +239,6 @@ hr {
     text-align: center;
     flex: 1;
     margin-top: 1rem;
-}
-
-.name_h1,
-.lastname_h1 {
-    margin: 0;
 }
 
 .lastname_h1 {
@@ -1428,7 +1462,7 @@ footer h3 > i {
         padding: 0 2rem 1rem 2rem;
     }
 
-    .card-container-projects_footer {
+    .card-container-projects {
         display: flex;
         flex-direction: column;
     }

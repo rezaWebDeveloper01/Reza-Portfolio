@@ -1,3 +1,130 @@
+// ----------####################----------
+// ----------##### Language #####----------
+// ----------####################----------
+
+const translations = {
+    fa: {
+        // navbar
+        contactLink: 'تماس',
+        projectsLink: 'پروژه ها',
+        skillsLink: 'مهارت ها',
+        aboutMe: 'درباره من',
+        learningWayLink: 'مسیر یادگیری',
+        hello: 'درود! من',
+        nameH1: 'رضا',
+        lastNameH1: 'نیازکار',
+        headerItemTwo: 'علاقه‌مند به توسعه Front-End',
+        headerItemThree: 'و ساختن وب‌سایت های مدرن و تعاملی هستم',
+        contactMe: 'تماس با من',
+        aboutMeParagraph:
+            'من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو شروع کردم. بعد از یاد گیری زبان های Html و CSS به طراحی سایت علاقه‌مند شدم و پروژه های ساده و پیش پا افتاده درست میکردم. بعد از تمرین های متعدد و مسلط شدن بر Html و CSS تصمیم به یاد گیری JavaScript کردم و اکنون درحال یادگیری استفاده از آن در ساخت وب‌سایت هستم.',
+        birthDate: 'تاریخ تولد',
+        birthDay: '1386/11/07',
+        location: 'موقعیت',
+        located: 'ایران - شیراز',
+        studies: 'تحصیلات',
+        studying: 'درحال تحصیل...',
+        favoritesTitle: 'علاقه‌مندی ها',
+        favoritesItems: 'برنامه نویسی، طراحی، ورزش',
+        skills: 'مهارت ها',
+        myLearningWay: 'مسیر یادگیری من',
+        dateItemOne: '1403',
+        titleItemOne: 'شروع برنامه نویسی',
+        paragraphItemOne:
+            'با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوضه طراحی سایت رو انتخاب کردم و شروع به دیدن آموزش کد نویسی سایت های ساده کردم',
+        dateItemTwo: '1404',
+        titleItemTwo: 'ورود به دنیای جاوااسکریپت',
+        paragraphItemTwo:
+            'جاوااسکریپت رو یاد گرفتم و همچنین کارم رو توی توسعه سایت ها ارتقا دادم - سطح زبانم رو هم ارتقا دادم',
+        dateItemThree: '1405',
+        titleItemThree: 'تمرکز روی توسعه مهارت های فرانت اند',
+        paragraphItemThree:
+            'درحال یادگیری استفاده از جاوااسکریپت در توسعه وب هستم و همچنین سعی در آموختن ترفند های جدید، حرفه‌ای و مدرن در توسعه وبسایت هستم',
+        projectOneTitle: 'رابط کاربری احراز هویت متحرک - نسخه دمو',
+        projectOneParagraph:
+            'یک رابط کاربری تایید هویت دو زبانه و واکنش‌گرا با انتقالات ورود/ثبت‌نام، اعتبارسنجی فرم، رابط کاربری CAPTCHA، قابلیت نمایش رمز عبور، پشتیبانی از راست‌به‌چپ/چپ‌به‌راست و طراحی واکنش‌گرای موبایل.',
+        goals: 'هدف ها',
+        goalOne: 'یادگیری کامل استفاده از جاوااسکریپت در وبسایت',
+        goalTwo: 'یادگیری React و ساخت پروژه های پیچیده',
+        goalThree: 'تسلط کامل بر مفاهیم پیشرفته',
+        goalFour: 'تسلط کامل بر زبان انگلیسی',
+        goalFive: 'کار در یک تیم حرفه ای',
+        goalSix: 'درآمد دلاری از طریق فریلنسری',
+    },
+
+    en: {
+        contactLink: 'Contact',
+        projectsLink: 'Projects',
+        skillsLink: 'Skills',
+        aboutMe: 'About Me',
+        learningWayLink: 'Learning Way',
+        hello: "Hello! I'm",
+        nameH1: 'Reza',
+        lastNameH1: 'Niazkar',
+        headerItemTwo: 'Interested in Front-End development',
+        headerItemThree: 'and I build modern and interactive websites',
+        contactMe: 'Contact me',
+        aboutMeParagraph:
+            "I am a computer engineering student and I started programming in 2024. After learning HTML and CSS, I became interested in web design and used to create simple, basic projects. After lots of practice and getting good at HTML and CSS, I decided to learn JavaScript, and now I'm learning how to use it for building websites.",
+        birthDate: 'Birth date',
+        birthDay: '2008/01/27',
+        location: 'Location',
+        located: 'Iran - Shiraz',
+        studies: 'Studies',
+        studying: 'Studying...',
+        favoritesTitle: 'Favorites',
+        favoritesItems: 'Coding, Designing, Exercise',
+        skills: 'Skills',
+        myLearningWay: 'My learning way',
+        dateItemOne: '2024',
+        titleItemOne: 'Starting programming',
+        paragraphItemOne:
+            'By learning Python, I became interested in programming, chose the field of web design, and started watching tutorials on coding simple websites.',
+        dateItemTwo: '2025',
+        titleItemTwo: 'Entering the world of JavaScript',
+        paragraphItemTwo:
+            'I learned JavaScript and also improved my work in website development – I also improved my language level.',
+        dateItemThree: '2026',
+        titleItemThree: 'Focus on developing front-end skills',
+        paragraphItemThree:
+            'I am learning how to use JavaScript in web development and also trying to learn new, professional, and modern tricks in website development',
+        projectOneTitle: 'Dynamic authentication user interface - Demo version',
+        projectOneParagraph:
+            'A bilingual and responsive authentication UI with login/signup transitions, form validation, CAPTCHA UI, password visibility toggle, RTL/LTR support, and mobile-responsive design.',
+        goals: 'Goals',
+        goalOne: 'Complete learning of using JavaScript on a website',
+        goalTwo: 'Learning React and building complex projects',
+        goalThree: 'Complete mastery of advanced concepts',
+        goalFour: 'Complete command of the English language',
+        goalFive: 'Working in a professional team',
+        goalSix: 'Earning dollars through freelancing',
+    },
+};
+
+const languageBtn = document.getElementById('language-btn');
+
+function changeLanguage(language) {
+    document.querySelectorAll('[data-i18n]').forEach((element) => {
+        const key = element.dataset.i18n;
+
+        element.textContent = translations[language][key];
+    });
+
+    localStorage.setItem('language', language);
+}
+
+languageBtn.addEventListener('click', () => {
+    const currentLanguage = localStorage.getItem('language') || 'fa';
+
+    const newLanguage = currentLanguage === 'fa' ? 'en' : 'fa';
+
+    changeLanguage(newLanguage);
+});
+
+const savedLanguage = localStorage.getItem('language') || 'fa';
+
+changeLanguage(savedLanguage);
+
 // ========================
 // === TYPING ANIMATION ===
 // ========================
