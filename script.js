@@ -23,7 +23,7 @@ const translations = {
         location: 'موقعیت',
         located: 'ایران - شیراز',
         studies: 'تحصیلات',
-        studying: 'درحال تحصیل...',
+        studying: 'درحال تحصیل',
         favoritesTitle: 'علاقه‌مندی ها',
         favoritesItems: 'برنامه نویسی، طراحی، ورزش',
         skills: 'مهارت ها',
@@ -65,13 +65,13 @@ const translations = {
         headerItemThree: 'and I build modern and interactive websites',
         contactMe: 'Contact me',
         aboutMeParagraph:
-            "I am a computer engineering student and I started programming in 2024. After learning HTML and CSS, I became interested in web design and used to create simple, basic projects. After lots of practice and getting good at HTML and CSS, I decided to learn JavaScript, and now I'm learning how to use it for building websites.",
+            "I am a computer engineering student and I started programming in 2024. After learning HTML and CSS, I became interested in web design and used to create simple, basic projects. After lots of practice and getting good at HTML and CSS, I decided to learn JavaScript, and now I'm learning how to use it for building websites",
         birthDate: 'Birth date',
         birthDay: '2008/01/27',
         location: 'Location',
         located: 'Iran - Shiraz',
         studies: 'Studies',
-        studying: 'Studying...',
+        studying: 'Studying',
         favoritesTitle: 'Favorites',
         favoritesItems: 'Coding, Designing, Exercise',
         skills: 'Skills',
@@ -79,11 +79,11 @@ const translations = {
         dateItemOne: '2024',
         titleItemOne: 'Starting programming',
         paragraphItemOne:
-            'By learning Python, I became interested in programming, chose the field of web design, and started watching tutorials on coding simple websites.',
+            'By learning Python, I became interested in programming, chose the field of web design, and started watching tutorials on coding simple websites',
         dateItemTwo: '2025',
         titleItemTwo: 'Entering the world of JavaScript',
         paragraphItemTwo:
-            'I learned JavaScript and also improved my work in website development – I also improved my language level.',
+            'I learned JavaScript and also improved my work in website development – I also improved my language level',
         dateItemThree: '2026',
         titleItemThree: 'Focus on developing front-end skills',
         paragraphItemThree:
@@ -124,6 +124,11 @@ languageBtn.addEventListener('click', () => {
 const savedLanguage = localStorage.getItem('language') || 'fa';
 
 changeLanguage(savedLanguage);
+
+// ----------#################----------
+// ----------##### Theme #####----------
+// ----------#################----------
+
 
 // ========================
 // === TYPING ANIMATION ===
