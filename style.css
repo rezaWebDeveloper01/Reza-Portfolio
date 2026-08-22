@@ -114,7 +114,7 @@ body {
     left: 50px;
     width: clamp(40px, 6vw, 60px);
     height: clamp(40px, 6vw, 60px);
-    background: url(./images/Languagee.webp);
+    background: url(./images/Language.webp);
     background-size: cover;
     z-index: 100;
     cursor: pointer;
@@ -434,8 +434,6 @@ hr {
 }
 
 /* $$$ HEADER ANIMATION $$$ */
-
-
 
 /* TranslateBTN */
 @keyframes moveUpDown {
