@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap');
+
+/* @font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-latin.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-latin.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    src: url('fonts/Vazirmatn.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+} */
+
 :root {
     /* Color */
     --color-white: #ffffff;
@@ -83,28 +109,35 @@
     --small-sircle-size: clamp(170px, 30vw, 360px);
     --big-sircle-size: clamp(200px, 35vw, 430px);
     --cover-position-size: clamp(200px, 35vw, 430px);
+    --skill-card-position: clamp(0%, 2vw, 20%);
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-html,
 body {
     padding: 0;
     margin: 0;
     width: 100%;
+    background: var(--color-black);
+    font-family: 'Vazirmatn', 'inter', sans-serif;
+}
+
+html[lang="fa"] body {
+    font-family: "Vazirmatn", sans-serif;
+    font-weight: 500;
+}
+
+html[lang="en"] body {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
 }
 
 * {
     color: var(--color-white);
     user-select: none;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--color-black);
 }
 
 #language-btn {
@@ -118,7 +151,7 @@ body {
     background-size: cover;
     z-index: 100;
     cursor: pointer;
-    animation: moveUpDown 3000ms ease-in-out infinite;
+    animation: moveUpDown 8s ease-in-out infinite;
 }
 /* --------------- */
 /* START ANIMATION */
@@ -135,7 +168,7 @@ body {
 .show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: none;
 }
 
 /* ############## */
@@ -163,6 +196,7 @@ header {
 .logo_header span {
     -webkit-animation: text-flicker-in-glow 6000ms linear both;
     animation: text-flicker-in-glow 6000ms linear both;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav a {
@@ -347,18 +381,16 @@ hr {
 /* === RIGHT SECTION === */
 
 .right-section_header {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 
 .cover-position-of-cards {
     width: var(--cover-position-size);
     height: var(--cover-position-size);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
     position: relative;
-    border-radius: 50%;
 }
 
 .big-circle {
@@ -389,7 +421,7 @@ hr {
     position: absolute;
 }
 
-.card_hero {
+.card-hero {
     text-align: center;
     position: absolute;
     padding: 0.3rem 0.6rem;
@@ -397,54 +429,52 @@ hr {
     font-size: clamp(0.7rem, 2vw, 1rem);
     border: var(--hero-card-border);
     text-shadow: var(--text-glow);
-    font-weight: 600;
     z-index: 1;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .code_hero {
     color: var(--color-white);
     background: var(--color-black);
-    left: 10%;
-    top: 5%;
     animation: goLeft 4s ease-in-out infinite;
+    left: var(--skill-card-position);
+    top: var(--skill-card-position);
 }
 
 .js_hero {
     color: #ffd900;
     background: #4e3402;
-    left: 80%;
-    top: 10%;
     animation: goUp 4s ease-in-out infinite;
+    right: var(--skill-card-position);
+    top: var(--skill-card-position);
 }
 
 .css_hero {
     color: #89cff8;
     background: #040263;
-    left: 5%;
-    top: 70%;
     animation: goDown 4s ease-in-out infinite;
+    left: var(--skill-card-position);
+    bottom: var(--skill-card-position);
 }
 
 .html_hero {
     color: #ffb28e;
     background: #612601;
-    left: 75%;
-    top: 75%;
     animation: goRight 4s ease-in-out infinite;
+    right: var(--skill-card-position);
+    bottom: var(--skill-card-position);
 }
 
 /* $$$ HEADER ANIMATION $$$ */
 
 /* TranslateBTN */
 @keyframes moveUpDown {
-    0% {
+    0%,
+    100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
+        transform: translateY(-20px);
     }
 }
 
@@ -792,15 +822,6 @@ nav a:hover {
 }
 
 /* Rihgt Section */
-@keyframes turning {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 @keyframes goUp {
     0% {
         transform: translateY(0px);
@@ -1126,6 +1147,7 @@ footer h3 > i {
 .card-container-projects {
     display: grid;
     grid-template-columns: var(--grid-column-3);
+    place-items: center;
     gap: 2rem;
     padding: 0 2rem;
 }
@@ -1183,8 +1205,7 @@ footer h3 > i {
 }
 
 .goals_paragraph {
-    width: 100%;
-    max-width: 400px;
+    width: 90%;
     background: var(--goals-bg-card);
     border: var(--border-box);
     border-radius: 0.5rem;
@@ -1202,14 +1223,19 @@ footer h3 > i {
     justify-content: center;
     text-align: center;
     padding: 0.5rem;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    border-right: 2px solid #394984ab;
+    padding: 1rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
 }
 
 .goals_paragraph > i {
     color: #e3e3e3;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
     padding: 1rem;
-    border-left: 2px solid #394984ab;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.goals_section > .goals_paragraph:nth-child(2) > i {
+    color: #50e60a;
 }
 
 .fa-bullseye {

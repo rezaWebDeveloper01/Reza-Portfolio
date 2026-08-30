@@ -17,7 +17,7 @@ const translations = {
         headerItemThree: 'و ساختن وب‌سایت های مدرن و تعاملی هستم',
         contactMe: 'تماس با من',
         aboutMeParagraph:
-            'من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو شروع کردم. بعد از یاد گیری زبان های Html و CSS به طراحی سایت علاقه‌مند شدم و پروژه های ساده و پیش پا افتاده درست میکردم. بعد از تمرین های متعدد و مسلط شدن بر Html و CSS تصمیم به یاد گیری JavaScript کردم و اکنون درحال یادگیری استفاده از آن در ساخت وب‌سایت هستم.',
+            'من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو شروع کردم. بعد از یاد گیری زبان های Html و CSS به طراحی سایت علاقه‌مند شدم و پروژه های ساده و پیش پا افتاده درست میکردم. بعد از تمرین های متعدد و مسلط شدن بر Html و CSS تصمیم به یاد گیری JavaScript کردم و اکنون درحال یادگیری React هستم.',
         birthDate: 'تاریخ تولد',
         birthDay: '1386/11/07',
         location: 'موقعیت',
@@ -31,21 +31,21 @@ const translations = {
         dateItemOne: '1403',
         titleItemOne: 'شروع برنامه نویسی',
         paragraphItemOne:
-            'با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوضه طراحی سایت رو انتخاب کردم و شروع به دیدن آموزش کد نویسی سایت های ساده کردم',
+            'با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوضه طراحی سایت رو انتخاب کردم و شروع به دیدن آموزش کد نویسی سایت های ساده کردم.',
         dateItemTwo: '1404',
         titleItemTwo: 'ورود به دنیای جاوااسکریپت',
         paragraphItemTwo:
-            'جاوااسکریپت رو یاد گرفتم و همچنین کارم رو توی توسعه سایت ها ارتقا دادم - سطح زبانم رو هم ارتقا دادم',
+            'جاوااسکریپت رو یاد گرفتم و همچنین کارم رو توی توسعه سایت ها ارتقا دادم - سطح زبانم رو هم ارتقا دادم.',
         dateItemThree: '1405',
         titleItemThree: 'تمرکز روی توسعه مهارت های فرانت اند',
         paragraphItemThree:
-            'درحال یادگیری استفاده از جاوااسکریپت در توسعه وب هستم و همچنین سعی در آموختن ترفند های جدید، حرفه‌ای و مدرن در توسعه وبسایت هستم',
+            'درحال یادگیری React و همچنین سعی در آموختن ترفند های جدید، حرفه‌ای و مدرن در توسعه وبسایت هستم.',
         projectOneTitle: 'رابط کاربری احراز هویت متحرک - نسخه دمو',
         projectOneParagraph:
-            'یک رابط کاربری تایید هویت دو زبانه و واکنش‌گرا با انتقالات ورود/ثبت‌نام، اعتبارسنجی فرم، رابط کاربری CAPTCHA، قابلیت نمایش رمز عبور، پشتیبانی از راست‌به‌چپ/چپ‌به‌راست و طراحی واکنش‌گرای موبایل.',
+            'یک رابط کاربری تایید هویت واکنش‌گرا با انتقالات ورود/ثبت‌نام، اعتبارسنجی فرم، رابط کاربری CAPTCHA، قابلیت نمایش رمز عبور، طراحی واکنش‌گرای موبایل.',
         goals: 'هدف ها',
-        goalOne: 'یادگیری کامل استفاده از جاوااسکریپت در وبسایت',
-        goalTwo: 'یادگیری React و ساخت پروژه های پیچیده',
+        goalOne: 'یادگیری استفاده از جاوااسکریپت در وبسایت',
+        goalTwo: 'یادگیری React',
         goalThree: 'تسلط کامل بر مفاهیم پیشرفته',
         goalFour: 'تسلط کامل بر زبان انگلیسی',
         goalFive: 'کار در یک تیم حرفه ای',
@@ -65,7 +65,7 @@ const translations = {
         headerItemThree: 'and I build modern and interactive websites',
         contactMe: 'Contact me',
         aboutMeParagraph:
-            "I am a computer engineering student and I started programming in 2024. After learning HTML and CSS, I became interested in web design and used to create simple, basic projects. After lots of practice and getting good at HTML and CSS, I decided to learn JavaScript, and now I'm learning how to use it for building websites",
+            "I am a computer engineering student and I started programming in 2024. After learning HTML and CSS, I became interested in web design and used to make simple and basic projects. After a lot of practice and getting good at HTML and CSS, I decided to learn JavaScript, and now I'm learning React.",
         birthDate: 'Birth date',
         birthDay: '2008/01/27',
         location: 'Location',
@@ -90,10 +90,10 @@ const translations = {
             'I am learning how to use JavaScript in web development and also trying to learn new, professional, and modern tricks in website development',
         projectOneTitle: 'Dynamic authentication user interface - Demo version',
         projectOneParagraph:
-            'A bilingual and responsive authentication UI with login/signup transitions, form validation, CAPTCHA UI, password visibility toggle, RTL/LTR support, and mobile-responsive design.',
+            'A responsive authentication UI with login/signup transitions, form validation, CAPTCHA interface, password visibility option, and mobile-responsive design.',
         goals: 'Goals',
-        goalOne: 'Complete learning of using JavaScript on a website',
-        goalTwo: 'Learning React and building complex projects',
+        goalOne: 'Learning of using JavaScript on a website',
+        goalTwo: 'Learning React',
         goalThree: 'Complete mastery of advanced concepts',
         goalFour: 'Complete command of the English language',
         goalFive: 'Working in a professional team',
@@ -106,7 +106,6 @@ const languageBtn = document.getElementById('language-btn');
 function changeLanguage(language) {
     document.querySelectorAll('[data-i18n]').forEach((element) => {
         const key = element.dataset.i18n;
-
         element.textContent = translations[language][key];
     });
 
@@ -119,15 +118,13 @@ languageBtn.addEventListener('click', () => {
     const newLanguage = currentLanguage === 'fa' ? 'en' : 'fa';
 
     changeLanguage(newLanguage);
+
+    document.documentElement.lang = newLanguage;
 });
 
 const savedLanguage = localStorage.getItem('language') || 'fa';
 
 changeLanguage(savedLanguage);
-
-// ----------#################----------
-// ----------##### Theme #####----------
-// ----------#################----------
 
 // ========================
 // === TYPING ANIMATION ===

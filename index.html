@@ -4,8 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="color-scheme" content="light dark" />
-        <link rel="stylesheet" href="./style.css" />
-        <!-- <link rel="stylesheet" href="CSS/help.css" /> -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -13,6 +11,7 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link rel="stylesheet" href="./style.css" />
         <title>Portfolio</title>
     </head>
     <body>
@@ -304,10 +303,10 @@
                 <section class="right-section_header">
                     <div class="cover-position-of-cards">
                         <!-- Boxes -->
-                        <div class="code_hero card_hero">&lt;/&gt;</div>
-                        <div class="js_hero card_hero">JS</div>
-                        <div class="css_hero card_hero">CSS</div>
-                        <div class="html_hero card_hero">HTML</div>
+                        <div class="code_hero card-hero">&lt;/&gt;</div>
+                        <div class="js_hero card-hero">JS</div>
+                        <div class="css_hero card-hero">CSS</div>
+                        <div class="html_hero card-hero">HTML</div>
 
                         <!-- Circles -->
                         <div class="big-circle"></div>
@@ -408,7 +407,7 @@
                         <div class="skills-card-container">
                             <!-- Card - HTML -->
                             <div class="skill-card hidden">
-                                <img src="./images/Html.webp" alt="HTML Logo" />
+                                <img src="./images/Html.webp" alt="HTML Logo" loading="lazy" />
                                 <h4>HTML</h4>
                                 <span class="counter" data-target="90">0%</span>
                                 <div class="skill-bar">
@@ -421,7 +420,7 @@
 
                             <!-- Card - CSS -->
                             <div class="skill-card hidden">
-                                <img src="./images/CSS.webp" alt="CSS Logo" />
+                                <img src="./images/CSS.webp" alt="CSS Logo" loading="lazy" />
                                 <h4>CSS</h4>
                                 <span class="counter" data-target="80">0%</span>
                                 <div class="skill-bar">
@@ -434,7 +433,7 @@
 
                             <!-- Card - JS -->
                             <div class="skill-card hidden">
-                                <img src="./images/JS.webp" alt="JS Logo" />
+                                <img src="./images/JS.webp" alt="JS Logo" loading="lazy" />
                                 <h4>JavaScript</h4>
                                 <span class="counter" data-target="60">0%</span>
                                 <div class="skill-bar">
@@ -447,7 +446,7 @@
 
                             <!-- Card - GIT -->
                             <div class="skill-card hidden">
-                                <img src="./images/Git.webp" alt="Git Logo" />
+                                <img src="./images/Git.webp" alt="Git Logo" loading="lazy" />
                                 <h4>Git</h4>
                                 <span class="counter" data-target="80">0%</span>
                                 <div class="skill-bar">
@@ -463,6 +462,7 @@
                                 <img
                                     src="./images/Responsive.webp"
                                     alt="Responsive Logo"
+                                    loading="lazy"
                                 />
                                 <h4>Responsive design</h4>
                                 <span class="counter" data-target="75">0%</span>
@@ -479,6 +479,7 @@
                                 <img
                                     src="./images/React.webp"
                                     alt="React Logo"
+                                    loading="lazy"
                                 />
                                 <h4>React</h4>
                                 <span class="counter" data-target="5">0%</span>
@@ -507,7 +508,7 @@
                         <div class="card_learning_way">
                             <span data-i18n="dateItemOne"></span>
                             <h4 data-i18n="titleItemOne"></h4>
-                            <p data-i18n="paragraphItemOne"></p>
+                            <p data-i18n="paragraphItemOne" dir="rtl"></p>
                         </div>
                         <div class="middle">
                             <span class="circle_learning_way"></span>
@@ -523,7 +524,7 @@
                         <div class="card_learning_way">
                             <span data-i18n="dateItemTwo"></span>
                             <h4 data-i18n="titleItemTwo"></h4>
-                            <p data-i18n="paragraphItemTwo"></p>
+                            <p data-i18n="paragraphItemTwo" dir="rtl"></p>
                         </div>
                     </div>
 
@@ -532,7 +533,7 @@
                         <div class="card_learning_way">
                             <span data-i18n="dateItemThree">1405</span>
                             <h4 data-i18n="titleItemThree"></h4>
-                            <p data-i18n="paragraphItemThree"></p>
+                            <p data-i18n="paragraphItemThree" dir="rtl"></p>
                         </div>
                         <div class="middle">
                             <span class="circle_learning_way"></span>
@@ -558,14 +559,15 @@
                 <!-- PROJECTS CONTAINER -->
                 <div class="card-container-projects">
                     <!-- Project - 1 -->
-                    <div class="project-card-container">
+                    <div class="project-card-container hidden">
                         <button
-                            class="project-card_footer hidden"
+                            class="project-card_footer"
                             id="project-one-btn"
                         >
                             <img
                                 src="./images/ProjectOne.webp"
                                 alt="First Project"
+                                loading="lazy"
                             />
                         </button>
                         <div class="modal-overlay" id="modal-project-one">
@@ -596,14 +598,24 @@
                     </div>
 
                     <!-- Project - 2 -->
-                    <button class="project-card_footer hidden" id="project-btn">
-                        Coming soon
-                    </button>
+                    <div class="project-card-container hidden">
+                        <button
+                            class="project-card_footer hidden"
+                            id="project-btn"
+                        >
+                            Coming soon
+                        </button>
+                    </div>
 
                     <!-- Project - 3 -->
-                    <button class="project-card_footer hidden" id="project-btn">
-                        Coming soon
-                    </button>
+                    <div class="project-card-container hidden">
+                        <button
+                            class="project-card_footer hidden"
+                            id="project-btn"
+                        >
+                            Coming soon
+                        </button>
+                    </div>
                 </div>
             </section>
 
@@ -714,7 +726,7 @@
             <h5 align="center" class="copyright hidden">
                 &copy 2026 Reza. All rights reserved.
             </h5>
-            <script src="script.js"></script>
+            <script src="script.js" defer></script>
         </footer>
     </body>
 </html>
