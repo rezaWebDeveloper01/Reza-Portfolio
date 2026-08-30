@@ -1,29 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap');
 
-/* @font-face {
-    font-family: 'Montserrat';
-    src: url('fonts/Montserrat-latin.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 900;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('fonts/Inter-latin.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Vazirmatn';
-    src: url('fonts/Vazirmatn.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-} */
-
 :root {
     /* Color */
     --color-white: #ffffff;
@@ -31,17 +7,23 @@
     --color-text: #c4c4c4;
     --color-blue: #006efd;
     --color-light-blue: #3db2ff;
-    /* Background */
-    /* Haeder */
+    --color-succeed: #2db820;
+    /* Hero */
     --header-bg: #092140;
     --logo-bg: linear-gradient(to right, #0d0085 20%, #03001d 100%);
     --nav-menu-bg: #06021674;
     --big-circle-border:
         linear-gradient(#092140) padding-box,
-        linear-gradient(30deg, #0047f950, #ffffff50) border-box;
+        linear-gradient(30deg, #0047fa33, #ffffff33) border-box;
     --small-circle-border:
         linear-gradient(#092140) padding-box,
-        linear-gradient(90deg, #0047f990, #ffffff90) border-box;
+        linear-gradient(90deg, #0047f980, #ffffff80) border-box;
+    --js: #ffd900;
+    --js-bg: #4e3402;
+    --css: #89cff8;
+    --css-bg: #040263;
+    --html: #ffb28e;
+    --html-bg: #612601;
     --blue-btn-bg: linear-gradient(
         to right bottom,
         #007bff,
@@ -121,16 +103,15 @@ body {
     margin: 0;
     width: 100%;
     background: var(--color-black);
-    font-family: 'Vazirmatn', 'inter', sans-serif;
 }
 
-html[lang="fa"] body {
-    font-family: "Vazirmatn", sans-serif;
+html[lang='fa'] body {
+    font-family: 'Vazirmatn', sans-serif;
     font-weight: 500;
 }
 
-html[lang="en"] body {
-    font-family: "Inter", sans-serif;
+html[lang='en'] body {
+    font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
 
@@ -399,7 +380,7 @@ hr {
     border: 3px solid transparent;
     background: var(--big-circle-border);
     border-radius: 50%;
-    animation: turning 2000ms linear infinite;
+    animation: turning 2.2s linear infinite;
     position: absolute;
 }
 
@@ -409,7 +390,7 @@ hr {
     border: 3px solid transparent;
     background: var(--small-circle-border);
     border-radius: 50%;
-    animation: turning 2500ms linear infinite;
+    animation: turning 2s linear infinite;
     position: absolute;
 }
 
@@ -436,31 +417,31 @@ hr {
 .code_hero {
     color: var(--color-white);
     background: var(--color-black);
-    animation: goLeft 4s ease-in-out infinite;
+    animation: goLeft 3s linear infinite;
     left: var(--skill-card-position);
     top: var(--skill-card-position);
 }
 
 .js_hero {
-    color: #ffd900;
-    background: #4e3402;
-    animation: goUp 4s ease-in-out infinite;
+    color: var(--js);
+    background: var(--js-bg);
+    animation: goUp 3s linear infinite;
     right: var(--skill-card-position);
     top: var(--skill-card-position);
 }
 
 .css_hero {
-    color: #89cff8;
-    background: #040263;
-    animation: goDown 4s ease-in-out infinite;
+    color: var(--css);
+    background: var(--css-bg);
+    animation: goDown 3s linear infinite;
     left: var(--skill-card-position);
     bottom: var(--skill-card-position);
 }
 
 .html_hero {
-    color: #ffb28e;
-    background: #612601;
-    animation: goRight 4s ease-in-out infinite;
+    color: var(--html);
+    background: var(--html-bg);
+    animation: goRight 3s linear infinite;
     right: var(--skill-card-position);
     bottom: var(--skill-card-position);
 }
@@ -822,51 +803,52 @@ nav a:hover {
 }
 
 /* Rihgt Section */
-@keyframes goUp {
+@keyframes turning {
     0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes goUp {
+    0%,
+    100% {
         transform: translateY(0px);
     }
     50% {
         transform: translateY(-10px);
     }
-    100% {
-        transform: translateY(0px);
-    }
 }
 
 @keyframes goDown {
-    0% {
+    0%,
+    100% {
         transform: translateY(0px);
     }
     50% {
         transform: translateY(10px);
     }
-    100% {
-        transform: translateY(0px);
-    }
 }
 
 @keyframes goRight {
-    0% {
+    0%,
+    100% {
         transform: translateX(0px);
     }
     50% {
         transform: translateX(10px);
     }
-    100% {
-        transform: translateX(0px);
-    }
 }
 
 @keyframes goLeft {
-    0% {
+    0%,
+    100% {
         transform: translateX(0px);
     }
     50% {
         transform: translateX(-10px);
-    }
-    100% {
-        transform: translateX(0px);
     }
 }
 
@@ -1121,6 +1103,40 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
+.learning-animation {
+    display: grid;
+    place-items: center;
+}
+
+.learning-animation > span {
+    width: 130px;
+    height: 10px;
+    background: var(--progress-bar-bg);
+    border-radius: 2rem;
+    position: relative;
+}
+
+.learning-animation > span::after {
+    content: '';
+    width: 20px;
+    position: absolute;
+    background: #49899c;
+    height: 100%;
+    border-radius: inherit;
+    left: 0;
+    animation: learningAnimation 2s linear infinite;
+}
+
+@keyframes learningAnimation {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(110px);
+    }
+}
+
 /* ###############*/
 /* ### FOOTER ### */
 /* ############## */
@@ -1209,11 +1225,10 @@ footer h3 > i {
     background: var(--goals-bg-card);
     border: var(--border-box);
     border-radius: 0.5rem;
-    font-size: 0.9rem;
-    color: var(--color-text);
     display: flex;
     align-items: center;
     transition: all 100ms ease;
+    font-size: clamp(0.7rem, 2vw, 1.1rem);
     direction: rtl;
 }
 
@@ -1225,17 +1240,16 @@ footer h3 > i {
     padding: 0.5rem;
     border-right: 2px solid #394984ab;
     padding: 1rem;
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    color: var(--color-text);
 }
 
 .goals_paragraph > i {
-    color: #e3e3e3;
-    font-size: clamp(0.7rem, 2vw, 0.9rem);
     padding: 1rem;
+    color: var(--color-text);
 }
 
 .goals_section > .goals_paragraph:nth-child(2) > i {
-    color: #50e60a;
+    color: var(--color-succeed);
 }
 
 .fa-bullseye {
@@ -1264,7 +1278,7 @@ footer h3 > i {
     cursor: pointer;
     text-decoration: none;
     color: var(--color-white);
-    transition: all 200ms;
+    transition: transform 200ms;
 }
 
 .contact-container > a:nth-child(odd) i {

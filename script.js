@@ -198,7 +198,7 @@ const observer = new IntersectionObserver(
             if (entry.target.classList.contains('skill-card')) {
                 setTimeout(() => {
                     animateSkillCard(entry.target);
-                }, 600);
+                }, 500);
             }
 
             observer.unobserve(entry.target);
