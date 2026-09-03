@@ -40,9 +40,15 @@ const translations = {
         titleItemThree: 'تمرکز روی توسعه مهارت های فرانت اند',
         paragraphItemThree:
             'درحال یادگیری React و همچنین سعی در آموختن ترفند های جدید، حرفه‌ای و مدرن در توسعه وبسایت هستم.',
-        projectOneTitle: 'رابط کاربری احراز هویت متحرک - نسخه دمو',
+        projectOneTitle: 'یک پورتفولیو جذاب و واکنش گرا',
         projectOneParagraph:
+            'این پورتفولیو کاملا از صفر کد نویسی و توسعه داده شده و در طول ساخت آن مهارت ها و تجربه های زیادی در طراحی و توسعه وب به دست آوردم. ساخت این پروژه حدود یک ماه زمان برد.',
+        projectTwoTitle: 'رابط کاربری احراز هویت متحرک - نسخه دمو',
+        projectTwoParagraph:
             'یک رابط کاربری تایید هویت واکنش‌گرا با انتقالات ورود/ثبت‌نام، اعتبارسنجی فرم، رابط کاربری CAPTCHA، قابلیت نمایش رمز عبور، طراحی واکنش‌گرای موبایل.',
+        projectThreeTitle: 'لندینگ پیج جذاب و واکنش گرا - نسخه دمو',
+        projectThreeParagraph:
+            'بعد از اتمام پروژه لینک آن در این قسمت قرار خواهد گرفت.',
         goals: 'هدف ها',
         goalOne: 'یادگیری استفاده از جاوااسکریپت در وبسایت',
         goalTwo: 'یادگیری React',
@@ -88,9 +94,16 @@ const translations = {
         titleItemThree: 'Focus on developing front-end skills',
         paragraphItemThree:
             'I am learning how to use JavaScript in web development and also trying to learn new, professional, and modern tricks in website development',
-        projectOneTitle: 'Dynamic authentication user interface - Demo version',
+        projectOneTitle: 'A Creative & Responsive Portfolio Website',
         projectOneParagraph:
+            'This portfolio was completely coded and developed from scratch, and during its creation, I gained a lot of skills and experience in web design and development. Building this project took about a month.',
+        projectTwoTitle: 'Dynamic authentication user interface - Demo version',
+        projectTwoParagraph:
             'A responsive authentication UI with login/signup transitions, form validation, CAPTCHA interface, password visibility option, and mobile-responsive design.',
+        projectThreeTitle:
+            'Attractive and Responsive Landing Page - Demo Version',
+        projectThreeParagraph:
+            'After the project is finished, its link will be posted here.',
         goals: 'Goals',
         goalOne: 'Learning of using JavaScript on a website',
         goalTwo: 'Learning React',
@@ -257,6 +270,16 @@ setupModal('about-btn', 'modal-about', 'close-about-btn');
 
 // === PROJECT ONE
 setupModal('project-one-btn', 'modal-project-one', 'close-project-one-btn');
+
+// === PROJECT TWO
+setupModal('project-two-btn', 'modal-project-two', 'close-project-two-btn');
+
+// === PROJECT THREE
+setupModal(
+    'project-three-btn',
+    'modal-project-three',
+    'close-project-three-btn',
+);
 
 // ===================
 // === COPY BUTTON ===
