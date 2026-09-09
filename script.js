@@ -56,6 +56,9 @@ const translations = {
         goalFour: 'تسلط کامل بر زبان انگلیسی',
         goalFive: 'کار در یک تیم حرفه ای',
         goalSix: 'درآمد دلاری از طریق فریلنسری',
+        Beginner: 'تازه وارد',
+        Intermediate: 'متوسط',
+        Advanced: 'پیشرفته',
     },
 
     en: {
@@ -71,7 +74,7 @@ const translations = {
         headerItemThree: 'and I build modern and interactive websites',
         contactMe: 'Contact me',
         aboutMeParagraph:
-            "I am a computer engineering student and I started programming in 2024. After learning HTML and CSS, I became interested in web design and used to make simple and basic projects. After a lot of practice and getting good at HTML and CSS, I decided to learn JavaScript, and now I'm learning React.",
+            "I am a computer engineering student and I started programming in 2024. After learning HTML and CSS, I became interested in web design and used to make simple and basic projects. After a lot of practice and getting good at HTML and CSS, I decided to learn JavaScript, and now I'm learning React",
         birthDate: 'Birth date',
         birthDay: '2008/01/27',
         location: 'Location',
@@ -111,6 +114,9 @@ const translations = {
         goalFour: 'Complete command of the English language',
         goalFive: 'Working in a professional team',
         goalSix: 'Earning dollars through freelancing',
+        Beginner: 'Beginner',
+        Intermediate: 'Intermediate',
+        Advanced: 'Advanced',
     },
 };
 
@@ -159,9 +165,9 @@ function typeText() {
 
 typeText();
 
-// ===============================
-// === SHOW + SKILLS ANIMATION ===
-// ===============================
+// ============
+// === SHOW ===
+// ============
 
 const hiddenElements = document.querySelectorAll('.hidden');
 

@@ -114,6 +114,7 @@ html[lang='en'] body {
 * {
     color: var(--color-white);
     user-select: none;
+    -webkit-user-drag: none;
     box-sizing: border-box;
 }
 
@@ -852,11 +853,12 @@ nav a:hover {
 /* ############ */
 
 .main-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     background: var(--main-bg);
-    padding: 0 2rem 1rem 2rem;
 }
 
 /* === ABOUT ME SECTION === */
@@ -870,7 +872,7 @@ nav a:hover {
 }
 
 .about-me_main {
-    width: 70%;
+    width: 40%;
     margin: 1rem auto;
     line-height: 2;
     color: var(--color-text);
@@ -879,10 +881,14 @@ nav a:hover {
 .card-container-about-me_main {
     display: grid;
     grid-template-columns: var(--grid-column-4);
-    gap: 0.5rem;
+    gap: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2vw, 1.1rem);
 }
 
-.fa-user {
+.fa-user,
+.fa-code {
     color: #8302fc;
 }
 
@@ -916,67 +922,55 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-right: 2rem;
+    overflow: hidden;
+    width: 100%;
 }
 
-.skills-container {
+.skills-track {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
+    width: max-content;
+    padding: 2rem;
+    animation: slider 15s linear infinite;
 }
 
-.fa-code {
-    color: #8f18ff;
-}
-
-.skills-card-container {
-    display: grid;
-    grid-template-columns: var(--grid-column-3);
-    gap: 2rem;
+.skills-track:hover {
+    animation-play-state: paused;
 }
 
 .skill-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 0.6rem;
+    justify-content: center;
     border: var(--border-box);
     border-radius: 5px;
     background: var(--skills-bg-card);
-    padding: 1.2rem 1rem;
     transition: all 100ms;
+    padding: 1rem 2rem;
 }
 
 .skill-card > img {
-    width: clamp(40px, 5vw, 60px);
+    margin-bottom: 1rem;
+    width: clamp(40px, 3vw, 60px);
 }
 
-.skills-card-container h4 {
-    font-size: 1rem;
-    margin: 0.3rem;
+.skill-card > h4 {
+    margin: 0 0 0.2rem 0;
 }
 
-.skills-card-container span {
+.skill-card > span {
     color: var(--color-text);
 }
 
-.skill-bar {
-    width: 100%;
-    height: 8px;
-    border-radius: 999px;
-    overflow: hidden;
-    background: var(--progress-bar-bg);
-}
-
-.skill-progress {
-    width: 0;
-    height: 100%;
-    border-radius: inherit;
-    transition: width 1.2s ease;
-    background: var(--progress-fill-bg);
+@keyframes slider {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 /* ####################### */
@@ -1096,40 +1090,6 @@ nav a:hover {
 
 .card_learning_way:hover {
     transform: translateY(-3px);
-}
-
-.learning-animation {
-    display: grid;
-    place-items: center;
-}
-
-.learning-animation > span {
-    width: 130px;
-    height: 10px;
-    background: var(--progress-bar-bg);
-    border-radius: 2rem;
-    position: relative;
-}
-
-.learning-animation > span::after {
-    content: '';
-    width: 20px;
-    position: absolute;
-    background: #49899c;
-    height: 100%;
-    border-radius: inherit;
-    left: 0;
-    animation: learningAnimation 2s linear infinite;
-}
-
-@keyframes learningAnimation {
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(110px);
-    }
 }
 
 /* ###############*/
@@ -1336,11 +1296,6 @@ footer h3 > i {
 /* === SMALL LAPTOP === */
 @media screen and (max-width: 1024px) {
     /* ### MAIN ### */
-
-    .about-me_main {
-        padding: 0;
-    }
-
     /* ### LEARNING WAY */
 
     .card_learning_way {
@@ -1444,30 +1399,6 @@ footer h3 > i {
     }
 
     /* ### MAIN ### */
-
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    /* ABOUT */
-
-    .left-section_main {
-        margin: 0;
-    }
-
-    /* SKILLS */
-
-    .right-section_main {
-        margin-right: 0;
-    }
-
-    .skills-card-container {
-        grid-template-columns: var(--grid-column-2);
-        padding: 0 1rem;
-    }
-
     /* ### LEARNING WAY ### */
 
     .timeline-item {
@@ -1527,16 +1458,16 @@ footer h3 > i {
 
     /* ### MAIN ### */
 
+    .card-container-about-me_main {
+        grid-template-columns: var(--grid-column-1);
+    }
+
     .left-section_main {
         gap: 6px;
     }
 
     .about-me_main {
         width: 80%;
-    }
-
-    .skills-card-container {
-        grid-template-columns: var(--grid-column-1);
     }
 
     /* ### LEARNING WAY ### */
