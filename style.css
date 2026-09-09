@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap');
-
 :root {
     /* Color */
     --color-white: #ffffff;
     --color-black: #000000;
-    --color-text: #c4c4c4;
+    --color-text: #bebdbd;
     --color-blue: #006efd;
     --color-light-blue: #3db2ff;
     --color-succeed: #2db820;
@@ -28,21 +26,19 @@
         to right bottom,
         #007bff,
         #004caf,
-        #092140 60%
+        #092140 70%
     );
     --blue-btn-bg_reverse: linear-gradient(
         to left top,
         #007bff,
         #004caf,
-        #092140 60%
+        #092140 70%
     );
     --link-hover: #80b2e1;
     /* Main */
     --main-bg: #08133b;
-    --about-me-bg-card: #0d1c4a;
-    --skills-bg-card: #102653;
-    --progress-bar-bg: #0101011e;
-    --progress-fill-bg: linear-gradient(to right, #678fff, #3d71ff, #255ffd);
+    --about-me-bg-card: linear-gradient(to left, #0d1c4a, #132955);
+    --skills-bg-card: linear-gradient(to left top, #16346f, #102653, #0a1b3e);
     /* Learning Way */
     --learning-way-bg: #05092f;
     --timeline-bg: linear-gradient(
@@ -68,7 +64,7 @@
         #3b82f6,
         #6574ff
     );
-    --learning-way-bg-card: #0a1240;
+    --learning-way-bg-card: linear-gradient(to left, #152162, #10194d, #0a1240);
     /* Footer */
     --footer-bg: #020520;
     --projects-bg-card: #07143a;
@@ -245,7 +241,6 @@ hr {
 .about-me-btn_header {
     font-size: clamp(1rem, 5vw, 1.3rem);
     all: unset;
-    cursor: pointer;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -956,7 +951,7 @@ nav a:hover {
 }
 
 .skill-card > img {
-    width: clamp(40px, 5vw, 55px);
+    width: clamp(40px, 5vw, 60px);
 }
 
 .skills-card-container h4 {
@@ -1174,6 +1169,7 @@ footer h3 > i {
     border-radius: 1rem;
     transition: all 100ms ease;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .project-card_footer > img {
@@ -1304,9 +1300,9 @@ footer h3 > i {
 .contact-container > a:hover {
     background: linear-gradient(
         to right bottom,
-        #2371e678,
-        #0a47cbc1,
-        #2371e678
+        #216bd978,
+        #083085c1,
+        #216bd978
     );
     transform: translateY(-3px);
 }
@@ -1539,7 +1535,7 @@ footer h3 > i {
         width: 80%;
     }
 
-    .container-skills_card {
+    .skills-card-container {
         grid-template-columns: var(--grid-column-1);
     }
 
@@ -1554,15 +1550,5 @@ footer h3 > i {
     .contact-container {
         display: flex;
         flex-direction: column;
-    }
-}
-
-/* ====== 400px ====== */
-/* === SMALL PHONE === */
-@media screen and (max-width: 400px) {
-    /* ### MAIN ### */
-
-    .skills-card-container {
-        grid-template-columns: var(--grid-column-1);
     }
 }

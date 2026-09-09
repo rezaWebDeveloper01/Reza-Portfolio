@@ -165,62 +165,14 @@ typeText();
 
 const hiddenElements = document.querySelectorAll('.hidden');
 
-function animateSkillCard(card) {
-    const counter = card.querySelector('.counter');
-    const progress = card.querySelector('.skill-progress');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-    if (!counter || !progress) return;
-
-    const target = Number(counter.dataset.target);
-
-    let current = 0;
-
-    const duration = 1500;
-    const fps = 60;
-    const totalFrames = duration / (1000 / fps);
-    const increment = target / totalFrames;
-
-    function update() {
-        current += increment;
-
-        if (current >= target) {
-            current = target;
-        }
-
-        const value = Math.floor(current);
-
-        counter.textContent = `${value}%`;
-        progress.style.width = `${value}%`;
-
-        if (current < target) {
-            requestAnimationFrame(update);
-        }
-    }
-
-    update();
-}
-
-const observer = new IntersectionObserver(
-    (entries, observer) => {
-        entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-
-            entry.target.classList.add('show');
-
-            // اگر این المنت یک کارت مهارت بود
-            if (entry.target.classList.contains('skill-card')) {
-                setTimeout(() => {
-                    animateSkillCard(entry.target);
-                }, 500);
-            }
-
-            observer.unobserve(entry.target);
-        });
-    },
-    {
-        threshold: 0.2,
-    },
-);
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+    });
+});
 
 hiddenElements.forEach((element) => {
     observer.observe(element);
