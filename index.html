@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="light dark" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <span class="language-btn-ripple"></span>
+        <button class="hidden" id="language-btn" type="button"></button>
+        <!-- ############## -->
+        <!-- ### HEADER ### -->
+        <!-- ############## -->
+
+        <header>
+            <!-- === NAVBAR SECTION === -->
+            <nav>
+                <!-- NAVBAR CONTAINER -->
+                <div class="navbar-container">
+                    <!-- Logo -->
+                    <div class="logo_header"><span>R</span></div>
+
+                    <!-- Toggle -->
+                    <div class="navbar-toggle" id="mobile-menu">
+                        <span class="bar_toggle"></span>
+                        <span class="bar_toggle"></span>
+                        <span class="bar_toggle"></span>
+                    </div>
+
+                    <!-- NAV ITEMS -->
+                    <ul class="navbar-menu">
+                        <!-- Item - 1 -->
+                        <li class="navbar-item">
+                            <a
+                                href="#contact"
+                                class="contact"
+                                data-i18n="contactLink"
+                            ></a>
+                        </li>
+                        <hr />
+
+                        <!-- Item - 2 -->
+                        <li class="navbar-item">
+                            <a
+                                href="#projects"
+                                class="projects"
+                                data-i18n="projectsLink"
+                            ></a>
+                        </li>
+                        <hr />
+
+                        <!-- Item - 3 -->
+                        <li class="navbar-item">
+                            <a
+                                href="#skills"
+                                class="skills"
+                                data-i18n="skillsLink"
+                            ></a>
+                        </li>
+                        <hr />
+
+                        <!-- Item - 4 -->
+                        <li class="navbar-item">
+                            <a
+                                href="#about"
+                                class="about-me"
+                                data-i18n="aboutMe"
+                            ></a>
+                        </li>
+                        <hr />
+
+                        <!-- Item - 5 -->
+                        <li class="navbar-item">
+                            <a
+                                href="#learningWay"
+                                class="learning-way"
+                                data-i18n="learningWayLink"
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="header-container">
+                <!-- === LEFT SECTION === -->
+                <section class="left-section_header">
+                    <div class="intro">
+                        <div class="hello" data-i18n="hello"></div>
+                        <h1 class="name-container">
+                            <span class="name_h1" data-i18n="nameH1"></span>
+                            <span class="lastname_h1" data-i18n="lastNameH1">
+                                نیازکار
+                            </span>
+                        </h1>
+
+                        <!-- Paragraph - 1 -->
+                        <p class="intro_header english" id="typing-text">
+                            <!-- Front-End Developer & Computer Engineering Student -->
+                        </p>
+
+                        <!-- Paragraph - 2 -->
+                        <p
+                            class="intro_header persian"
+                            dir="rtl"
+                            data-i18n="headerItemTwo"
+                        ></p>
+
+                        <!-- Paragraph - 3 -->
+                        <p
+                            class="intro_header persian"
+                            data-i18n="headerItemThree"
+                        ></p>
+                    </div>
+                    <div class="buttons-container_header">
+                        <!-- Contact Button -->
+                        <button class="contact-btn_header" id="contact-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span data-i18n="contactMe"></span>
+                        </button>
+
+                        <!-- Modal Contact -->
+                        <div class="modal-overlay" id="modal-contact">
+                            <!-- Box -->
+                            <div class="modal-box">
+                                <!-- Close btn -->
+                                <button
+                                    class="close-btn"
+                                    id="close-contact-btn"
+                                >
+                                    ✕
+                                </button>
+
+                                <!-- Title -->
+                                <h2
+                                    class="modal-box-title"
+                                    data-i18n="contactMe"
+                                ></h2>
+
+                                <!-- Email -->
+                                <div class="contact-item">
+                                    <span class="modal-item-name"
+                                        ><i class="fa-solid fa-envelope"></i>
+                                        Email</span
+                                    >
+                                    <div class="buttons-container">
+                                        <button
+                                            class="copy-btn"
+                                            data-copy="rezan4162@gmail.com"
+                                        >
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a href="mailto:rezan4162@gmail.com">
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i>
+                                            Open</a
+                                        >
+                                    </div>
+                                </div>
+
+                                <!-- Github -->
+                                <div class="contact-item">
+                                    <span class="modal-item-name"
+                                        ><i class="fa-brands fa-github"></i>
+                                        Github</span
+                                    >
+                                    <div class="buttons-container">
+                                        <button
+                                            class="copy-btn"
+                                            data-copy="rezaWebDeveloper01"
+                                        >
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a
+                                            href="https://github.com/rezaWebDeveloper01"
+                                            target="_blank"
+                                        >
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i>
+                                            Open
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Telegram -->
+                                <div class="contact-item">
+                                    <span class="modal-item-name"
+                                        ><i class="fa-brands fa-telegram"></i>
+                                        Telegram</span
+                                    >
+                                    <div class="buttons-container">
+                                        <button
+                                            class="copy-btn"
+                                            data-copy="reza80_08"
+                                        >
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a
+                                            href="https://t.me/reza80_08"
+                                            target="_blank"
+                                        >
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i>
+                                            Open
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Linkedin -->
+                                <div class="contact-item">
+                                    <span class="modal-item-name"
+                                        ><i class="fa-brands fa-linkedin"></i>
+                                        Linkedin</span
+                                    >
+                                    <div class="buttons-container">
+                                        <button
+                                            class="copy-btn"
+                                            data-copy="reza-niazkar-front-end"
+                                        >
+                                            <i class="fa-regular fa-copy"></i>
+                                        </button>
+                                        <a
+                                            href="https://www.linkedin.com/in/reza-niazkar-front-end"
+                                            target="_blank"
+                                        >
+                                            <i
+                                                class="fa-solid fa-arrow-up-right-from-square"
+                                            ></i>
+                                            Open
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About Me Button -->
+                        <button class="about-me-btn_header" id="about-btn">
+                            <span data-i18n="aboutMe"></span
+                            ><i class="fa-solid fa-info"></i>
+                        </button>
+
+                        <!-- Modal About Me -->
+                        <div class="modal-overlay" id="modal-about">
+                            <div class="modal-box">
+                                <button class="close-btn" id="close-about-btn">
+                                    ✕
+                                </button>
+                                <h2
+                                    class="modal-box-title"
+                                    data-i18n="aboutMe"
+                                ></h2>
+                                <p
+                                    class="modal-paragraph"
+                                    dir="rtl"
+                                    data-i18n="aboutMeParagraph"
+                                ></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="social_header">
+                        <!-- Git -->
+                        <a
+                            href="https://www.github.com/rezaWebDeveloper01"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <!-- Linkedin -->
+                        <a
+                            href="https://www.linkedin.com/in/reza-niazkar-front-end"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:rezan4162@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="https://t.me/reza80_08" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- === RIGHT SECTION === -->
+                <section class="right-section_header">
+                    <div class="cover-position-of-cards">
+                        <!-- Boxes -->
+                        <div class="code_hero card-hero">&lt;/&gt;</div>
+                        <div class="js_hero card-hero">JS</div>
+                        <div class="css_hero card-hero">CSS</div>
+                        <div class="html_hero card-hero">HTML</div>
+
+                        <!-- Circles -->
+                        <div class="big-circle"></div>
+                        <div class="smaller-circle"></div>
+
+                        <!-- Image -->
+                        <img
+                            class="hero-img"
+                            src="./images/Profile.webp"
+                            alt="Profile"
+                        />
+                    </div>
+                </section>
+            </div>
+        </header>
+
+        <!-- ############ -->
+        <!-- ### MAIN ### -->
+        <!-- ############ -->
+
+        <main>
+            <div class="main-container">
+                <!-- === ABOUT ME SECTION === -->
+                <section class="left-section_main hidden" id="about">
+                    <!-- LEFT SECTION CONTAINER -->
+                    <div class="about-me-container_main">
+                        <!-- Title -->
+                        <h3 class="title hidden">
+                            <span data-i18n="aboutMe"></span
+                            ><i class="fa-regular fa-user"></i>
+                        </h3>
+
+                        <!-- Paragraph -->
+                        <p
+                            class="about-me_main hidden"
+                            dir="rtl"
+                            data-i18n="aboutMeParagraph"
+                        ></p>
+
+                        <!-- BOXES -->
+                        <div class="card-container-about-me_main">
+                            <!-- Box - Birth -->
+                            <div class="birth about-me_box hidden">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span class="birth" data-i18n="birthDate">
+                                </span>
+                                <span class="birth" data-i18n="birthDay">
+                                </span>
+                            </div>
+
+                            <!-- Box - Location -->
+                            <div class="location about-me_box hidden">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span class="location" data-i18n="location">
+                                </span>
+                                <span class="location" data-i18n="located">
+                                </span>
+                            </div>
+
+                            <!-- Box - Studies -->
+                            <div class="studies about-me_box hidden">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span class="studies" data-i18n="studies">
+                                </span>
+                                <span
+                                    class="studies"
+                                    dir="rtl"
+                                    data-i18n="studying"
+                                ></span>
+                            </div>
+
+                            <!-- Box - Favourite -->
+                            <div class="favourite about-me_box hidden">
+                                <i class="fa-regular fa-heart"></i>
+                                <span
+                                    class="favourite"
+                                    data-i18n="favoritesTitle"
+                                ></span>
+                                <span
+                                    class="favourite"
+                                    data-i18n="favoritesItems"
+                                ></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- === SKILLS SECTION === -->
+                <section class="right-section_main" id="skills">
+                    <!-- Title -->
+                    <h3 class="title hidden">
+                        <span data-i18n="skills"></span
+                        ><i class="fa-solid fa-code"></i>
+                    </h3>
+
+                    <!-- CARDS -->
+                    <div class="skills-track hidden">
+                        <!-- Card - HTML -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Html.webp"
+                                alt="HTML Logo"
+                                loading="lazy"
+                            />
+                            <h4>HTML</h4>
+                            <span data-i18n="Advanced"></span>
+                        </div>
+
+                        <!-- Card - CSS -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/CSS.webp"
+                                alt="CSS Logo"
+                                loading="lazy"
+                            />
+                            <h4>CSS</h4>
+                            <span data-i18n="Advanced"></span>
+                        </div>
+
+                        <!-- Card - JS -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/JS.webp"
+                                alt="JS Logo"
+                                loading="lazy"
+                            />
+                            <h4>JavaScript</h4>
+                            <span data-i18n="Intermediate">Intermediate</span>
+                        </div>
+
+                        <!-- Card - REACT -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/React.webp"
+                                alt="React Logo"
+                                loading="lazy"
+                            />
+                            <h4>React</h4>
+                            <span>Learning...</span>
+                        </div>
+
+                        <!-- Card - TypeScript -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Typescript.webp"
+                                alt="TypeScript Logo"
+                                loading="lazy"
+                            />
+                            <h4>TypeScript</h4>
+                            <span>Learning...</span>
+                        </div>
+
+                        <!-- Card - GIT -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Git.webp"
+                                alt="Git Logo"
+                                loading="lazy"
+                            />
+                            <h4>Git & GitHub</h4>
+                            <span data-i18n="Intermediate"></span>
+                        </div>
+
+                        <!-- Card - RESPONSIVE DESIGN -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Responsive.webp"
+                                alt="Responsive Logo"
+                                loading="lazy"
+                            />
+                            <h4>Responsive design</h4>
+                            <span data-i18n="Advanced"></span>
+                        </div>
+
+                        <!-- Card - Bootstrap -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Bootstrap.webp"
+                                alt="Bootstrap Logo"
+                                loading="lazy"
+                            />
+                            <h4>Bootstrap</h4>
+                            <span data-i18n="Beginner"></span>
+                        </div>
+
+                        <!-- Card - Figma -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Figma.webp"
+                                alt="Figma Logo"
+                                loading="lazy"
+                            />
+                            <h4>Figma</h4>
+                            <span data-i18n="Beginner"></span>
+                        </div>
+
+                        <!-- Card - Photoshop -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Photoshop.webp"
+                                alt="Photoshop Logo"
+                                loading="lazy"
+                            />
+                            <h4>Photoshop</h4>
+                            <span data-i18n="Intermediate"></span>
+                        </div>
+
+                        <!-- Card - HTML -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Html.webp"
+                                alt="HTML Logo"
+                                loading="lazy"
+                            />
+                            <h4>HTML</h4>
+                            <span data-i18n="Advanced"></span>
+                        </div>
+
+                        <!-- Card - CSS -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/CSS.webp"
+                                alt="CSS Logo"
+                                loading="lazy"
+                            />
+                            <h4>CSS</h4>
+                            <span data-i18n="Advanced"></span>
+                        </div>
+
+                        <!-- Card - JS -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/JS.webp"
+                                alt="JS Logo"
+                                loading="lazy"
+                            />
+                            <h4>JavaScript</h4>
+                            <span data-i18n="Intermediate"></span>
+                        </div>
+
+                        <!-- Card - REACT -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/React.webp"
+                                alt="React Logo"
+                                loading="lazy"
+                            />
+                            <h4>React</h4>
+                            <span>Learning...</span>
+                        </div>
+
+                        <!-- Card - TypeScript -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Typescript.webp"
+                                alt="TypeScript Logo"
+                                loading="lazy"
+                            />
+                            <h4>TypeScript</h4>
+                            <span>Learning...</span>
+                        </div>
+
+                        <!-- Card - GIT -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Git.webp"
+                                alt="Git Logo"
+                                loading="lazy"
+                            />
+                            <h4>Git & GitHub</h4>
+                            <span data-i18n="Intermediate"></span>
+                        </div>
+
+                        <!-- Card - RESPONSIVE DESIGN -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Responsive.webp"
+                                alt="Responsive Logo"
+                                loading="lazy"
+                            />
+                            <h4>Responsive design</h4>
+                            <span data-i18n="Advanced"></span>
+                        </div>
+
+                        <!-- Card - Bootstrap -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Bootstrap.webp"
+                                alt="Bootstrap Logo"
+                                loading="lazy"
+                            />
+                            <h4>Bootstrap</h4>
+                            <span data-i18n="Beginner"></span>
+                        </div>
+
+                        <!-- Card - Figma -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Figma.webp"
+                                alt="Figma Logo"
+                                loading="lazy"
+                            />
+                            <h4>Figma</h4>
+                            <span data-i18n="Beginner"></span>
+                        </div>
+
+                        <!-- Card - Photoshop -->
+                        <div class="skill-card">
+                            <img
+                                src="./images/Photoshop.webp"
+                                alt="Photoshop Logo"
+                                loading="lazy"
+                            />
+                            <h4>Photoshop</h4>
+                            <span data-i18n="Intermediate"></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- === MY LEARNING WAY SECTION === -->
+            <section class="timeline-container hidden" id="learningWay">
+                <!-- Title -->
+                <h4 class="title hidden">
+                    <span data-i18n="myLearningWay"></span
+                    ><i class="fa-solid fa-route"></i>
+                </h4>
+                <div class="timeline hidden">
+                    <!-- Item - 1 -->
+                    <div class="timeline-item left hidden">
+                        <div class="card_learning_way">
+                            <span data-i18n="dateItemOne"></span>
+                            <h4 data-i18n="titleItemOne"></h4>
+                            <p data-i18n="paragraphItemOne" dir="rtl"></p>
+                        </div>
+                        <div class="middle">
+                            <span class="circle_learning_way"></span>
+                        </div>
+                    </div>
+
+                    <!-- Item - 2 -->
+                    <div class="timeline-item right hidden">
+                        <div></div>
+                        <div class="middle">
+                            <span class="circle_learning_way"></span>
+                        </div>
+                        <div class="card_learning_way">
+                            <span data-i18n="dateItemTwo"></span>
+                            <h4 data-i18n="titleItemTwo"></h4>
+                            <p data-i18n="paragraphItemTwo" dir="rtl"></p>
+                        </div>
+                    </div>
+
+                    <!-- Item - 3 -->
+                    <div class="timeline-item left hidden">
+                        <div class="card_learning_way">
+                            <span data-i18n="dateItemThree">1405</span>
+                            <h4 data-i18n="titleItemThree"></h4>
+                            <p data-i18n="paragraphItemThree" dir="rtl"></p>
+                        </div>
+                        <div class="middle">
+                            <span class="circle_learning_way"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ############## -->
+        <!-- ### FOOTER ### -->
+        <!-- ############## -->
+
+        <footer>
+            <!-- === PROJECTS SECTION === -->
+            <section class="projects_footer" id="projects">
+                <!-- Title -->
+                <h3 class="title hidden">
+                    <span data-i18n="projectsLink"></span
+                    ><i class="fa-solid fa-briefcase"></i>
+                </h3>
+
+                <!-- PROJECTS CONTAINER -->
+                <div class="card-container-projects">
+                    <!-- Project - 1 -->
+                    <div class="project-card-container hidden">
+                        <button
+                            class="project-card_footer hidden"
+                            id="project-one-btn"
+                        >
+                            <img
+                                src="./images/ProjectOne.webp"
+                                alt="Project One"
+                            />
+                        </button>
+                        <div class="modal-overlay" id="modal-project-one">
+                            <div class="modal-box">
+                                <button
+                                    class="close-btn"
+                                    id="close-project-one-btn"
+                                >
+                                    ✕
+                                </button>
+                                <h2
+                                    class="modal-box-title"
+                                    data-i18n="projectOneTitle"
+                                ></h2>
+                                <p
+                                    class="modal-paragraph"
+                                    dir="rtl"
+                                    data-i18n="projectOneParagraph"
+                                ></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project - 2 -->
+                    <div class="project-card-container hidden">
+                        <button
+                            class="project-card_footer"
+                            id="project-two-btn"
+                        >
+                            <img
+                                src="./images/ProjectTwo.webp"
+                                alt="Project Two"
+                                loading="lazy"
+                            />
+                        </button>
+                        <div class="modal-overlay" id="modal-project-two">
+                            <div class="modal-box">
+                                <button
+                                    class="close-btn"
+                                    id="close-project-two-btn"
+                                >
+                                    ✕
+                                </button>
+                                <h2
+                                    class="modal-box-title"
+                                    data-i18n="projectTwoTitle"
+                                ></h2>
+                                <p
+                                    class="modal-paragraph"
+                                    dir="rtl"
+                                    data-i18n="projectTwoParagraph"
+                                ></p>
+                                <a
+                                    href="https://rezawebdeveloper01.github.io/Login-SignUp-Form/"
+                                    target="_blank"
+                                    class="project-link"
+                                    >OPEN</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project - 3 -->
+                    <div class="project-card-container hidden">
+                        <button
+                            class="project-card_footer hidden"
+                            id="project-three-btn"
+                        >
+                            <img src="./images/ProjectThree.webp" alt="" />
+                        </button>
+                        <div class="modal-overlay" id="modal-project-three">
+                            <div class="modal-box">
+                                <button
+                                    class="close-btn"
+                                    id="close-project-three-btn"
+                                >
+                                    ✕
+                                </button>
+                                <h2
+                                    class="modal-box-title"
+                                    data-i18n="projectThreeTitle"
+                                ></h2>
+                                <p
+                                    class="modal-paragraph"
+                                    dir="rtl"
+                                    data-i18n="projectThreeParagraph"
+                                ></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="footer-container">
+                <!-- === GOALS SECTION === -->
+                <section class="goals_section">
+                    <!-- Title -->
+                    <h3 class="title hidden">
+                        <span data-i18n="goals"></span
+                        ><i class="fa-solid fa-bullseye"></i>
+                    </h3>
+
+                    <!-- Goal - 1 -->
+                    <div class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalOne"></span>
+                    </div>
+
+                    <!-- Goal - 2 -->
+                    <div class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalTwo"></span>
+                    </div>
+
+                    <!-- Goal - 3 -->
+                    <div class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalThree"></span>
+                    </div>
+
+                    <!-- Goal - 4 -->
+                    <div class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalFour"></span>
+                    </div>
+
+                    <!-- Goal - 5 -->
+                    <div class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalFive"></span>
+                    </div>
+
+                    <!-- Goal - 6 -->
+                    <div class="goals_paragraph hidden">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <span data-i18n="goalSix"></span>
+                    </div>
+                </section>
+
+                <!-- === CONTACT SECTION === -->
+                <section class="contact_section" id="contact">
+                    <!-- Title -->
+                    <h3 class="title hidden">
+                        <span data-i18n="contactMe"></span
+                        ><i class="fa-regular fa-paper-plane"></i>
+                    </h3>
+
+                    <!-- CONTACT CONTAINER -->
+                    <div class="contact-container">
+                        <!-- Gmail -->
+                        <a
+                            class="gmail-footer hidden"
+                            href="mailto:rezan4162@gmail.com"
+                            target="_blank"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                            <h4>Gmail</h4>
+                            <span>rezan4162@gmail.com</span>
+                        </a>
+
+                        <!-- Github -->
+                        <a
+                            class="github-footer hidden"
+                            href="https://www.github.com/rezaWebDeveloper01"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            <h4>GitHub</h4>
+                            <span>rezaWebDeveloper01</span>
+                        </a>
+
+                        <!-- Telegram -->
+                        <a
+                            class="telegram-footer hidden"
+                            href="https://t.me/reza80_08"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-telegram"></i>
+                            <h4>Telegram</h4>
+                            <span>@reza80_08</span>
+                        </a>
+
+                        <!-- Linkedin -->
+                        <a
+                            class="linkedin-footer hidden"
+                            href="https://www.linkedin.com/in/reza-niazkar-front-end"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                            <h4>Linkedin</h4>
+                            <span>reza-niazkar-front-end</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- === COPYRIGHT SECTION === -->
+            <h5 align="center" class="copyright hidden">
+                &copy 2026 Reza. All rights reserved.
+            </h5>
+            <script src="script.js" defer></script>
+        </footer>
+    </body>
+</html>
