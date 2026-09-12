@@ -119,7 +119,6 @@ html[lang='en'] body {
 }
 
 #language-btn {
-    all: unset;
     position: fixed;
     bottom: 30px;
     left: 50px;
@@ -166,19 +165,26 @@ header {
     font-size: clamp(2rem, 5vw, 3rem);
     padding: 0.2rem 1rem;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    place-items: center;
 }
 
 .logo_header span {
-    -webkit-animation: text-flicker-in-glow 6000ms linear both;
     animation: text-flicker-in-glow 6000ms linear both;
     font-family: 'Montserrat', sans-serif;
 }
 
-nav a {
-    transition: all 100ms;
+a {
+    text-decoration: none;
+}
+
+button {
+    all: unset;
+}
+
+.navbar-toggle {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .navbar-container {
@@ -200,15 +206,11 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
     padding: 0 1rem;
+    transition: all 100ms;
 }
 
-hr {
-    display: none;
-}
-
-.header-container {
+.hero-content {
     width: 100%;
     height: 100%;
     display: grid;
@@ -218,7 +220,7 @@ hr {
 
 /* === LEFT SECTION === */
 
-.left-section_header {
+.hero-info {
     display: flex;
     flex-direction: column;
     font-size: clamp(0.7rem, 4vw, 1.4rem);
@@ -241,7 +243,6 @@ hr {
 .contact-btn_header,
 .about-me-btn_header {
     font-size: clamp(1rem, 5vw, 1.3rem);
-    all: unset;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -283,7 +284,6 @@ hr {
 }
 
 .close-btn {
-    all: unset;
     float: right;
     cursor: pointer;
 }
@@ -297,7 +297,6 @@ hr {
 }
 
 .modal-overlay a {
-    text-decoration: none;
     color: var(--color-white);
     font-size: clamp(1rem, 5vw, 1.2rem);
     margin-left: 5px;
@@ -331,7 +330,6 @@ hr {
 
 .copy-btn,
 .buttons-container {
-    all: unset;
     padding: 8px 14px;
     text-decoration: none;
     cursor: pointer;
@@ -357,7 +355,7 @@ hr {
 
 /* === RIGHT SECTION === */
 
-.right-section_header {
+.hero-visual {
     display: grid;
     place-items: center;
 }
@@ -456,168 +454,6 @@ hr {
 }
 
 /* Logo - Navbar Section */
-@-webkit-keyframes text-flicker-in-glow {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    10.1% {
-        opacity: 1;
-        text-shadow: none;
-    }
-    10.2% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    20% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    20.1% {
-        opacity: 1;
-        text-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
-    }
-    20.6% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    30% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    30.1% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.45),
-            0 0 60px rgba(255, 255, 255, 0.25);
-    }
-    30.5% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.45),
-            0 0 60px rgba(255, 255, 255, 0.25);
-    }
-    30.6% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    45% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    45.1% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.45),
-            0 0 60px rgba(255, 255, 255, 0.25);
-    }
-    50% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.45),
-            0 0 60px rgba(255, 255, 255, 0.25);
-    }
-    55% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.45),
-            0 0 60px rgba(255, 255, 255, 0.25);
-    }
-    55.1% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    57% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    57.1% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.55),
-            0 0 60px rgba(255, 255, 255, 0.35);
-    }
-    60% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.55),
-            0 0 60px rgba(255, 255, 255, 0.35);
-    }
-    60.1% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    65% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    65.1% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.55),
-            0 0 60px rgba(255, 255, 255, 0.35),
-            0 0 100px rgba(255, 255, 255, 0.1);
-    }
-    75% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.55),
-            0 0 60px rgba(255, 255, 255, 0.35),
-            0 0 100px rgba(255, 255, 255, 0.1);
-    }
-    75.1% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    77% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    77.1% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.55),
-            0 0 60px rgba(255, 255, 255, 0.4),
-            0 0 110px rgba(255, 255, 255, 0.2),
-            0 0 100px rgba(255, 255, 255, 0.1);
-    }
-    85% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.55),
-            0 0 60px rgba(255, 255, 255, 0.4),
-            0 0 110px rgba(255, 255, 255, 0.2),
-            0 0 100px rgba(255, 255, 255, 0.1);
-    }
-    85.1% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    86% {
-        opacity: 0;
-        text-shadow: none;
-    }
-    86.1% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.6),
-            0 0 60px rgba(255, 255, 255, 0.45),
-            0 0 110px rgba(255, 255, 255, 0.25),
-            0 0 100px rgba(255, 255, 255, 0.1);
-    }
-    100% {
-        opacity: 1;
-        text-shadow:
-            0 0 30px rgba(255, 255, 255, 0.6),
-            0 0 60px rgba(255, 255, 255, 0.45),
-            0 0 110px rgba(255, 255, 255, 0.25),
-            0 0 100px rgba(255, 255, 255, 0.1);
-    }
-}
-
 @keyframes text-flicker-in-glow {
     0% {
         opacity: 0;
@@ -788,7 +624,7 @@ hr {
 }
 
 .social_header i:hover,
-nav a:hover {
+.navbar-menu a:hover {
     color: var(--link-hover);
     transform: scale(1.1);
 }
@@ -798,7 +634,7 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* Rihgt Section */
+/* Right Section */
 @keyframes turning {
     0% {
         transform: rotate(0deg);
@@ -863,7 +699,7 @@ nav a:hover {
 
 /* === ABOUT ME SECTION === */
 
-.left-section_main {
+.about-section {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -918,7 +754,7 @@ nav a:hover {
 
 /* === SKILLS SECTION === */
 
-.right-section_main {
+.skills-section {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -1101,7 +937,7 @@ footer {
     background: var(--footer-bg);
 }
 
-footer h3 > i {
+footer h2 > i {
     font-size: 1.2rem;
     color: var(--color-blue);
 }
@@ -1193,7 +1029,6 @@ footer h3 > i {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 0.5rem;
     border-right: 2px solid #394984ab;
     padding: 1rem;
     color: var(--color-text);
@@ -1272,6 +1107,7 @@ footer h3 > i {
 .copyright {
     margin: 0;
     padding: 2rem;
+    text-align: center;
 }
 
 /* ###========########========### */
@@ -1282,10 +1118,6 @@ footer h3 > i {
 /* === LARGE LAPTOP === */
 @media screen and (max-width: 1220px) {
     /* ### MAIN ### */
-
-    .skills-card-container {
-        grid-template-columns: var(--grid-column-2);
-    }
 
     .card-container-about-me_main {
         grid-template-columns: var(--grid-column-2);
@@ -1316,6 +1148,11 @@ footer h3 > i {
 @media screen and (max-width: 900px) {
     /* ### HEADER ### */
     /* NAVBAR SECTION */
+
+    .navbar-toggle {
+        opacity: 1;
+        pointer-events: all;
+    }
 
     .navbar-menu {
         position: absolute;
@@ -1360,11 +1197,6 @@ footer h3 > i {
         display: table;
     }
 
-    hr {
-        display: block;
-        width: 100%;
-    }
-
     #mobile-menu {
         transform: translate(5%, 20%);
         left: 10%;
@@ -1383,18 +1215,18 @@ footer h3 > i {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .header-container {
+    .hero-content {
         display: grid;
         grid-template-columns: var(--grid-column-1);
     }
 
     /* LEFT SECTION */
 
-    .left-section_header {
+    .hero-info {
         grid-row: 2;
     }
 
-    .right-section_header {
+    .hero-visual {
         grid-row: 1;
     }
 
@@ -1451,7 +1283,7 @@ footer h3 > i {
 @media screen and (max-width: 500px) {
     /* ### HEADER ### */
 
-    .buttons_header {
+    .buttons-container_header {
         gap: 1rem;
         margin: 0 0 1rem 0;
     }
@@ -1462,7 +1294,7 @@ footer h3 > i {
         grid-template-columns: var(--grid-column-1);
     }
 
-    .left-section_main {
+    .about-section {
         gap: 6px;
     }
 

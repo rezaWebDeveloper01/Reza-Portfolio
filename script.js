@@ -17,7 +17,7 @@ const translations = {
         headerItemThree: 'و ساختن وب‌سایت های مدرن و تعاملی هستم',
         contactMe: 'تماس با من',
         aboutMeParagraph:
-            'من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو شروع کردم. بعد از یاد گیری زبان های Html و CSS به طراحی سایت علاقه‌مند شدم و پروژه های ساده و پیش پا افتاده درست میکردم. بعد از تمرین های متعدد و مسلط شدن بر Html و CSS تصمیم به یاد گیری JavaScript کردم و اکنون درحال یادگیری React هستم.',
+            'من دانشجوی مهندسی کامپیوتر هستم و از سال 1403 برنامه نویسی رو شروع کردم. بعد از یادگیری زبان‌های HTML و CSS به طراحی سایت علاقه‌مند شدم و پروژه‌های ساده و پیش‌پاافتاده درست میکردم. بعد از تمرین های متعدد و مسلط شدن بر Html و CSS تصمیم به یاد گیری JavaScript کردم و اکنون درحال یادگیری React هستم.',
         birthDate: 'تاریخ تولد',
         birthDay: '1386/11/07',
         location: 'موقعیت',
@@ -31,7 +31,7 @@ const translations = {
         dateItemOne: '1403',
         titleItemOne: 'شروع برنامه نویسی',
         paragraphItemOne:
-            'با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوضه طراحی سایت رو انتخاب کردم و شروع به دیدن آموزش کد نویسی سایت های ساده کردم.',
+            'با یادگیری پایتون به برنامه نویسی علاقه مند شدم و حوزه طراحی سایت رو انتخاب کردم و شروع به دیدن آموزش کدنویسی سایت های ساده کردم.',
         dateItemTwo: '1404',
         titleItemTwo: 'ورود به دنیای جاوااسکریپت',
         paragraphItemTwo:
@@ -39,10 +39,10 @@ const translations = {
         dateItemThree: '1405',
         titleItemThree: 'تمرکز روی توسعه مهارت های فرانت اند',
         paragraphItemThree:
-            'درحال یادگیری React و همچنین سعی در آموختن ترفند های جدید، حرفه‌ای و مدرن در توسعه وبسایت هستم.',
+            'درحال یادگیری React و همچنین سعی در آموختن ترفند های جدید، حرفه‌ای و مدرن در توسعه وب‌سایت هستم.',
         projectOneTitle: 'یک پورتفولیو جذاب و واکنش گرا',
         projectOneParagraph:
-            'این پورتفولیو کاملا از صفر کد نویسی و توسعه داده شده و در طول ساخت آن مهارت ها و تجربه های زیادی در طراحی و توسعه وب به دست آوردم. ساخت این پروژه حدود یک ماه زمان برد.',
+            'این پورتفولیو کاملا از صفر کدنویسی و توسعه داده شده و در طول ساخت آن مهارت ها و تجربه های زیادی در طراحی و توسعه وب به دست آوردم. ساخت این پروژه حدود یک ماه زمان برد.',
         projectTwoTitle: 'رابط کاربری احراز هویت متحرک - نسخه دمو',
         projectTwoParagraph:
             'یک رابط کاربری تایید هویت واکنش‌گرا با انتقالات ورود/ثبت‌نام، اعتبارسنجی فرم، رابط کاربری CAPTCHA، قابلیت نمایش رمز عبور، طراحی واکنش‌گرای موبایل.',
@@ -50,15 +50,16 @@ const translations = {
         projectThreeParagraph:
             'بعد از اتمام پروژه لینک آن در این قسمت قرار خواهد گرفت.',
         goals: 'هدف ها',
-        goalOne: 'یادگیری استفاده از جاوااسکریپت در وبسایت',
+        goalOne: 'یادگیری استفاده از جاوااسکریپت در وب‌سایت',
         goalTwo: 'یادگیری React',
         goalThree: 'تسلط کامل بر مفاهیم پیشرفته',
         goalFour: 'تسلط کامل بر زبان انگلیسی',
-        goalFive: 'کار در یک تیم حرفه ای',
+        goalFive: 'کار در یک تیم حرفه‌ای',
         goalSix: 'درآمد دلاری از طریق فریلنسری',
         Beginner: 'تازه وارد',
         Intermediate: 'متوسط',
         Advanced: 'پیشرفته',
+        learning: 'درحال یادگیری',
     },
 
     en: {
@@ -108,7 +109,7 @@ const translations = {
         projectThreeParagraph:
             'After the project is finished, its link will be posted here.',
         goals: 'Goals',
-        goalOne: 'Learning of using JavaScript on a website',
+        goalOne: 'Using JavaScript in web development',
         goalTwo: 'Learning React',
         goalThree: 'Complete mastery of advanced concepts',
         goalFour: 'Complete command of the English language',
@@ -117,6 +118,7 @@ const translations = {
         Beginner: 'Beginner',
         Intermediate: 'Intermediate',
         Advanced: 'Advanced',
+        learning: 'Learning',
     },
 };
 
@@ -128,18 +130,18 @@ function changeLanguage(language) {
         element.textContent = translations[language][key];
     });
 
+    document.documentElement.lang = language;
     localStorage.setItem('language', language);
 }
 
-languageBtn.addEventListener('click', () => {
-    const currentLanguage = localStorage.getItem('language') || 'fa';
+if (languageBtn) {
+    languageBtn.addEventListener('click', () => {
+        const currentLanguage = localStorage.getItem('language') || 'fa';
+        const newLanguage = currentLanguage === 'fa' ? 'en' : 'fa';
 
-    const newLanguage = currentLanguage === 'fa' ? 'en' : 'fa';
-
-    changeLanguage(newLanguage);
-
-    document.documentElement.lang = newLanguage;
-});
+        changeLanguage(newLanguage);
+    });
+}
 
 const savedLanguage = localStorage.getItem('language') || 'fa';
 
@@ -155,12 +157,12 @@ const typingText = document.getElementById('typing-text');
 let index = 0;
 
 function typeText() {
-    if (index < text.length) {
-        typingText.textContent += text[index];
-        index++;
+    if (!typingText || index >= text.length) return;
 
-        setTimeout(typeText, 50);
-    }
+    typingText.textContent += text[index];
+    index++;
+
+    setTimeout(typeText, 50);
 }
 
 typeText();
@@ -191,10 +193,25 @@ hiddenElements.forEach((element) => {
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar-menu');
 
-menu.addEventListener('click', () => {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-});
+if (menu && menuLinks) {
+    menu.setAttribute('aria-expanded', 'false');
+    menu.setAttribute('aria-controls', menuLinks.id);
+
+    menu.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('is-active');
+
+        menuLinks.classList.toggle('active', isOpen);
+        menu.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    menuLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('is-active');
+            menuLinks.classList.remove('active');
+            menu.setAttribute('aria-expanded', 'false');
+        });
+    });
+}
 
 // ===========================
 // === MODAL FUNCTIONALITY ===
@@ -205,17 +222,36 @@ function setupModal(openBtnId, modalId, closeBtnId) {
     const modal = document.getElementById(modalId);
     const closeBtn = document.getElementById(closeBtnId);
 
+    if (!openBtn || !modal || !closeBtn) return;
+
+    const setModalState = (isOpen) => {
+        modal.classList.toggle('active', isOpen);
+        modal.setAttribute('aria-hidden', String(!isOpen));
+
+        if (isOpen) {
+            closeBtn.focus();
+        } else {
+            openBtn.focus();
+        }
+    };
+
     openBtn.addEventListener('click', () => {
-        modal.classList.add('active');
+        setModalState(true);
     });
 
     closeBtn.addEventListener('click', () => {
-        modal.classList.remove('active');
+        setModalState(false);
     });
 
     modal.addEventListener('click', (event) => {
         if (event.target === modal) {
-            modal.classList.remove('active');
+            setModalState(false);
+        }
+    });
+
+    modal.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            setModalState(false);
         }
     });
 }
@@ -247,16 +283,18 @@ const copyButtons = document.querySelectorAll('.copy-btn');
 
 copyButtons.forEach((button) => {
     button.addEventListener('click', async () => {
-        await navigator.clipboard.writeText(button.dataset.copy);
+        try {
+            await navigator.clipboard.writeText(button.dataset.copy);
 
-        button.innerHTML = `
-            <i class="fa-solid fa-check"></i>
-        `;
+            button.innerHTML = '<i class="fa-solid fa-check"></i>';
+            button.setAttribute('aria-label', 'Copied');
 
-        setTimeout(() => {
-            button.innerHTML = `
-                <i class="fa-regular fa-copy"></i>
-            `;
-        }, 2500);
+            setTimeout(() => {
+                button.innerHTML = '<i class="fa-regular fa-copy"></i>';
+                button.setAttribute('aria-label', 'Copy');
+            }, 2500);
+        } catch (error) {
+            console.error('Failed to copy text:', error);
+        }
     });
 });

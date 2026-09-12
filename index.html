@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="color-scheme" content="light dark" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -18,7 +17,7 @@
             referrerpolicy="no-referrer"
         />
         <link rel="stylesheet" href="./style.css" />
-        <title>Portfolio</title>
+        <title>Reza Niazkar | Front-End Developer</title>
     </head>
     <body>
         <span class="language-btn-ripple"></span>
@@ -33,62 +32,46 @@
                 <!-- NAVBAR CONTAINER -->
                 <div class="navbar-container">
                     <!-- Logo -->
-                    <div class="logo_header"><span>R</span></div>
+                    <a href="#" class="logo_header"><span>R</span></a>
 
                     <!-- Toggle -->
-                    <div class="navbar-toggle" id="mobile-menu">
+                    <button
+                        class="navbar-toggle"
+                        id="mobile-menu"
+                        type="button"
+                        aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbar-menu"
+                    >
                         <span class="bar_toggle"></span>
                         <span class="bar_toggle"></span>
                         <span class="bar_toggle"></span>
-                    </div>
+                    </button>
 
                     <!-- NAV ITEMS -->
-                    <ul class="navbar-menu">
+                    <ul class="navbar-menu" id="navbar-menu">
                         <!-- Item - 1 -->
                         <li class="navbar-item">
-                            <a
-                                href="#contact"
-                                class="contact"
-                                data-i18n="contactLink"
-                            ></a>
+                            <a href="#contact" data-i18n="contactLink"></a>
                         </li>
-                        <hr />
 
                         <!-- Item - 2 -->
                         <li class="navbar-item">
-                            <a
-                                href="#projects"
-                                class="projects"
-                                data-i18n="projectsLink"
-                            ></a>
+                            <a href="#projects" data-i18n="projectsLink"></a>
                         </li>
-                        <hr />
 
                         <!-- Item - 3 -->
                         <li class="navbar-item">
-                            <a
-                                href="#skills"
-                                class="skills"
-                                data-i18n="skillsLink"
-                            ></a>
+                            <a href="#skills" data-i18n="skillsLink"></a>
                         </li>
-                        <hr />
 
                         <!-- Item - 4 -->
                         <li class="navbar-item">
-                            <a
-                                href="#about"
-                                class="about-me"
-                                data-i18n="aboutMe"
-                            ></a>
+                            <a href="#about" data-i18n="aboutMe"></a>
                         </li>
-                        <hr />
 
                         <!-- Item - 5 -->
                         <li class="navbar-item">
                             <a
                                 href="#learningWay"
-                                class="learning-way"
                                 data-i18n="learningWayLink"
                             ></a>
                         </li>
@@ -96,16 +79,17 @@
                 </div>
             </nav>
 
-            <div class="header-container">
+            <div class="hero-content">
                 <!-- === LEFT SECTION === -->
-                <section class="left-section_header">
+                <section class="hero-info">
                     <div class="intro">
                         <div class="hello" data-i18n="hello"></div>
                         <h1 class="name-container">
                             <span class="name_h1" data-i18n="nameH1"></span>
-                            <span class="lastname_h1" data-i18n="lastNameH1">
-                                نیازکار
-                            </span>
+                            <span
+                                class="lastname_h1"
+                                data-i18n="lastNameH1"
+                            ></span>
                         </h1>
 
                         <!-- Paragraph - 1 -->
@@ -128,26 +112,32 @@
                     </div>
                     <div class="buttons-container_header">
                         <!-- Contact Button -->
-                        <button class="contact-btn_header" id="contact-btn">
+                        <button
+                            class="contact-btn_header"
+                            id="contact-btn"
+                            type="button"
+                        >
                             <i class="fa-solid fa-paper-plane"></i>
                             <span data-i18n="contactMe"></span>
                         </button>
 
                         <!-- Modal Contact -->
-                        <div class="modal-overlay" id="modal-contact">
+                        <div class="modal-overlay" id="modal-contact" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-contact-title">
                             <!-- Box -->
                             <div class="modal-box">
                                 <!-- Close btn -->
                                 <button
                                     class="close-btn"
                                     id="close-contact-btn"
+                                    type="button"
+                                    aria-label="Close"
                                 >
                                     ✕
                                 </button>
 
                                 <!-- Title -->
                                 <h2
-                                    class="modal-box-title"
+                                    class="modal-box-title" id="modal-contact-title"
                                     data-i18n="contactMe"
                                 ></h2>
 
@@ -161,10 +151,15 @@
                                         <button
                                             class="copy-btn"
                                             data-copy="rezan4162@gmail.com"
+                                            type="button"
                                         >
                                             <i class="fa-regular fa-copy"></i>
                                         </button>
-                                        <a href="mailto:rezan4162@gmail.com">
+                                        <a
+                                            href="mailto:rezan4162@gmail.com"
+                                            rel="noopener noreferrer"
+                                            aria-label="Email"
+                                        >
                                             <i
                                                 class="fa-solid fa-arrow-up-right-from-square"
                                             ></i>
@@ -183,12 +178,15 @@
                                         <button
                                             class="copy-btn"
                                             data-copy="rezaWebDeveloper01"
+                                            type="button"
                                         >
                                             <i class="fa-regular fa-copy"></i>
                                         </button>
                                         <a
                                             href="https://github.com/rezaWebDeveloper01"
                                             target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="GitHub"
                                         >
                                             <i
                                                 class="fa-solid fa-arrow-up-right-from-square"
@@ -208,12 +206,15 @@
                                         <button
                                             class="copy-btn"
                                             data-copy="reza80_08"
+                                            type="button"
                                         >
                                             <i class="fa-regular fa-copy"></i>
                                         </button>
                                         <a
                                             href="https://t.me/reza80_08"
                                             target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Telegram"
                                         >
                                             <i
                                                 class="fa-solid fa-arrow-up-right-from-square"
@@ -233,12 +234,15 @@
                                         <button
                                             class="copy-btn"
                                             data-copy="reza-niazkar-front-end"
+                                            type="button"
                                         >
                                             <i class="fa-regular fa-copy"></i>
                                         </button>
                                         <a
                                             href="https://www.linkedin.com/in/reza-niazkar-front-end"
                                             target="_blank"
+                                            rel="noopener noreferrer"
+                                            aria-label="Linkedin"
                                         >
                                             <i
                                                 class="fa-solid fa-arrow-up-right-from-square"
@@ -251,19 +255,28 @@
                         </div>
 
                         <!-- About Me Button -->
-                        <button class="about-me-btn_header" id="about-btn">
+                        <button
+                            class="about-me-btn_header"
+                            id="about-btn"
+                            type="button"
+                        >
                             <span data-i18n="aboutMe"></span
                             ><i class="fa-solid fa-info"></i>
                         </button>
 
                         <!-- Modal About Me -->
-                        <div class="modal-overlay" id="modal-about">
+                        <div class="modal-overlay" id="modal-about" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-about-title">
                             <div class="modal-box">
-                                <button class="close-btn" id="close-about-btn">
+                                <button
+                                    class="close-btn"
+                                    id="close-about-btn"
+                                    type="button"
+                                    aria-label="Close"
+                                >
                                     ✕
                                 </button>
                                 <h2
-                                    class="modal-box-title"
+                                    class="modal-box-title" id="modal-about-title"
                                     data-i18n="aboutMe"
                                 ></h2>
                                 <p
@@ -279,8 +292,10 @@
                     <div class="social_header">
                         <!-- Git -->
                         <a
-                            href="https://www.github.com/rezaWebDeveloper01"
+                            href="https://github.com/rezaWebDeveloper01"
                             target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
                         >
                             <i class="fa-brands fa-github"></i>
                         </a>
@@ -289,24 +304,35 @@
                         <a
                             href="https://www.linkedin.com/in/reza-niazkar-front-end"
                             target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Linkedin"
                         >
                             <i class="fa-brands fa-linkedin"></i>
                         </a>
 
                         <!-- Email -->
-                        <a href="mailto:rezan4162@gmail.com" target="_blank">
+                        <a
+                            href="mailto:rezan4162@gmail.com"
+                            rel="noopener noreferrer"
+                            aria-label="Email"
+                        >
                             <i class="fa-solid fa-envelope"></i>
                         </a>
 
                         <!-- Telegram -->
-                        <a href="https://t.me/reza80_08" target="_blank">
+                        <a
+                            href="https://t.me/reza80_08"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Telegram"
+                        >
                             <i class="fa-brands fa-telegram"></i>
                         </a>
                     </div>
                 </section>
 
                 <!-- === RIGHT SECTION === -->
-                <section class="right-section_header">
+                <section class="hero-visual">
                     <div class="cover-position-of-cards">
                         <!-- Boxes -->
                         <div class="code_hero card-hero">&lt;/&gt;</div>
@@ -322,7 +348,7 @@
                         <img
                             class="hero-img"
                             src="./images/Profile.webp"
-                            alt="Profile"
+                            alt="Reza Niazkar"
                         />
                     </div>
                 </section>
@@ -336,14 +362,16 @@
         <main>
             <div class="main-container">
                 <!-- === ABOUT ME SECTION === -->
-                <section class="left-section_main hidden" id="about">
-                    <!-- LEFT SECTION CONTAINER -->
+                <section class="about-section hidden" id="about">
                     <div class="about-me-container_main">
                         <!-- Title -->
-                        <h3 class="title hidden">
+                        <h2 class="title hidden">
                             <span data-i18n="aboutMe"></span
-                            ><i class="fa-regular fa-user"></i>
-                        </h3>
+                            ><i
+                                class="fa-regular fa-user"
+                                aria-hidden="true"
+                            ></i>
+                        </h2>
 
                         <!-- Paragraph -->
                         <p
@@ -355,8 +383,11 @@
                         <!-- BOXES -->
                         <div class="card-container-about-me_main">
                             <!-- Box - Birth -->
-                            <div class="birth about-me_box hidden">
-                                <i class="fa-solid fa-calendar-days"></i>
+                            <div class="about-me_box hidden">
+                                <i
+                                    class="fa-solid fa-calendar-days"
+                                    aria-hidden="true"
+                                ></i>
                                 <span class="birth" data-i18n="birthDate">
                                 </span>
                                 <span class="birth" data-i18n="birthDay">
@@ -364,8 +395,11 @@
                             </div>
 
                             <!-- Box - Location -->
-                            <div class="location about-me_box hidden">
-                                <i class="fa-solid fa-location-dot"></i>
+                            <div class="about-me_box hidden">
+                                <i
+                                    class="fa-solid fa-location-dot"
+                                    aria-hidden="true"
+                                ></i>
                                 <span class="location" data-i18n="location">
                                 </span>
                                 <span class="location" data-i18n="located">
@@ -373,8 +407,11 @@
                             </div>
 
                             <!-- Box - Studies -->
-                            <div class="studies about-me_box hidden">
-                                <i class="fa-solid fa-graduation-cap"></i>
+                            <div class="about-me_box hidden">
+                                <i
+                                    class="fa-solid fa-graduation-cap"
+                                    aria-hidden="true"
+                                ></i>
                                 <span class="studies" data-i18n="studies">
                                 </span>
                                 <span
@@ -385,8 +422,11 @@
                             </div>
 
                             <!-- Box - Favourite -->
-                            <div class="favourite about-me_box hidden">
-                                <i class="fa-regular fa-heart"></i>
+                            <div class="about-me_box hidden">
+                                <i
+                                    class="fa-regular fa-heart"
+                                    aria-hidden="true"
+                                ></i>
                                 <span
                                     class="favourite"
                                     data-i18n="favoritesTitle"
@@ -401,12 +441,12 @@
                 </section>
 
                 <!-- === SKILLS SECTION === -->
-                <section class="right-section_main" id="skills">
+                <section class="skills-section" id="skills">
                     <!-- Title -->
-                    <h3 class="title hidden">
+                    <h2 class="title hidden">
                         <span data-i18n="skills"></span
-                        ><i class="fa-solid fa-code"></i>
-                    </h3>
+                        ><i class="fa-solid fa-code" aria-hidden="true"></i>
+                    </h2>
 
                     <!-- CARDS -->
                     <div class="skills-track hidden">
@@ -440,7 +480,7 @@
                                 loading="lazy"
                             />
                             <h4>JavaScript</h4>
-                            <span data-i18n="Intermediate">Intermediate</span>
+                            <span data-i18n="Intermediate"></span>
                         </div>
 
                         <!-- Card - REACT -->
@@ -451,7 +491,7 @@
                                 loading="lazy"
                             />
                             <h4>React</h4>
-                            <span>Learning...</span>
+                            <span data-i18n="learning"></span>
                         </div>
 
                         <!-- Card - TypeScript -->
@@ -462,7 +502,7 @@
                                 loading="lazy"
                             />
                             <h4>TypeScript</h4>
-                            <span>Learning...</span>
+                            <span data-i18n="learning"></span>
                         </div>
 
                         <!-- Card - GIT -->
@@ -561,7 +601,7 @@
                                 loading="lazy"
                             />
                             <h4>React</h4>
-                            <span>Learning...</span>
+                            <span data-i18n="learning"></span>
                         </div>
 
                         <!-- Card - TypeScript -->
@@ -572,7 +612,7 @@
                                 loading="lazy"
                             />
                             <h4>TypeScript</h4>
-                            <span>Learning...</span>
+                            <span data-i18n="learning"></span>
                         </div>
 
                         <!-- Card - GIT -->
@@ -636,10 +676,10 @@
             <!-- === MY LEARNING WAY SECTION === -->
             <section class="timeline-container hidden" id="learningWay">
                 <!-- Title -->
-                <h4 class="title hidden">
+                <h2 class="title hidden">
                     <span data-i18n="myLearningWay"></span
-                    ><i class="fa-solid fa-route"></i>
-                </h4>
+                    ><i class="fa-solid fa-route" aria-hidden="true"></i>
+                </h2>
                 <div class="timeline hidden">
                     <!-- Item - 1 -->
                     <div class="timeline-item left hidden">
@@ -689,10 +729,10 @@
             <!-- === PROJECTS SECTION === -->
             <section class="projects_footer" id="projects">
                 <!-- Title -->
-                <h3 class="title hidden">
+                <h2 class="title hidden">
                     <span data-i18n="projectsLink"></span
-                    ><i class="fa-solid fa-briefcase"></i>
-                </h3>
+                    ><i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                </h2>
 
                 <!-- PROJECTS CONTAINER -->
                 <div class="card-container-projects">
@@ -701,22 +741,26 @@
                         <button
                             class="project-card_footer hidden"
                             id="project-one-btn"
+                            type="button"
                         >
                             <img
                                 src="./images/ProjectOne.webp"
                                 alt="Project One"
+                                loading="lazy"
                             />
                         </button>
-                        <div class="modal-overlay" id="modal-project-one">
+                        <div class="modal-overlay" id="modal-project-one" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-one-title">
                             <div class="modal-box">
                                 <button
                                     class="close-btn"
                                     id="close-project-one-btn"
+                                    type="button"
+                                    aria-label="Close"
                                 >
                                     ✕
                                 </button>
                                 <h2
-                                    class="modal-box-title"
+                                    class="modal-box-title" id="modal-project-one-title"
                                     data-i18n="projectOneTitle"
                                 ></h2>
                                 <p
@@ -733,6 +777,7 @@
                         <button
                             class="project-card_footer"
                             id="project-two-btn"
+                            type="button"
                         >
                             <img
                                 src="./images/ProjectTwo.webp"
@@ -740,16 +785,18 @@
                                 loading="lazy"
                             />
                         </button>
-                        <div class="modal-overlay" id="modal-project-two">
+                        <div class="modal-overlay" id="modal-project-two" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-two-title">
                             <div class="modal-box">
                                 <button
                                     class="close-btn"
                                     id="close-project-two-btn"
+                                    type="button"
+                                    aria-label="Close"
                                 >
                                     ✕
                                 </button>
                                 <h2
-                                    class="modal-box-title"
+                                    class="modal-box-title" id="modal-project-two-title"
                                     data-i18n="projectTwoTitle"
                                 ></h2>
                                 <p
@@ -760,6 +807,7 @@
                                 <a
                                     href="https://rezawebdeveloper01.github.io/Login-SignUp-Form/"
                                     target="_blank"
+                                    rel="noopener noreferrer"
                                     class="project-link"
                                     >OPEN</a
                                 >
@@ -772,19 +820,26 @@
                         <button
                             class="project-card_footer hidden"
                             id="project-three-btn"
+                            type="button"
                         >
-                            <img src="./images/ProjectThree.webp" alt="" />
+                            <img
+                                src="./images/ProjectThree.webp"
+                                alt="Project Three"
+                                loading="lazy"
+                            />
                         </button>
-                        <div class="modal-overlay" id="modal-project-three">
+                        <div class="modal-overlay" id="modal-project-three" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-project-three-title">
                             <div class="modal-box">
                                 <button
                                     class="close-btn"
                                     id="close-project-three-btn"
+                                    type="button"
+                                    aria-label="Close"
                                 >
                                     ✕
                                 </button>
                                 <h2
-                                    class="modal-box-title"
+                                    class="modal-box-title" id="modal-project-three-title"
                                     data-i18n="projectThreeTitle"
                                 ></h2>
                                 <p
@@ -802,10 +857,10 @@
                 <!-- === GOALS SECTION === -->
                 <section class="goals_section">
                     <!-- Title -->
-                    <h3 class="title hidden">
+                    <h2 class="title hidden">
                         <span data-i18n="goals"></span
-                        ><i class="fa-solid fa-bullseye"></i>
-                    </h3>
+                        ><i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                    </h2>
 
                     <!-- Goal - 1 -->
                     <div class="goals_paragraph hidden">
@@ -847,18 +902,22 @@
                 <!-- === CONTACT SECTION === -->
                 <section class="contact_section" id="contact">
                     <!-- Title -->
-                    <h3 class="title hidden">
+                    <h2 class="title hidden">
                         <span data-i18n="contactMe"></span
-                        ><i class="fa-regular fa-paper-plane"></i>
-                    </h3>
+                        ><i
+                            class="fa-regular fa-paper-plane"
+                            aria-hidden="true"
+                        ></i>
+                    </h2>
 
                     <!-- CONTACT CONTAINER -->
                     <div class="contact-container">
-                        <!-- Gmail -->
+                        <!-- Email -->
                         <a
-                            class="gmail-footer hidden"
+                            class="hidden"
                             href="mailto:rezan4162@gmail.com"
-                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Email"
                         >
                             <i class="fa-solid fa-envelope"></i>
                             <h4>Gmail</h4>
@@ -867,9 +926,11 @@
 
                         <!-- Github -->
                         <a
-                            class="github-footer hidden"
-                            href="https://www.github.com/rezaWebDeveloper01"
+                            class="hidden"
+                            href="https://github.com/rezaWebDeveloper01"
                             target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
                         >
                             <i class="fa-brands fa-github"></i>
                             <h4>GitHub</h4>
@@ -878,9 +939,11 @@
 
                         <!-- Telegram -->
                         <a
-                            class="telegram-footer hidden"
+                            class="hidden"
                             href="https://t.me/reza80_08"
                             target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Telegram"
                         >
                             <i class="fa-brands fa-telegram"></i>
                             <h4>Telegram</h4>
@@ -889,9 +952,11 @@
 
                         <!-- Linkedin -->
                         <a
-                            class="linkedin-footer hidden"
+                            class="hidden"
                             href="https://www.linkedin.com/in/reza-niazkar-front-end"
                             target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Linkedin"
                         >
                             <i class="fa-brands fa-linkedin"></i>
                             <h4>Linkedin</h4>
@@ -902,9 +967,9 @@
             </div>
 
             <!-- === COPYRIGHT SECTION === -->
-            <h5 align="center" class="copyright hidden">
-                &copy 2026 Reza. All rights reserved.
-            </h5>
+            <p class="copyright hidden">
+                &copy; 2026 Reza. All rights reserved.
+            </p>
             <script src="script.js" defer></script>
         </footer>
     </body>
