@@ -768,7 +768,7 @@ button {
     gap: 1.5rem;
     width: max-content;
     padding: 2rem;
-    animation: slider 15s linear infinite;
+    animation: slider 20s linear infinite;
 }
 
 .skills-track:hover {
