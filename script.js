@@ -48,7 +48,7 @@ const translations = {
             'یک رابط کاربری تایید هویت واکنش‌گرا با انتقالات ورود/ثبت‌نام، اعتبارسنجی فرم، رابط کاربری CAPTCHA، قابلیت نمایش رمز عبور، طراحی واکنش‌گرای موبایل.',
         projectThreeTitle: 'لندینگ پیج جذاب و واکنش گرا - نسخه دمو',
         projectThreeParagraph:
-            'بعد از اتمام پروژه لینک آن در این قسمت قرار خواهد گرفت.',
+            'یک لندینگ پیج فارسی با طراحی مدرن، انیمیشن‌های جذاب و رابط کاربری واکنش‌گرا که با HTML، CSS و JavaScript ساخته شده است. این پروژه صرفاً یک **دمو (Demo)** برای نمایش مهارت‌های طراحی و توسعه فرانت‌اند است و یک وب‌سایت تجاری واقعی نیست.',
         goals: 'هدف ها',
         goalOne: 'یادگیری استفاده از جاوااسکریپت در وبسایت',
         goalTwo: 'یادگیری React',
@@ -106,7 +106,7 @@ const translations = {
         projectThreeTitle:
             'Attractive and Responsive Landing Page - Demo Version',
         projectThreeParagraph:
-            'After the project is finished, its link will be posted here.',
+            'A modern Persian landing page featuring eye-catching animations, a responsive layout, and a clean user interface, built with HTML, CSS, and JavaScript. This project is a **demo** created to showcase front-end design and development skills, not a real commercial website.',
         goals: 'Goals',
         goalOne: 'Learning of using JavaScript on a website',
         goalTwo: 'Learning React',
